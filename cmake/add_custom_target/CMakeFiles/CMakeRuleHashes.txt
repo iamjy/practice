@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+42807db6510461207362064202a7ba9e CMakeFiles/print-city
+8c68a1d716d2ba9c668ec524f3ef23ec CMakeFiles/print-day
+909b6853e1c962475e723e01d222823a CMakeFiles/print-time

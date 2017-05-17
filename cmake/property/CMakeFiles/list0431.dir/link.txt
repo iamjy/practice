@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/list0431.dir/list0431main.c.o CMakeFiles/list0431.dir/list0431A.c.o CMakeFiles/list0431.dir/list0431B.c.o  -o list0431 -rdynamic 

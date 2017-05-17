@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+6fa0561b1619785d125aef9ab38336d1 CMakeFiles/cksum-add.c
+1d249d092e97af2f8d9f18fadeed99e3 CMakeFiles/cksum-calc.c
+88df64148a950d447ee6a9cb84a21453 CMakeFiles/cksum-mult.c
+da21ec1ba851c3f5d2dfff3a2f5fa327 CMakeFiles/cksum-sub.c

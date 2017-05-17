@@ -1,0 +1,2 @@
+/home/iamjy1005/work/lab/practice/script/cmake/test4/CMakeFiles/edit_cache.dir
+/home/iamjy1005/work/lab/practice/script/cmake/test4/CMakeFiles/rebuild_cache.dir

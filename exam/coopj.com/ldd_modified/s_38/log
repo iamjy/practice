@@ -1,0 +1,26 @@
+In file included from include/linux/kernel.h:13:0,
+                 from include/linux/cache.h:4,
+                 from include/linux/time.h:4,
+                 from include/linux/stat.h:18,
+                 from include/linux/module.h:10,
+                 from /home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.c:3:
+/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.c: In function ‘generic_init’:
+include/linux/printk.h:223:2: error: expected ‘;’ before ‘printk’
+  printk(KERN_INFO pr_fmt(fmt), ##__VA_ARGS__)
+  ^
+/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.c:38:5: note: in expansion of macro ‘pr_info’
+     pr_info("Succeeded in registering %s device \n", GENERIC_DEV_NAME);
+     ^
+/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.c:32:8: warning: unused variable ‘p’ [-Wunused-variable]
+  void *p = NULL;
+        ^
+/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.c: At top level:
+/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.c:15:1: warning: ‘generic_open’ defined but not used [-Wunused-function]
+ generic_open(struct inode *inode, struct file *file)
+ ^
+/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.c:22:1: warning: ‘generic_release’ defined but not used [-Wunused-function]
+ generic_release(struct inode *inode, struct file *file)
+ ^
+make[2]: *** [/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38/ldd_test.o] Error 1
+make[1]: *** [_module_/home/jyp/work/lab/exam/book/coopj.com/ldd_modified/s_38] Error 2
+make: *** [modules] Error 2

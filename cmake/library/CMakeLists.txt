@@ -1,0 +1,33 @@
+project (basic-syntax C)
+
+cmake_minimum_required (VERSION 2.6)
+
+set (CMAKE_BUILD_TYPE Debug)
+set (wife Grace)
+set (dog Stan)
+message ("${wife}, please take ${dog} for a walk")
+
+set_property (DIRECTORY PROPERTY COMPILE_DEFINITIONS TEST=1)
+set_property (SOURCE add.c PROPERTY COMPILE_DEFINITIONS QUICKADD=1)
+set_property (SOURCE sub.c PROPERTY COMPILE_DEFINITIONS QUICKSUB=1)
+set_property (SOURCE mult.c PROPERTY COMPILE_DEFINITIONS QUICKMULT=1)
+set_property (SOURCE add.c PROPERTY Author Peter)
+set_property (SOURCE sub.c PROPERTY Author Louis)
+set_property (SOURCE mult.c PROPERTY Author John)
+get_property (add_author SOURCE add.c PROPERTY Author)
+get_property (sub_author SOURCE sub.c PROPERTY Author)
+get_property (mult_author SOURCE mult.c PROPERTY Author)
+get_property (add_defs SOURCE add.c PROPERTY COMPILE_DEFINITIONS)
+get_property (sub_defs SOURCE sub.c PROPERTY COMPILE_DEFINITIONS)
+get_property (mult_defs SOURCE mult.c PROPERTY COMPILE_DEFINITIONS)
+message ("The author of add.c is ${add_author}")
+message ("The author of sub.c is ${sub_author}")
+message ("The author of mult.c is ${mult_author}")
+message ("The definitions of add.c is ${add_defs}")
+message ("The definitions of sub.c is ${sub_defs}")
+message ("The definitions of mult.c is ${mult_defs}")
+
+add_library (math STATIC add sub mult)
+add_executable (calculator calc)
+target_link_libraries (calculator math)
+

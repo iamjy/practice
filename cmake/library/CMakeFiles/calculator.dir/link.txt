@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/calculator.dir/calc.c.o  -o calculator -rdynamic libmath.a 

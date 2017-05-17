@@ -1,0 +1,6 @@
+/home/iamjy1005/work/lab/practice/script/cmake/foreach/CMakeFiles/rebuild_cache.dir
+/home/iamjy1005/work/lab/practice/script/cmake/foreach/CMakeFiles/cksum-add.c.dir
+/home/iamjy1005/work/lab/practice/script/cmake/foreach/CMakeFiles/cksum-sub.c.dir
+/home/iamjy1005/work/lab/practice/script/cmake/foreach/CMakeFiles/edit_cache.dir
+/home/iamjy1005/work/lab/practice/script/cmake/foreach/CMakeFiles/cksum-mult.c.dir
+/home/iamjy1005/work/lab/practice/script/cmake/foreach/CMakeFiles/cksum-calc.c.dir
