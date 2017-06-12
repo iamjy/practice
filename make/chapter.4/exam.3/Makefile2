@@ -1,0 +1,11 @@
+#!/bin/bash
+
+plot :
+	cc -o $@ basic.c prompt.c
+	if \
+		cp $@ /usr/local ;\
+	then \
+		rm -f plot ;\
+	else \
+		echo 'Cannot move plot to new location' ;\
+	fi
