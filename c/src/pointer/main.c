@@ -1,19 +1,30 @@
 #include <stdint.h>
+#include <stddef.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-#include <errno.h>
+#include <stdlib.h>
+#include "../../inc/ptr.h"
 
-int main(int argc, char const *argv[]) {
-  int array[10] = {0,};
-  int *ptrArray[10];
+#define ROW_MAX 5
+#define COL_MAX 10
 
-	for (int i = 0; i < 0; i++)
-  {
-    array[i] = i;
-    ptrArray[i] = &array[i];
+int **a = NULL;
 
-    printf("array[%d] ptrArray[%d]\n", array[i], ptrArray[i]);
-  }
+int vaPrintf(char *fmt, ...)
+{
+  char buf[256] = {'\0',};
+  va_list ap;
 
- 	return 0;
+  strcpy(buf, "Error: ");
+  va_start(ap, fmt);
+  vsprintf(buf + strlen(buf), fmt, ap);
+  va_end(ap);
+
+    puts(buf);
+}
+
+int main(int arTgc, char const *argv[]) {
+
+  return 0;
 }
