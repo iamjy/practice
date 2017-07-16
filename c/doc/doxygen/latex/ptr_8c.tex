@@ -1,0 +1,126 @@
+\hypertarget{ptr_8c}{}\section{src/pointer/ptr.c 파일 참조}
+\label{ptr_8c}\index{src/pointer/ptr.\+c@{src/pointer/ptr.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+ptr.\+c에 대한 include 의존 그래프
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{ptr_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ptr_8c_a6423a880df59733d2d9b509c7718d3a9}{S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}~10
+\end{DoxyCompactItemize}
+\subsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{ptr_8c_abdc31db446e3fd2b8884acf9d1132d69}{stack\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ptr_8c_a9235f768e511383f117f41ab92d601f6}{push} (int data)
+\item 
+int \hyperlink{ptr_8c_a4c5807670c67d62abe111c66c053bd7e}{pop} (void)
+\end{DoxyCompactItemize}
+\subsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ptr_8c_abdc31db446e3fd2b8884acf9d1132d69}{stack\+\_\+t} \hyperlink{ptr_8c_a460d05636a1abaa5f0f1b51ac0277449}{stack} \mbox{[}\hyperlink{ptr_8c_a6423a880df59733d2d9b509c7718d3a9}{S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+unsigned int \hyperlink{ptr_8c_a3fdd42ea34070a54e696b3adc28c4be3}{top}
+\end{DoxyCompactItemize}
+
+
+\subsection{매크로 문서화}
+\mbox{\Hypertarget{ptr_8c_a6423a880df59733d2d9b509c7718d3a9}\label{ptr_8c_a6423a880df59733d2d9b509c7718d3a9}} 
+\index{ptr.\+c@{ptr.\+c}!S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE@{S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}
+\index{S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE@{S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}!ptr.\+c@{ptr.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}{STACK\_SIZE}}
+{\footnotesize\ttfamily \#define S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~10}
+
+
+
+ptr.\+c 파일의 4 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{타입정의 문서화}
+\mbox{\Hypertarget{ptr_8c_abdc31db446e3fd2b8884acf9d1132d69}\label{ptr_8c_abdc31db446e3fd2b8884acf9d1132d69}} 
+\index{ptr.\+c@{ptr.\+c}!stack\+\_\+t@{stack\+\_\+t}}
+\index{stack\+\_\+t@{stack\+\_\+t}!ptr.\+c@{ptr.\+c}}
+\subsubsection{\texorpdfstring{stack\+\_\+t}{stack\_t}}
+{\footnotesize\ttfamily typedef int \hyperlink{ptr_8c_abdc31db446e3fd2b8884acf9d1132d69}{stack\+\_\+t}}
+
+
+
+ptr.\+c 파일의 5 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{함수 문서화}
+\mbox{\Hypertarget{ptr_8c_a4c5807670c67d62abe111c66c053bd7e}\label{ptr_8c_a4c5807670c67d62abe111c66c053bd7e}} 
+\index{ptr.\+c@{ptr.\+c}!pop@{pop}}
+\index{pop@{pop}!ptr.\+c@{ptr.\+c}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily int pop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ptr.\+c 파일의 16 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+17 \{
+18   \textcolor{keywordflow}{if} (\hyperlink{ptr_8c_a3fdd42ea34070a54e696b3adc28c4be3}{top} == 0)
+19     exit(EXIT\_FAILURE);
+20 
+21   \textcolor{keywordflow}{return} \hyperlink{ptr_8c_a460d05636a1abaa5f0f1b51ac0277449}{stack}[--\hyperlink{ptr_8c_a3fdd42ea34070a54e696b3adc28c4be3}{top}];
+22 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{ptr_8c_a9235f768e511383f117f41ab92d601f6}\label{ptr_8c_a9235f768e511383f117f41ab92d601f6}} 
+\index{ptr.\+c@{ptr.\+c}!push@{push}}
+\index{push@{push}!ptr.\+c@{ptr.\+c}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+ptr.\+c 파일의 9 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+9                     \{
+10   \textcolor{keywordflow}{if} (\hyperlink{ptr_8c_a3fdd42ea34070a54e696b3adc28c4be3}{top} >= \hyperlink{ptr_8c_a6423a880df59733d2d9b509c7718d3a9}{STACK\_SIZE})
+11     exit(EXIT\_FAILURE);
+12 
+13   \hyperlink{ptr_8c_a460d05636a1abaa5f0f1b51ac0277449}{stack}[++\hyperlink{ptr_8c_a3fdd42ea34070a54e696b3adc28c4be3}{top}] = data;
+14 \}
+\end{DoxyCode}
+
+
+\subsection{변수 문서화}
+\mbox{\Hypertarget{ptr_8c_a460d05636a1abaa5f0f1b51ac0277449}\label{ptr_8c_a460d05636a1abaa5f0f1b51ac0277449}} 
+\index{ptr.\+c@{ptr.\+c}!stack@{stack}}
+\index{stack@{stack}!ptr.\+c@{ptr.\+c}}
+\subsubsection{\texorpdfstring{stack}{stack}}
+{\footnotesize\ttfamily \hyperlink{ptr_8c_abdc31db446e3fd2b8884acf9d1132d69}{stack\+\_\+t} stack\mbox{[}\hyperlink{ptr_8c_a6423a880df59733d2d9b509c7718d3a9}{S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}\mbox{]}}
+
+
+
+ptr.\+c 파일의 6 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{ptr_8c_a3fdd42ea34070a54e696b3adc28c4be3}\label{ptr_8c_a3fdd42ea34070a54e696b3adc28c4be3}} 
+\index{ptr.\+c@{ptr.\+c}!top@{top}}
+\index{top@{top}!ptr.\+c@{ptr.\+c}}
+\subsubsection{\texorpdfstring{top}{top}}
+{\footnotesize\ttfamily unsigned int top}
+
+
+
+ptr.\+c 파일의 7 번째 라인에서 정의되었습니다.
+
