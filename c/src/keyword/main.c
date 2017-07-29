@@ -13,8 +13,12 @@
 #include <string.h>
 #include <stdarg.h>
 #include <errno.h>
-#include <assert.h>
 #include <time.h>
+
+#define NDEBUG
+#include <assert.h>
+
+#include "macro.h"
 
 /*****************************************************************************
  * Macro definitions
@@ -52,6 +56,8 @@ typedef struct _struct {
  * Function definitions
  *****************************************************************************/
 int main(int argc, char const *argv[]) {
+
+  myfunc();
 
   return 0;
 }

@@ -1,7 +1,12 @@
-SRCS := main.c
-LIB := 
-CFLAGS += -g
-OBJS := (SRCS:.c=.o)
-include lib.mk
+#!/bin bash
 
-$(OBJS): common.h
+TARGET := function
+SRCS := main.c function.c fileIO.c
+LIB := 
+CFLAGS += -g --save-temps
+OBJS := $(SRCS:.c=.o)
+
+$(TARGET) : $(OBJS)
+	$(CC) -o $@ $^
+
+$(OBJS): function.h fileIO.h

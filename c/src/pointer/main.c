@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "../../inc/ptr.h"
+#include "pointer.h"
 
 #define ROW_MAX 5
 #define COL_MAX 10

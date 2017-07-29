@@ -7,6 +7,7 @@
  */
 
 #include <stdint.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
@@ -19,27 +20,13 @@
 /*****************************************************************************
  * Macro definitions
  *****************************************************************************/
-#define BUFF_SIZE   256 ///< Buffer size for character data
 
 /*****************************************************************************
  * Structures
  *****************************************************************************/
- /**
-  * 구조체 형 선언
-  */
-struct {
-  int i;
-  float f;
-  char s[10];
-} object;
-
 /**
  *
  */
-typedef struct _struct {
-  int i;
-
-} STRUCT;
 
 /*****************************************************************************
  * Global variables
@@ -49,6 +36,7 @@ typedef struct _struct {
  * Static variables
  *****************************************************************************/
 
+
 /*****************************************************************************
  * Extern variables
  *****************************************************************************/
@@ -56,6 +44,11 @@ typedef struct _struct {
 /*****************************************************************************
  * Function prototypes
  *****************************************************************************/
+FILE *fopen_read(const char *f_name);
+FILE *fopen_write(const char *f_name, bool mode_a);
+FILE *fopen_read_binary(const char *f_name);
+FILE *fopen_write_binary(const char *f_name, bool mode_a);
+FILE *fopen_read_write(const char *fname, bool mode_a);
 
 /*****************************************************************************
  * Function definitions
@@ -65,3 +58,19 @@ typedef struct _struct {
  *  @param
  *  @return
  */
+FILE *fopen_read(const char *f_name) {
+  FILE *pf = NULL;
+  int errnum;
+
+  if ((pf = fopen(f_name, "r")) == NULL)
+  {
+    errnum = errno;
+
+    fprintf(stderr, "Failed to open %s file (%d)\n", f_name, errnum);
+    fprintf(stderr, "%s: %s\n", __FUNCTION__, strerror(errnum));
+
+    return NULL;
+  }
+
+  return pf;
+}

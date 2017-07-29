@@ -104,6 +104,16 @@ void sleep(int cnt) {
 
 #if 1 // Sample 5.6
 int main(int argc, char const *argv[]) {
+  FILE *pf = NULL;
+  char *f_name = "README";
+
+  if ((pf = fopen_read(f_name)) == NULL)
+  {
+    exit(1);
+  }
+
+  if (!pf)
+    fclose(pf);
 
   return 0;
 }

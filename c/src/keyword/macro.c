@@ -15,31 +15,19 @@
 #include <errno.h>
 #include <assert.h>
 #include <time.h>
+#include "macro.h"
 
 /*****************************************************************************
  * Macro definitions
  *****************************************************************************/
-#define BUFF_SIZE   256 ///< Buffer size for character data
+#define BUFF_SIZE    256 ///< Buffer size for character data
 
 /*****************************************************************************
  * Structures
  *****************************************************************************/
- /**
-  * 구조체 형 선언
-  */
-struct {
-  int i;
-  float f;
-  char s[10];
-} object;
-
 /**
  *
  */
-typedef struct _struct {
-  int i;
-
-} STRUCT;
 
 /*****************************************************************************
  * Global variables
@@ -65,3 +53,6 @@ typedef struct _struct {
  *  @param
  *  @return
  */
+void myfunc() {
+
+}
