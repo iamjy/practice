@@ -102,7 +102,20 @@ void sleep(int cnt) {
   }
 }
 
-#if 1 // Sample 5.6
+#if 1
+int main(int argc, char *argv[])
+{
+	char *str0 = "abcdef";
+	char *str1 = "bc";
+	int ret = 0;
+
+	ret = strcspn(str0, str1);
+	printf("%d\n", ret);
+
+	return 0;
+}
+#endif
+#if 0 // Sample 5.6
 int main(int argc, char const *argv[]) {
   FILE *pf = NULL;
   char *f_name = "README";

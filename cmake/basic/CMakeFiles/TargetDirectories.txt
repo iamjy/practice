@@ -1,0 +1,5 @@
+/home/iamjy1005/work/lab/practice/cmake/basic/CMakeFiles/edit_cache.dir
+/home/iamjy1005/work/lab/practice/cmake/basic/CMakeFiles/archive.dir
+/home/iamjy1005/work/lab/practice/cmake/basic/CMakeFiles/rebuild_cache.dir
+/home/iamjy1005/work/lab/practice/cmake/basic/CMakeFiles/archiveExtras.dir
+/home/iamjy1005/work/lab/practice/cmake/basic/CMakeFiles/main.dir

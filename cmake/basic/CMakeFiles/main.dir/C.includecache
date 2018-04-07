@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+./include/bar.h
+
+/home/iamjy1005/work/lab/practice/cmake/basic/main.c
+stdio.h
+-
+bar.h
+/home/iamjy1005/work/lab/practice/cmake/basic/bar.h
+

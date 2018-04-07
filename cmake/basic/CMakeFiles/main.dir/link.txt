@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/main.dir/main.c.o CMakeFiles/archive.dir/foo.c.o CMakeFiles/archive.dir/bar.c.o  -o main 

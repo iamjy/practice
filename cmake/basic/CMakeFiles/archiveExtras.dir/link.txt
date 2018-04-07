@@ -1,0 +1,2 @@
+/usr/bin/ar qc libarchiveExtras.a  CMakeFiles/archiveExtras.dir/extras.c.o CMakeFiles/archive.dir/foo.c.o CMakeFiles/archive.dir/bar.c.o
+/usr/bin/ranlib libarchiveExtras.a
