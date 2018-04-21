@@ -7,9 +7,9 @@ OBJ_DIR := $(CUR_DIR)/obj
 LIB_DIR := $(CUR_DIR)/lib
 TARGET_INSTALL := /export
 
-STATIC_LIB   := libbase.a
-DYNAMIC_LIB  := libbase.so.0.0.0
-DYNAMIC_LINK := libbase.so
+STATIC_LIB   := libcommon.a
+DYNAMIC_LIB  := libcommon.so.0.0.0
+DYNAMIC_LINK := libcommon.so
 TARGET_DEFS := -D__ARM__ -D__LINUX_OS__
 
 SRCS := $(strip $(shell ls $(SRC_DIR)/*.c))

@@ -9,4 +9,8 @@ OBJS := $(SRCS:.c=.o)
 $(TARGET) : $(OBJS)
 	$(CC) -o $@ $^
 
+clean:
+	rm $(TARGET)
+	rm *.[iso]
+
 $(OBJS): function.h fileIO.h

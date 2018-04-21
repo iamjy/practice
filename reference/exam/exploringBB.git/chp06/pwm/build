@@ -1,3 +1,0 @@
-#!/bin/sh
-g++ -o pwm_test PWM.cpp util.cpp pwm_test.cpp
-

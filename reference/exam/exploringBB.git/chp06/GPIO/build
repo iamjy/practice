@@ -1,3 +1,0 @@
-#!/bin/bash
-g++ simple.cpp GPIO.cpp -o simple -pthread
-

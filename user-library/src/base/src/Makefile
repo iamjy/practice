@@ -1,10 +1,12 @@
 ##
 
+include ../../../build/make-rule/compilepath.mk
+
 CUR_DIR := .
 UP_DIR  := ..
-SRC_DIR := $(CUR_DIR)/src
-OBJ_DIR := $(CUR_DIR)/obj
-LIB_DIR := $(CUR_DIR)/lib
+SRC_DIR := $(CUR_DIR)
+OBJ_DIR := $(UP_DIR)/obj
+LIB_DIR := $(UP_DIR)/lib
 TARGET_INSTALL := /export
 
 STATIC_LIB   := libbase.a
@@ -24,7 +26,12 @@ LIBS := \
 	-ldl \
 	-lm
 
-CFLAGS += $(TARGET_DEFS)
+ifeq ($(STATIC_BUILD), y)
+CFLAGS  +=
+else
+CFLAGS  += -fPIC 
+endif
+CFLAGS  += $(TARGET_DEFS)
 LDFLAGS += 
 
 BUILD_ALL = BUILD $(STATIC_LIB) $(DYNAMIC_LIB)
@@ -33,7 +40,7 @@ all: $(BUILD_ALL)
 
 BUILD: $(SRCS)
 	$(CC) $(CFLAGS) $(LDFLAGS) -c $^ $(INCLUDE) $(LIBS)
-	@mv -f $(CUR_DIR)/*.o $(OBJ_DIR)
+	@cp -f $(CUR_DIR)/*.o $(OBJ_DIR)
 
 $(STATIC_LIB): $(OBJS)
 	$(AR) cr $(STATIC_LIB) $^
@@ -48,15 +55,16 @@ install:
 		for search in $(TARGET_INSTALL)/*; \
 		do \
 			if [ -d "$$search" ]; then \
+				sudo cp -f "$(LIB_DIR)/$(STATIC_LIB)" "$$search"; \
 				sudo cp -f "$(LIB_DIR)/$(DYNAMIC_LIB)" "$$search"; \
 			fi \
 		done \
 	fi
 
 clean:
-	@rm -f $(CUR_DIR)/$(STATIC_LIB)
-	@rm -f $(LIB_DIR)/$(STATIC_LIB)
-	@rm -f $(CUR_DIR)/$(DYNAMIC_LIB)
-	@rm -f $(LIB_DIR)/$(DYNAMIC_LIB)
-	@rm -f $(CUR_DIR)/*.[iso]
-	@rm -f $(OBJ_DIR)/*.o
+	-@rm -f $(CUR_DIR)/$(STATIC_LIB)
+	-@rm -f $(LIB_DIR)/$(STATIC_LIB)
+	-@rm -f $(CUR_DIR)/$(DYNAMIC_LIB)
+	-@rm -f $(LIB_DIR)/$(DYNAMIC_LIB)
+	-@rm -f $(CUR_DIR)/*.[iso]
+	-@rm -f $(OBJ_DIR)/*.o

@@ -1,14 +1,14 @@
 #!/bin bash
 
-TARGET := pointer
+TARGET := macro
 
 SRCS := \
 	main.c \
-	pointer.c
+	macro.c
 
 INCLUDE := \
 	main.h \
-	pointer.h
+	macro.h
 
 LIB := 
 

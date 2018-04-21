@@ -1,3 +1,0 @@
-#!/bin/bash
-echo "Building the Java Class Files - place in the exploringBB folder/package"
-javac -d .  LEDExample.java 

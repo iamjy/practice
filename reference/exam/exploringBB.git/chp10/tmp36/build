@@ -1,3 +1,0 @@
-#!/bin/bash
-g++ tmp36.cpp -o tmp36
-g++ tmp36raw.cpp -o tmp36raw

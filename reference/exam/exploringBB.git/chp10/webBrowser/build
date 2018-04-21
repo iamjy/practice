@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc webBrowser.c -o webBrowser
