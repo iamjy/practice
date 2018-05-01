@@ -444,4 +444,3 @@ module_exit(generic_exit);
 MODULE_AUTHOR("Jinyoung Park");
 MODULE_DESCRIPTION("Linux Platform Module");
 MODULE_LICENSE("GPL v2");
-

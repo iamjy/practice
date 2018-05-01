@@ -85,4 +85,3 @@ int32_t odin_v4l2_stream_off (int32_t fd, enum v4l2_buf_type type);
     Closing Header File Guarder
 ******************************************************************************/
 #endif	/* _HARDWARE_V4L2_H_ */
-
