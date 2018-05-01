@@ -1,0 +1,11 @@
+prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gsl-2.4/output/arm-buildroot-linux-gnueabi
+exec_prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gsl-2.4/output/arm-buildroot-linux-gnueabi
+libdir=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gsl-2.4/output/arm-buildroot-linux-gnueabi/lib
+includedir=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gsl-2.4/output/arm-buildroot-linux-gnueabi/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.4
+Libs: -L/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gsl-2.4/output/arm-buildroot-linux-gnueabi/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gsl-2.4/output/arm-buildroot-linux-gnueabi/include
