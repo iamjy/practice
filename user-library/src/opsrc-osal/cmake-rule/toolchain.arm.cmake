@@ -1,0 +1,8 @@
+SET(CMAKE_C_COMPILER arm-none-linux-gnueabi-gcc)
+SET(CMAKE_CXX_COMPILER arm-none-linux-gnueabi-g++)
+SET(CMAKE_LINKER arm-none-linux-gnueabi-ld)
+SET(CMAKE_NM arm-none-linux-gnueabi-nm)
+SET(CMAKE_OBJCOPY arm-none-linux-gnueabi-objcopy)
+SET(CMAKE_OBJDUMP arm-none-linux-gnueabi-objdump)
+SET(CMAKE_RANLIB arm-none-linux-gnueabi-ranlib)
+SET(CMAKE_AR arm-none-linux-gnueabi-ar)
