@@ -1,0 +1,4 @@
+[Test]
+Exec=/bin/sh -c "cd /usr/local/libexec/installed-tests/gtk+/css/nodes && /usr/local/libexec/installed-tests/gtk+/css/nodes/test-css-nodes --tap"
+Type=session
+Output=TAP

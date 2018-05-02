@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+ ProjectType="Visual C++"
+ Version="8.00"
+ Name="atkinstallprops"
+ InheritedPropertySheets=".\atk-build-defines.vsprops"
+ >
+ <UserMacro
+  Name="AtkDoInstall"
+  Value="
+mkdir $(CopyDir)&#x0D;&#x0A;
+mkdir $(CopyDir)\bin&#x0D;&#x0A;
+copy $(SolutionDir)$(ConfigurationName)\$(PlatformName)\bin\$(AtkDllPrefix)atk$(AtkDllSuffix).dll $(CopyDir)\bin&#x0D;&#x0A;
+copy $(SolutionDir)$(ConfigurationName)\$(PlatformName)\bin\$(AtkDllPrefix)atk$(AtkDllSuffix).pdb $(CopyDir)\bin&#x0D;&#x0A;
+mkdir $(CopyDir)\lib&#x0D;&#x0A;
+copy $(SolutionDir)$(ConfigurationName)\$(PlatformName)\bin\atk-$(ApiVersion).lib $(CopyDir)\lib&#x0D;&#x0A;
+mkdir $(CopyDir)\include\atk-$(ApiVersion)\atk&#x0D;&#x0A;
+copy ..\..\atk\atk.h $(CopyDir)\include\atk-1.0\atk\atk.h&#x0D;&#x0A;
+copy ..\..\atk\atkaction.h $(CopyDir)\include\atk-1.0\atk\atkaction.h&#x0D;&#x0A;
+copy ..\..\atk\atkcomponent.h $(CopyDir)\include\atk-1.0\atk\atkcomponent.h&#x0D;&#x0A;
+copy ..\..\atk\atkdocument.h $(CopyDir)\include\atk-1.0\atk\atkdocument.h&#x0D;&#x0A;
+copy ..\..\atk\atkeditabletext.h $(CopyDir)\include\atk-1.0\atk\atkeditabletext.h&#x0D;&#x0A;
+copy ..\..\atk\atkgobjectaccessible.h $(CopyDir)\include\atk-1.0\atk\atkgobjectaccessible.h&#x0D;&#x0A;
+copy ..\..\atk\atkhyperlink.h $(CopyDir)\include\atk-1.0\atk\atkhyperlink.h&#x0D;&#x0A;
+copy ..\..\atk\atkhyperlinkimpl.h $(CopyDir)\include\atk-1.0\atk\atkhyperlinkimpl.h&#x0D;&#x0A;
+copy ..\..\atk\atkhypertext.h $(CopyDir)\include\atk-1.0\atk\atkhypertext.h&#x0D;&#x0A;
+copy ..\..\atk\atknoopobject.h $(CopyDir)\include\atk-1.0\atk\atknoopobject.h&#x0D;&#x0A;
+copy ..\..\atk\atknoopobjectfactory.h $(CopyDir)\include\atk-1.0\atk\atknoopobjectfactory.h&#x0D;&#x0A;
+copy ..\..\atk\atkobject.h $(CopyDir)\include\atk-1.0\atk\atkobject.h&#x0D;&#x0A;
+copy ..\..\atk\atkobjectfactory.h $(CopyDir)\include\atk-1.0\atk\atkobjectfactory.h&#x0D;&#x0A;
+copy ..\..\atk\atkplug.h $(CopyDir)\include\atk-1.0\atk\atkplug.h&#x0D;&#x0A;
+copy ..\..\atk\atkimage.h $(CopyDir)\include\atk-1.0\atk\atkimage.h&#x0D;&#x0A;
+copy ..\..\atk\atkrange.h $(CopyDir)\include\atk-1.0\atk\atkrange.h&#x0D;&#x0A;
+copy ..\..\atk\atkregistry.h $(CopyDir)\include\atk-1.0\atk\atkregistry.h&#x0D;&#x0A;
+copy ..\..\atk\atkrelation.h $(CopyDir)\include\atk-1.0\atk\atkrelation.h&#x0D;&#x0A;
+copy ..\..\atk\atkrelationtype.h $(CopyDir)\include\atk-1.0\atk\atkrelationtype.h&#x0D;&#x0A;
+copy ..\..\atk\atkrelationset.h $(CopyDir)\include\atk-1.0\atk\atkrelationset.h&#x0D;&#x0A;
+copy ..\..\atk\atkselection.h $(CopyDir)\include\atk-1.0\atk\atkselection.h&#x0D;&#x0A;
+copy ..\..\atk\atksocket.h $(CopyDir)\include\atk-1.0\atk\atksocket.h&#x0D;&#x0A;
+copy ..\..\atk\atkstate.h $(CopyDir)\include\atk-1.0\atk\atkstate.h&#x0D;&#x0A;
+copy ..\..\atk\atkstateset.h $(CopyDir)\include\atk-1.0\atk\atkstateset.h&#x0D;&#x0A;
+copy ..\..\atk\atkstreamablecontent.h $(CopyDir)\include\atk-1.0\atk\atkstreamablecontent.h&#x0D;&#x0A;
+copy ..\..\atk\atktable.h $(CopyDir)\include\atk-1.0\atk\atktable.h&#x0D;&#x0A;
+copy ..\..\atk\atktablecell.h $(CopyDir)\include\atk-1.0\atk\atktablecell.h&#x0D;&#x0A;
+copy ..\..\atk\atktext.h $(CopyDir)\include\atk-1.0\atk\atktext.h&#x0D;&#x0A;
+copy ..\..\atk\atkutil.h $(CopyDir)\include\atk-1.0\atk\atkutil.h&#x0D;&#x0A;
+copy ..\..\atk\atkmisc.h $(CopyDir)\include\atk-1.0\atk\atkmisc.h&#x0D;&#x0A;
+copy ..\..\atk\atkvalue.h $(CopyDir)\include\atk-1.0\atk\atkvalue.h&#x0D;&#x0A;
+copy ..\..\atk\atkwindow.h $(CopyDir)\include\atk-1.0\atk\atkwindow.h&#x0D;&#x0A;
+copy ..\..\atk\atkversion.h $(CopyDir)\include\atk-1.0\atk\atkversion.h&#x0D;&#x0A;
+copy ..\..\atk\atk-enum-types.h $(CopyDir)\include\atk-1.0\atk\atk-enum-types.h&#x0D;&#x0A;
+copy ..\..\atk\atkversion.h $(CopyDir)\include\atk-1.0\atk\atkversion.h&#x0D;&#x0A;
+mkdir $(CopyDir)\lib\pkgconfig&#x0D;&#x0A;
+copy ..\atk.pc $(CopyDir)\lib\pkgconfig&#x0D;&#x0A;
+"
+ />
+ <UserMacro
+  Name="AtkGenPC"
+  Value="$(PythonDir)\python.exe ..\atkpc.py --prefix=$(CopyDir) --version=$(AtkMajorVersion).$(AtkMinorVersion).$(AtkMicroVersion)"
+ />
+ <UserMacro
+  Name="AtkGenPCX64"
+  Value="$(PythonDirX64)\python.exe ..\atkpc.py --prefix=$(CopyDir) --version=$(AtkMajorVersion).$(AtkMinorVersion).$(AtkMicroVersion)"
+ />
+</VisualStudioPropertySheet>
