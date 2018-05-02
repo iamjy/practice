@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gdk-pixbuf-2.36.12/output/x86_64/bin/gdk-pixbuf-thumbnailer
+Exec=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gdk-pixbuf-2.36.12/output/x86_64/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+MimeType=
