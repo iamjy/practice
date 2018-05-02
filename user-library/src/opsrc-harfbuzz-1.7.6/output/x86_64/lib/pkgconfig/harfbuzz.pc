@@ -1,0 +1,13 @@
+prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-harfbuzz-1.7.6/output/x86_64
+exec_prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-harfbuzz-1.7.6/output/x86_64
+libdir=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-harfbuzz-1.7.6/output/x86_64/lib
+includedir=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-harfbuzz-1.7.6/output/x86_64/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 1.7.6
+
+Libs: -L${libdir} -lharfbuzz
+Libs.private: -lm    
+Requires.private: glib-2.0 >= 2.19.1 
+Cflags: -I${includedir}/harfbuzz
