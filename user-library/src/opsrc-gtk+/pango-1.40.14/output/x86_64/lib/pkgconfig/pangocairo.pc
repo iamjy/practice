@@ -1,0 +1,12 @@
+prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/pango-1.40.14/output/x86_64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Pango Cairo
+Description: Cairo rendering support for Pango
+Version: 1.40.14
+Requires: pango cairo
+Requires.private:  pangoft2
+Libs: -L${libdir} -lpangocairo-1.0
+Cflags: -I${includedir}/pango-1.0
