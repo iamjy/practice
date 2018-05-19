@@ -1,4 +1,4 @@
-prefix=/home/rico/jhbuild/install
+prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gobject-introspection-1.54.1/output/arm-linux-gnueabihf
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 bindir=${exec_prefix}/bin
