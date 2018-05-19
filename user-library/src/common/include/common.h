@@ -11,6 +11,7 @@
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
  /*****************************************************************************
   * Inclusion
   *****************************************************************************/
@@ -23,6 +24,8 @@
 #include <errno.h>
 #include <fcntl.h>
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 /*****************************************************************************
@@ -44,6 +47,9 @@
 #include <time.h>
 #endif
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -51,6 +57,7 @@
 /*****************************************************************************
  * Macro definitions
  *****************************************************************************/
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
@@ -75,6 +82,8 @@ typedef struct STRUCT_COMMON_H {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 #ifndef DEBUG
 #define LIB_DEBUG_PRINT(...) \
             printf("%s:%s():%d: ", \
@@ -96,6 +105,9 @@ typedef struct STRUCT_COMMON_H {
  * Static variables
  *****************************************************************************/
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -109,7 +121,10 @@ typedef struct STRUCT_COMMON_H {
  *****************************************************************************/
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -117,6 +132,9 @@ typedef struct STRUCT_COMMON_H {
  * Function definitions
  *****************************************************************************/
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -127,7 +145,10 @@ typedef struct STRUCT_COMMON_H {
  */
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 void error_exit (char *message);
@@ -154,6 +175,9 @@ int debug_printf (char *fmt, ...);
 int info_printf (char *fmt, ...);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
