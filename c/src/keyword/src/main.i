@@ -28,7 +28,7 @@
 # 1 "../include/keyword.h" 1
 # 15 "../include/keyword.h"
 # 1 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 1
-# 20 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
+# 15 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h" 1 3 4
 # 9 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -98,7 +98,22 @@ typedef unsigned long int uintptr_t;
 typedef long int intmax_t;
 typedef unsigned long int uintmax_t;
 # 10 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h" 2 3 4
-# 21 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 16 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h" 1 3 4
+# 17 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 149 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+typedef long int ptrdiff_t;
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+typedef int wchar_t;
+# 426 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+} max_align_t;
+# 18 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
 # 1 "/usr/include/stdio.h" 1 3 4
 # 29 "/usr/include/stdio.h" 3 4
 
@@ -106,8 +121,6 @@ typedef unsigned long int uintmax_t;
 
 
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
@@ -922,18 +935,7 @@ extern int ftrylockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__));
 # 942 "/usr/include/stdio.h" 3 4
 
-# 22 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 149 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-typedef long int ptrdiff_t;
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-typedef int wchar_t;
-# 426 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-typedef struct {
-  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
-  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
-} max_align_t;
-# 23 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 19 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
@@ -1987,7 +1989,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 # 955 "/usr/include/stdlib.h" 2 3 4
 # 967 "/usr/include/stdlib.h" 3 4
 
-# 24 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 20 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 27 "/usr/include/string.h" 3 4
 
@@ -2244,9 +2246,7 @@ extern char *stpncpy (char *__restrict __dest,
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
 # 658 "/usr/include/string.h" 3 4
 
-# 25 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 26 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 21 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
 # 1 "/usr/include/errno.h" 1 3 4
 # 31 "/usr/include/errno.h" 3 4
 
@@ -2271,9 +2271,118 @@ extern int *__errno_location (void) __attribute__ ((__nothrow__ , __leaf__)) __a
 # 36 "/usr/include/errno.h" 2 3 4
 # 58 "/usr/include/errno.h" 3 4
 
-# 27 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 22 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 1 "/usr/include/fcntl.h" 1 3 4
+# 28 "/usr/include/fcntl.h" 3 4
+
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/fcntl.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/fcntl.h" 3 4
+struct flock
+  {
+    short int l_type;
+    short int l_whence;
+
+    __off_t l_start;
+    __off_t l_len;
+
+
+
+
+    __pid_t l_pid;
+  };
+# 61 "/usr/include/x86_64-linux-gnu/bits/fcntl.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h" 1 3 4
+# 363 "/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h" 3 4
+
+# 437 "/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h" 3 4
+
+# 61 "/usr/include/x86_64-linux-gnu/bits/fcntl.h" 2 3 4
+# 36 "/usr/include/fcntl.h" 2 3 4
+# 76 "/usr/include/fcntl.h" 3 4
+# 1 "/usr/include/time.h" 1 3 4
+# 77 "/usr/include/fcntl.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stat.h" 1 3 4
+# 46 "/usr/include/x86_64-linux-gnu/bits/stat.h" 3 4
+struct stat
+  {
+    __dev_t st_dev;
+
+
+
+
+    __ino_t st_ino;
+
+
+
+
+
+
+
+    __nlink_t st_nlink;
+    __mode_t st_mode;
+
+    __uid_t st_uid;
+    __gid_t st_gid;
+
+    int __pad0;
+
+    __dev_t st_rdev;
+
+
+
+
+    __off_t st_size;
+
+
+
+    __blksize_t st_blksize;
+
+    __blkcnt_t st_blocks;
+# 91 "/usr/include/x86_64-linux-gnu/bits/stat.h" 3 4
+    struct timespec st_atim;
+    struct timespec st_mtim;
+    struct timespec st_ctim;
+# 106 "/usr/include/x86_64-linux-gnu/bits/stat.h" 3 4
+    __syscall_slong_t __glibc_reserved[3];
+# 115 "/usr/include/x86_64-linux-gnu/bits/stat.h" 3 4
+  };
+# 78 "/usr/include/fcntl.h" 2 3 4
+# 146 "/usr/include/fcntl.h" 3 4
+extern int fcntl (int __fd, int __cmd, ...);
+# 156 "/usr/include/fcntl.h" 3 4
+extern int open (const char *__file, int __oflag, ...) __attribute__ ((__nonnull__ (1)));
+# 180 "/usr/include/fcntl.h" 3 4
+extern int openat (int __fd, const char *__file, int __oflag, ...)
+     __attribute__ ((__nonnull__ (2)));
+# 202 "/usr/include/fcntl.h" 3 4
+extern int creat (const char *__file, mode_t __mode) __attribute__ ((__nonnull__ (1)));
+# 231 "/usr/include/fcntl.h" 3 4
+extern int lockf (int __fd, int __cmd, off_t __len);
+# 248 "/usr/include/fcntl.h" 3 4
+extern int posix_fadvise (int __fd, off_t __offset, off_t __len,
+     int __advise) __attribute__ ((__nothrow__ , __leaf__));
+# 270 "/usr/include/fcntl.h" 3 4
+extern int posix_fallocate (int __fd, off_t __offset, off_t __len);
+# 292 "/usr/include/fcntl.h" 3 4
+
+# 23 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 34 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 35 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+
+
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 38 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 1 "/usr/include/errno.h" 1 3 4
+# 39 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
 # 1 "/usr/include/assert.h" 1 3 4
-# 28 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 40 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
 # 1 "/usr/include/time.h" 1 3 4
 # 29 "/usr/include/time.h" 3 4
 
@@ -2494,10 +2603,15 @@ extern int timespec_get (struct timespec *__ts, int __base)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
 # 430 "/usr/include/time.h" 3 4
 
-# 29 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
-# 71 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
+# 41 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h" 2
+# 61 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
 
-# 71 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
+# 61 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
+typedef struct STRUCT_COMMON_H {
+  int i;
+
+} STRUCT_COMMON_H;
+# 103 "/home/iamjy1005/work/lab/practice/c/../user-library/src/common/include/common.h"
 void error_exit (char *message);
 
 

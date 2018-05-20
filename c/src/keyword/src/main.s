@@ -96,25 +96,25 @@ main:
 	.long	.LASF8
 	.uleb128 0x2
 	.byte	0x8
-	.byte	0x7
-	.long	.LASF9
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x6
-	.long	.LASF10
-	.uleb128 0x5
-	.byte	0x8
-	.long	0x8f
-	.uleb128 0x6
-	.long	0x82
-	.uleb128 0x2
-	.byte	0x8
 	.byte	0x5
-	.long	.LASF11
+	.long	.LASF9
 	.uleb128 0x2
 	.byte	0x10
 	.byte	0x4
+	.long	.LASF10
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.long	.LASF11
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
 	.long	.LASF12
+	.uleb128 0x5
+	.byte	0x8
+	.long	0x9d
+	.uleb128 0x6
+	.long	0x90
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x7
@@ -186,7 +186,7 @@ main:
 	.byte	0
 	.uleb128 0x5
 	.byte	0x8
-	.long	0x89
+	.long	0x97
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -382,7 +382,7 @@ main:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF11:
+.LASF9:
 	.string	"long long int"
 .LASF5:
 	.string	"unsigned int"
@@ -402,7 +402,7 @@ main:
 	.string	"uint8_t"
 .LASF3:
 	.string	"unsigned char"
-.LASF10:
+.LASF12:
 	.string	"char"
 .LASF2:
 	.string	"long int"
@@ -416,11 +416,11 @@ main:
 	.string	"signed char"
 .LASF15:
 	.string	"argv"
-.LASF12:
+.LASF10:
 	.string	"long double"
 .LASF1:
 	.string	"short int"
-.LASF9:
+.LASF11:
 	.string	"sizetype"
 	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609"
 	.section	.note.GNU-stack,"",@progbits
