@@ -1,11 +1,16 @@
-TARGET = process
-SRCS = main.c process.c
+TARGET = main
+
+SRCS = \
+	process.c \
+	main.c
 OBJS = $(SRCS:.c=.o)
-CC = arm-none-linux-gnueabi-gcc
-CFLAGS = -g -c
 
-all: ${OBJS}
-	${CC} -g -o ${TARGET} ${OBJS}
+INCLUDE = \
+	process.h \
+	main.h
 
-clean:
-	rm -f ${TARGET} ${OBJS}
+CFLAGS = -g
+LDFLAGS = -pthread
+
+all: $(OBJS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LDFLAGS)

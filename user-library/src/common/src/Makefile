@@ -1,10 +1,10 @@
 ##
+include ../../../build/make-rule/compiler.mk
+include ../../../build/make-rule/compile-option.mk
+include ../../../build/make-rule/compile-path.mk
 
-include ../../../build/make-rule/compilepath.mk
-
-CUR_DIR := .
-UP_DIR  := ..
 SRC_DIR := $(CUR_DIR)
+INC_DIR := $(UP_DIR)/include
 OBJ_DIR := $(UP_DIR)/obj
 LIB_DIR := $(UP_DIR)/lib
 TARGET_INSTALL := /export
@@ -18,7 +18,7 @@ SRCS := $(strip $(shell ls $(SRC_DIR)/*.c))
 OBJS := $(SRCS:.c=.o)
 
 INCLUDE := \
-	   -I$(CUR_DIR)/include
+	   -I$(INC_DIR)
 
 LIBS := \
 	-lpthread \
@@ -29,12 +29,16 @@ LIBS := \
 ifeq ($(STATIC_BUILD), y)
 CFLAGS  +=
 else
-CFLAGS  += -fPIC 
+CFLAGS  += -fPIC
 endif
 CFLAGS  += $(TARGET_DEFS)
-LDFLAGS += 
+LDFLAGS +=
 
-BUILD_ALL = BUILD $(STATIC_LIB) $(DYNAMIC_LIB)
+ifeq ($(STATIC_BUILD), y)
+BUILD_ALL = BUILD $(STATIC_LIB)
+else
+BUILD_ALL = BUILD $(DYNAMIC_LIB)
+endif
 
 all: $(BUILD_ALL)
 

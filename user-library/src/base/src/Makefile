@@ -1,6 +1,7 @@
 ##
-
-include ../../../build/make-rule/compilepath.mk
+include ../../../build/make-rule/compiler.mk
+include ../../../build/make-rule/compile-option.mk
+include ../../../build/make-rule/compile-path.mk
 
 CUR_DIR := .
 UP_DIR  := ..
@@ -29,10 +30,10 @@ LIBS := \
 ifeq ($(STATIC_BUILD), y)
 CFLAGS  +=
 else
-CFLAGS  += -fPIC 
+CFLAGS  += -fPIC
 endif
 CFLAGS  += $(TARGET_DEFS)
-LDFLAGS += 
+LDFLAGS +=
 
 BUILD_ALL = BUILD $(STATIC_LIB) $(DYNAMIC_LIB)
 

@@ -1,2 +1,2 @@
 #!/bin/bash
-include build/main.mk
+include build/build.mk

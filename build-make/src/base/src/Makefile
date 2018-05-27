@@ -1,6 +1,6 @@
 #!/bin bash
 
-include ../../../build/path.mk
+include ../../../build/make-rule/compile-path.mk
 
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
@@ -19,18 +19,24 @@ INCS := \
 	$(INC_DIR)/main.h \
 	$(INC_DIR)/api.h
 
+LIBRARY := \
+	-L$(USR_LIB_DIR)/common/lib
+
 LIBS := \
+	-lcommon
 
 OBJS := $(SRCS:.c=.o)
 
 TARGET := base
 CFLAGS += -g --save-temps
 CFLAGS += $(INCLUDE)
-LFLAGS += $(LIBS)
+LFLAGS += $(LIBRARY) $(LIBS)
 
 $(TARGET) : $(OBJS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LFLAGS)
 	@cp $(SRC_DIR)/*.o $(OBJ_DIR)
+
+install :
 	@cp $(TARGET) $(BIN_DIR)
 	strip $(BIN_DIR)/$(TARGET)
 
