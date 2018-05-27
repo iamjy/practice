@@ -1,10 +1,11 @@
 #!/bin bash
 
+include ../../../build/make-rule/compiler.mk
+include ../../../build/make-rule/compile-option.mk
 include ../../../build/make-rule/compile-path.mk
 
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
-OBJ_DIR := $(UP_DIR)/obj
 BIN_DIR := $(UP_DIR)/bin
 
 INCLUDE := \
@@ -35,7 +36,6 @@ LFLAGS += $(LIBRARY) $(LIBS)
 
 $(TARGET) : $(OBJS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LFLAGS)
-	@cp $(SRC_DIR)/*.o $(OBJ_DIR)
 
 install:
 	@cp $(TARGET) $(BIN_DIR)
@@ -44,7 +44,6 @@ install:
 clean:
 	@-rm $(TARGET)
 	@-rm $(BIN_DIR)/$(TARGET)
-	@-rm $(OBJ_DIR)/*.o
 	@-rm $(SRC_DIR)/*.[iso]
 
 $(OBJS): $(INCS)

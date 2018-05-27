@@ -1,7 +1,6 @@
 #!/bin bash
 
 include ../../../build/make-rule/compiler.mk
-include ../../../build/make-rule/compile-option.mk
 include ../../../build/make-rule/compile-path.mk
 
 SRC_DIR := $(CUR_DIR)
@@ -10,18 +9,16 @@ BIN_DIR := $(UP_DIR)/bin
 
 INCLUDE := \
 	-I$(COMMON_DIR)/include \
-	-I$(INC_DIR)
+	-I$(INC_DIR) \
 
 SRCS := \
-	$(SRC_DIR)/Declaring_Attributes_of_Functions2.c \
-	$(SRC_DIR)/Declaring_Attributes_of_Functions.c \
-	$(SRC_DIR)/Declaring_Attributes_of_Functions_main.c \
-	$(SRC_DIR)/fileIO.c \
-	$(SRC_DIR)/function.c \
+	$(SRC_DIR)/quick-sort.c \
+	$(SRC_DIR)/linked-list.c \
 	$(SRC_DIR)/main.c
 
 INCS := \
-	$(INC_DIR)/function.h \
+	$(INC_DIR)/quick-sort.h \
+	$(INC_DIR)/linked-list.h \
 	$(INC_DIR)/main.h
 
 LIBRARY := \
@@ -32,7 +29,7 @@ LIBS := \
 
 OBJS := $(SRCS:.c=.o)
 
-TARGET := function
+TARGET := algorithm
 CFLAGS += -g --save-temps
 CFLAGS += $(INCLUDE)
 LFLAGS += $(LIBRARY) $(LIBS)
