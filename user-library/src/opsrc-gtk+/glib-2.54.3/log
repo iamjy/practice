@@ -1,0 +1,137 @@
+config.log:22255:ac_cv_env_PCRE_CFLAGS_set=
+config.log:22256:ac_cv_env_PCRE_CFLAGS_value=
+config.log:22595:pkg_cv_PCRE_CFLAGS=
+config.log:22829:PCRE_CFLAGS=''
+configure.ac.orig:2380:                  CFLAGS="$CFLAGS $PCRE_CFLAGS" LIBS="$PCRE_LIBS"
+configure.ac.orig:2401:  AC_SUBST(PCRE_CFLAGS)
+win32/Makefile:336:PCRE_CFLAGS = 
+win32/vs9/Makefile:277:PCRE_CFLAGS = 
+win32/vs9/Makefile.in:277:PCRE_CFLAGS = @PCRE_CFLAGS@
+win32/vs10/Makefile:277:PCRE_CFLAGS = 
+win32/vs10/Makefile.in:277:PCRE_CFLAGS = @PCRE_CFLAGS@
+win32/vs11/Makefile:294:PCRE_CFLAGS = 
+win32/vs11/Makefile.in:294:PCRE_CFLAGS = @PCRE_CFLAGS@
+win32/vs14/Makefile:294:PCRE_CFLAGS = 
+win32/vs14/Makefile.in:294:PCRE_CFLAGS = @PCRE_CFLAGS@
+win32/vs15/Makefile:294:PCRE_CFLAGS = 
+win32/vs15/Makefile.in:294:PCRE_CFLAGS = @PCRE_CFLAGS@
+win32/vs12/Makefile:294:PCRE_CFLAGS = 
+win32/vs12/Makefile.in:294:PCRE_CFLAGS = @PCRE_CFLAGS@
+win32/Makefile.in:336:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/win32/Makefile:586:PCRE_CFLAGS = 
+gio/win32/Makefile.in:586:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/kqueue/Makefile:585:PCRE_CFLAGS = 
+gio/kqueue/Makefile.in:585:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/fam/Makefile:586:PCRE_CFLAGS = 
+gio/fam/Makefile.in:586:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/Makefile:1108:PCRE_CFLAGS = 
+gio/tests/Makefile:2023:PCRE_CFLAGS = 
+gio/tests/gdbus-object-manager-example/Makefile:593:PCRE_CFLAGS = 
+gio/tests/gdbus-object-manager-example/Makefile.in:593:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/tests/modules/Makefile:378:PCRE_CFLAGS = 
+gio/tests/modules/Makefile.in:378:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/tests/services/Makefile:277:PCRE_CFLAGS = 
+gio/tests/services/Makefile.in:277:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/tests/Makefile.in:2023:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/inotify/Makefile:585:PCRE_CFLAGS = 
+gio/inotify/Makefile.in:585:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/xdgmime/Makefile:584:PCRE_CFLAGS = 
+gio/xdgmime/Makefile.in:584:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/gdbus-2.0/codegen/Makefile:536:PCRE_CFLAGS = 
+gio/gdbus-2.0/codegen/Makefile.in:536:PCRE_CFLAGS = @PCRE_CFLAGS@
+gio/Makefile.in:1108:PCRE_CFLAGS = @PCRE_CFLAGS@
+ChangeLog.pre-2-14:870:	PCRE_CFLAGS/PCRE_LIBS when checking system PCRE.  (#421607, 
+Makefile:627:PCRE_CFLAGS = 
+config.status:1299:S["PCRE_CFLAGS"]=""
+tests/refcount/Makefile:656:PCRE_CFLAGS = 
+tests/refcount/Makefile.in:656:PCRE_CFLAGS = @PCRE_CFLAGS@
+tests/Makefile:882:PCRE_CFLAGS = 
+tests/gobject/Makefile:667:PCRE_CFLAGS = 
+tests/gobject/Makefile.in:667:PCRE_CFLAGS = @PCRE_CFLAGS@
+tests/Makefile.in:882:PCRE_CFLAGS = @PCRE_CFLAGS@
+gobject/Makefile:688:PCRE_CFLAGS = 
+gobject/tests/Makefile:673:PCRE_CFLAGS = 
+gobject/tests/Makefile.in:673:PCRE_CFLAGS = @PCRE_CFLAGS@
+gobject/Makefile.in:688:PCRE_CFLAGS = @PCRE_CFLAGS@
+glib/Makefile:798:PCRE_CFLAGS = 
+glib/Makefile:1173:pcre_inc = $(PCRE_CFLAGS)
+glib/Makefile.am:347:pcre_inc = $(PCRE_CFLAGS)
+glib/update-pcre/Makefile:530:PCRE_CFLAGS = 
+glib/update-pcre/Makefile.in:530:PCRE_CFLAGS = @PCRE_CFLAGS@
+glib/tests/Makefile:1041:PCRE_CFLAGS = 
+glib/tests/Makefile:1202:pcre_inc = $(PCRE_CFLAGS)
+glib/tests/Makefile.am:5:pcre_inc = $(PCRE_CFLAGS)
+glib/tests/Makefile.in:1041:PCRE_CFLAGS = @PCRE_CFLAGS@
+glib/tests/Makefile.in:1202:@USE_SYSTEM_PCRE_TRUE@pcre_inc = $(PCRE_CFLAGS)
+glib/libcharset/Makefile:580:PCRE_CFLAGS = 
+glib/libcharset/Makefile.in:580:PCRE_CFLAGS = @PCRE_CFLAGS@
+glib/gnulib/Makefile:582:PCRE_CFLAGS = 
+glib/gnulib/Makefile.in:582:PCRE_CFLAGS = @PCRE_CFLAGS@
+glib/pcre/Makefile:589:PCRE_CFLAGS = 
+glib/pcre/Makefile.in:589:PCRE_CFLAGS = @PCRE_CFLAGS@
+glib/Makefile.in:798:PCRE_CFLAGS = @PCRE_CFLAGS@
+glib/Makefile.in:1173:@USE_SYSTEM_PCRE_TRUE@pcre_inc = $(PCRE_CFLAGS)
+autom4te.cache/traces.0:2446:m4trace:configure.ac:2374: -1- AC_SUBST([PCRE_CFLAGS])
+autom4te.cache/traces.0:2447:m4trace:configure.ac:2374: -1- AC_SUBST_TRACE([PCRE_CFLAGS])
+autom4te.cache/traces.0:2448:m4trace:configure.ac:2374: -1- m4_pattern_allow([^PCRE_CFLAGS$])
+autom4te.cache/traces.0:2459:m4trace:configure.ac:2374: -1- AC_SUBST([PCRE_CFLAGS])
+autom4te.cache/traces.0:2460:m4trace:configure.ac:2374: -1- AC_SUBST_TRACE([PCRE_CFLAGS])
+autom4te.cache/traces.0:2461:m4trace:configure.ac:2374: -1- m4_pattern_allow([^PCRE_CFLAGS$])
+autom4te.cache/output.0:698:PCRE_CFLAGS
+autom4te.cache/output.0:1047:PCRE_CFLAGS
+autom4te.cache/output.0:1789:  PCRE_CFLAGS C compiler flags for PCRE, overriding pkg-config
+autom4te.cache/output.0:27895:if test -n "$PCRE_CFLAGS"; then
+autom4te.cache/output.0:27896:    pkg_cv_PCRE_CFLAGS="$PCRE_CFLAGS"
+autom4te.cache/output.0:27904:  pkg_cv_PCRE_CFLAGS=`$PKG_CONFIG --cflags "libpcre >= $PCRE_REQUIRED_VERSION" 2>/dev/null`
+autom4te.cache/output.0:27956:Alternatively, you may set the environment variables PCRE_CFLAGS
+autom4te.cache/output.0:27968:Alternatively, you may set the environment variables PCRE_CFLAGS
+autom4te.cache/output.0:27975:	PCRE_CFLAGS=$pkg_cv_PCRE_CFLAGS
+autom4te.cache/output.0:27989:                  CFLAGS="$CFLAGS $PCRE_CFLAGS" LIBS="$PCRE_LIBS"
+autom4te.cache/traces.1:4881:m4trace:configure.ac:2374: -1- m4_pattern_allow([^PCRE_CFLAGS$])
+autom4te.cache/traces.1:4883:m4trace:configure.ac:2374: -1- PKG_CHECK_EXISTS([libpcre >= $PCRE_REQUIRED_VERSION], [pkg_cv_[]PCRE_CFLAGS=`$PKG_CONFIG --[]cflags "libpcre >= $PCRE_REQUIRED_VERSION" 2>/dev/null`
+autom4te.cache/traces.1:4895:m4trace:configure.ac:2374: -1- m4_pattern_allow([^PCRE_CFLAGS$])
+autom4te.cache/output.1:698:PCRE_CFLAGS
+autom4te.cache/output.1:1047:PCRE_CFLAGS
+autom4te.cache/output.1:1789:  PCRE_CFLAGS C compiler flags for PCRE, overriding pkg-config
+autom4te.cache/output.1:27895:if test -n "$PCRE_CFLAGS"; then
+autom4te.cache/output.1:27896:    pkg_cv_PCRE_CFLAGS="$PCRE_CFLAGS"
+autom4te.cache/output.1:27904:  pkg_cv_PCRE_CFLAGS=`$PKG_CONFIG --cflags "libpcre >= $PCRE_REQUIRED_VERSION" 2>/dev/null`
+autom4te.cache/output.1:27956:Alternatively, you may set the environment variables PCRE_CFLAGS
+autom4te.cache/output.1:27968:Alternatively, you may set the environment variables PCRE_CFLAGS
+autom4te.cache/output.1:27975:	PCRE_CFLAGS=$pkg_cv_PCRE_CFLAGS
+autom4te.cache/output.1:27989:                  CFLAGS="$CFLAGS $PCRE_CFLAGS" LIBS="$PCRE_LIBS"
+configure.ac:2380:                  CFLAGS="$CFLAGS $PCRE_CFLAGS" LIBS="$PCRE_LIBS"
+configure.ac:2401:  AC_SUBST(PCRE_CFLAGS)
+configure:698:PCRE_CFLAGS
+configure:1047:PCRE_CFLAGS
+configure:1789:  PCRE_CFLAGS C compiler flags for PCRE, overriding pkg-config
+configure:27895:if test -n "$PCRE_CFLAGS"; then
+configure:27896:    pkg_cv_PCRE_CFLAGS="$PCRE_CFLAGS"
+configure:27904:  pkg_cv_PCRE_CFLAGS=`$PKG_CONFIG --cflags "libpcre >= $PCRE_REQUIRED_VERSION" 2>/dev/null`
+configure:27956:Alternatively, you may set the environment variables PCRE_CFLAGS
+configure:27968:Alternatively, you may set the environment variables PCRE_CFLAGS
+configure:27975:	PCRE_CFLAGS=$pkg_cv_PCRE_CFLAGS
+configure:27989:                  CFLAGS="$CFLAGS $PCRE_CFLAGS" LIBS="$PCRE_LIBS"
+m4macros/Makefile:530:PCRE_CFLAGS = 
+m4macros/Makefile.in:530:PCRE_CFLAGS = @PCRE_CFLAGS@
+gthread/Makefile:584:PCRE_CFLAGS = 
+gthread/Makefile.in:584:PCRE_CFLAGS = @PCRE_CFLAGS@
+gmodule/Makefile:588:PCRE_CFLAGS = 
+gmodule/Makefile.in:588:PCRE_CFLAGS = @PCRE_CFLAGS@
+Makefile.in:627:PCRE_CFLAGS = @PCRE_CFLAGS@
+build/win32/dirent/Makefile:276:PCRE_CFLAGS = 
+build/win32/dirent/Makefile.in:276:PCRE_CFLAGS = @PCRE_CFLAGS@
+build/win32/Makefile:336:PCRE_CFLAGS = 
+build/win32/Makefile.in:336:PCRE_CFLAGS = @PCRE_CFLAGS@
+build/Makefile:336:PCRE_CFLAGS = 
+build/Makefile.in:336:PCRE_CFLAGS = @PCRE_CFLAGS@
+docs/Makefile:336:PCRE_CFLAGS = 
+docs/reference/gio/Makefile:326:PCRE_CFLAGS = 
+docs/reference/gio/Makefile.in:326:PCRE_CFLAGS = @PCRE_CFLAGS@
+docs/reference/Makefile:337:PCRE_CFLAGS = 
+docs/reference/gobject/Makefile:319:PCRE_CFLAGS = 
+docs/reference/gobject/Makefile.in:319:PCRE_CFLAGS = @PCRE_CFLAGS@
+docs/reference/glib/Makefile:319:PCRE_CFLAGS = 
+docs/reference/glib/Makefile.in:319:PCRE_CFLAGS = @PCRE_CFLAGS@
+docs/reference/Makefile.in:337:PCRE_CFLAGS = @PCRE_CFLAGS@
+docs/Makefile.in:336:PCRE_CFLAGS = @PCRE_CFLAGS@

@@ -1,0 +1,52 @@
+
+simple
+------
+
+Commented and easy to understand example.
+
+
+gtkglarea_demo
+--------------
+
+Even better example than simple.
+
+
+
+viewlw
+------
+
+Usage: viewlw [FILE]...
+
+viewlw is a nifty little utility for viewing LightWave 3D objects.
+Try viewing included alien.lwo and penguin.lwo objects.
+
+In the program:
+Mouse button 1 + drag           spin (virtual trackball)
+Mouse button 2 + drag           zoom
+Mouse button 3                  popup menu
+
+NOTE: files trackball.h and trackball.c are Copyright by Silicon Graphics, Inc.
+and are freely useable, see files for more information.
+
+
+zktor
+-----
+
+Ingame keys:
+
+cursor left             turn left
+cursor right            turn right
+cursor down             thrust
+cursor up,space         fire
+r                       restart
+d                       detail
+f                       switch between fullscreen/windowed mode (only with 3DFX)
+
+Keyboard handling is buggy and needs to be fixed. For some reason key
+releases are not received unless cursor is over glarea widget.
+There is now rudimentary support for fullscreen 3DFX acceleration with
+Mesa, but it is not compiled in as default. You have to uncomment
+FULLSCREEN_MESA_3DFX defined near the start of zktor.c to compile it.
+
+
+

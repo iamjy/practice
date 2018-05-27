@@ -1,0 +1,40 @@
+# GTK+ Input Method Modules file
+# Automatically generated file, do not edit
+# Created by /home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/gtk/.libs/lt-gtk-query-immodules-3.0 from gtk+-3.22.30
+#
+# ModulesPath = /home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/x86_64-pc-linux-gnu/immodules:/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules:/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/x86_64-pc-linux-gnu/immodules:/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/immodules
+#
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-am-et.so" 
+"am_et" "Amharic (EZ+)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "am" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-cedilla.so" 
+"cedilla" "Cedilla" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "az:ca:co:fr:gv:oc:pt:sq:tr:wa" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-cyrillic-translit.so" 
+"cyrillic_translit" "Cyrillic (Transliterated)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-inuktitut.so" 
+"inuktitut" "Inuktitut (Transliterated)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "iu" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-ipa.so" 
+"ipa" "IPA" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-multipress.so" 
+"multipress" "Multipress" "gtk30" "" "" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-thai.so" 
+"thai" "Thai-Lao" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "lo:th" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-ti-er.so" 
+"ti_er" "Tigrigna-Eritrean (EZ+)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "ti" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-ti-et.so" 
+"ti_et" "Tigrigna-Ethiopian (EZ+)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "ti" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-viqr.so" 
+"viqr" "Vietnamese (VIQR)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "vi" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/lib/gtk-3.0/3.0.0/immodules/im-xim.so" 
+"xim" "X Input Method" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64/share/locale" "ko:ja:th:zh" 
+
+

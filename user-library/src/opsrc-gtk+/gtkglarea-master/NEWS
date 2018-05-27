@@ -1,0 +1,23 @@
+=============
+Version 2.1.0
+=============
+
+General
+	* Lots of clean ups in the build system
+	* Modernize all the code as much as possible before a
+	  possible transition to GTK+3
+	* Remove GLU dependency
+
+=============
+Version 2.0.2
+=============
+
+General
+	* Code reorganisation and cleanup.
+	* 64-bit and Win32 portability fixes.
+	* Support for newer autotools versions.
+	* Fix Cygwin and MinGW builds.
+
+Examples
+	* New fragment shader and vertex shader example program.
+

@@ -1,0 +1,34 @@
+##
+## Obsolete. Use autoconfiscation.
+##
+
+TOP = ../..
+
+include ../build/win32/make.mingw
+
+GTKGLAREA_VER=@VERSION@
+
+INCLUDES = -I . -I ..
+DEPCFLAGS = $(GLIB_CFLAGS) $(GTK_CFLAGS) $(OPENGL_CFLAGS)
+
+LIBS = -L ../gtkgl -lgtkgl-$(GTKGLAREA_VER) $(GTK_LIBS) $(GLIB_LIBS) $(OPENGL_LIBS)
+
+TARGETS = viewlw.exe simple.exe zktor.exe
+
+VIEWLW_OBJECTS = viewlw.o lw.o trackball.o
+
+all : $(TARGETS)
+
+viewlw.exe : $(VIEWLW_OBJECTS)
+	$(CC) -o $@ $(CFLAGS) $(VIEWLW_OBJECTS) $(LIBS)
+
+simple.exe : simple.o
+	$(CC) -o $@ $(CFLAGS) simple.o $(LIBS)
+
+zktor.exe : zktor.o
+	$(CC) -o $@ $(CFLAGS) zktor.o $(LIBS)
+
+# Hack to get an updated makefile.mingw automatically if updating
+# makefile.mingw.in
+makefile.mingw: makefile.mingw.in
+	sed -e 's,@VER[S]ION@,@VERSION@,' <$< >$@

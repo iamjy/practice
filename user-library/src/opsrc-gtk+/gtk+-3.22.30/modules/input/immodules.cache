@@ -1,0 +1,38 @@
+# GTK+ Input Method Modules file
+# Automatically generated file, do not edit
+# Created by /home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/gtk/.libs/lt-gtk-query-immodules-3.0 from gtk+-3.22.30
+#
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-am-et.la" 
+"am_et" "Amharic (EZ+)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "am" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-cedilla.la" 
+"cedilla" "Cedilla" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "az:ca:co:fr:gv:oc:pt:sq:tr:wa" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-cyrillic-translit.la" 
+"cyrillic_translit" "Cyrillic (Transliterated)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-inuktitut.la" 
+"inuktitut" "Inuktitut (Transliterated)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "iu" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-ipa.la" 
+"ipa" "IPA" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-multipress.la" 
+"multipress" "Multipress" "gtk30" "" "" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-thai.la" 
+"thai" "Thai-Lao" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "lo:th" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-ti-er.la" 
+"ti_er" "Tigrigna-Eritrean (EZ+)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "ti" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-ti-et.la" 
+"ti_et" "Tigrigna-Ethiopian (EZ+)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "ti" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-viqr.la" 
+"viqr" "Vietnamese (VIQR)" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "vi" 
+
+"/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/modules/input/im-xim.la" 
+"xim" "X Input Method" "gtk30" "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/arm-buildroot-linux-gnueabi/share/locale" "ko:ja:th:zh" 
+
+

@@ -1,0 +1,73 @@
+lib/libcommon_la-linux_version.lo: lib/linux_version.c \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/stdc-predef.h \
+ config.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/stdio.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/libc-header-start.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/features.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/long-double.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/gnu/stubs-soft.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/lib/gcc/arm-linux-gnueabi/7.2.1/include/stddef.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/types.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/libio.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/_G_config.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/wchar.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/lib/gcc/arm-linux-gnueabi/7.2.1/include/stdarg.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/stdio.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/sys/utsname.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/utsname.h \
+ include/linux_version.h \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/linux/version.h
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/stdc-predef.h:
+
+config.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/stdio.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/libc-header-start.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/features.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/long-double.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/gnu/stubs-soft.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/lib/gcc/arm-linux-gnueabi/7.2.1/include/stddef.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/libio.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/wchar.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/lib/gcc/arm-linux-gnueabi/7.2.1/include/stdarg.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/stdio.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/sys/utsname.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/bits/utsname.h:
+
+include/linux_version.h:
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/linux/version.h:

@@ -1,0 +1,63 @@
+
+
+1. Help, ./configure does not find Mesa, I do have Mesa libaries installed.
+
+    - Mesa may need additional libraries to link with, depending on what
+      options were used while compiling Mesa libraries. Currently configure
+      tries to link Mesa with whatever libraries GTK needs and if this fails
+      it tries adding the pthreads libraries. Try passing extra libraries to
+      ./configure in LIBS envinronment variable.
+
+
+
+2. How do I make any widget opengl widget?
+
+    Your widget needs an OpenGL capable visual.
+    The widget must also have an X window (not all widgets have it).
+
+    /* get visual using ggla_choose_visual */
+    visual = ggla_choose_visual(visual_attributes);
+
+    /* create your widget */
+    widget = gtk_foobar_new();
+
+    /* disable backing store (only in GTK-1.4) */
+    gtk_widget_set_double_buffered(widget, FALSE);
+
+
+
+3. How do I render to such widget?
+
+    Create a GL context and connect it to the widget's GdkDrawable.
+
+    context = ggla_context(visual);
+
+    /* connect to gdk window of widget */
+    if (ggla_make_current(widget->window, context)) {
+        /* do opengl stuff... */
+
+    }
+
+
+
+6. Can I use gdk_gl functions and GglaArea widget in the same program?
+
+    Yes, just remember that ggla_area_make_current() makes the GglaArea
+    widget's internal context the current context and leaves it so.
+
+
+
+7. How do I capture keypress events for GglaArea widget?
+
+    This is not a GglaArea specific question, but here is a solution:
+
+    - Set an event mask:
+         gtk_widget_set_events(glarea, GDK_KEY_PRESS_MASK);
+
+    - Grab the focus:
+        GTK_WIDGET_SET_FLAGS(glarea, GTK_CAN_FOCUS);
+        gtk_widget_grab_focus(GTK_WIDGET(glarea));
+
+    - Prevent possible default handlers from running:
+        /* do this in the keypress handler and return TRUE from handler */
+        g_signal_stop_emission_by_name (G_OBJECT(glarea), "key-press-event");

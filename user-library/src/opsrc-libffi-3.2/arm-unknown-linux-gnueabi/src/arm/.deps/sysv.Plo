@@ -1,0 +1,11 @@
+src/arm/sysv.lo: ../src/arm/sysv.S \
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/stdc-predef.h \
+ fficonfig.h include/ffi.h include/ffitarget.h
+
+/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/linaro/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/stdc-predef.h:
+
+fficonfig.h:
+
+include/ffi.h:
+
+include/ffitarget.h:

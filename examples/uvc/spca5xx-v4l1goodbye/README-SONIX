@@ -1,0 +1,14 @@
+Dear spca5xx users,
+If you have compiled the sn9c102 driver from the main kernel tree, you should get
+a conflict with spca5xx and sonix sn9c101 or sonix sn9c102 webcams.
+you can :
+a)load the spca5xx before plug your webcam with 
+modprobe spca5xx
+that way the sn9c102 kernel module did not load and you can benefit of the large
+V4L support
+b)rename the sn9c102.ko to sn9c102.ko.old in
+/lib/modules/kernel-name/kernel/drivers/usb/media/
+then run the command depmod -ae
+Regards
+
+ 

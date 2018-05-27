@@ -1,0 +1,41 @@
+Module compile outside the kernel tree but need the source of your running
+kernel installed and configured.
+be sure your kernel include usb and v4l stuff
+Kernel 2.4.x 
+	configure your kernel
+	make dep
+	go to the spca5xx directories
+	make clean (to be sure)
+	make
+	if all goes right as root :
+	make install
+Kernel 2.6.x
+	make clean
+	make
+	if all goes right as root :
+	make install
+	
+To test please use the command line spcaview tool.
+You need libsdl installed with the header from your distro or goto http://www.libsdl.org
+/*******************************************************************************************/
+	SPCAVIEW is the only V4L1 Apps for testing your SPCA5XX webcam.
+	IF THAT WORK WITH SPCAVIEW ALL OTHERS V4L1 APPS SHOULD WORK !!!
+	DON'T ASK ME ABOUT :
+	XAWTV GNOMEMEETING MOTION EKIGA AMSN ZONEMINDER CAMORAMA CAMSTREAM
+	VIDEODOG PALANTIR SPOKE CAMSOURCE MPLAYER VLC FFMPEG MPEG4IP .....
+		ASK THE AUTHORS. YOU SHOULD GET A BETTER ANSWER !!!
+/*******************************************************************************************/
+
+plug the cam
+as root :
+	lsmod
+	spca5xx should be load with videodev, if not, somethings goes wrong,
+	verify that your cam is supported if not and you are sure for a Sunplus
+	chip goto irc.freenode.net channel #spca50x and ask for help
+	if yes run spcaview with this parameters (maybe read the readme is the
+	best)
+	spcaview -d /dev/video0 -f yuv 
+	if you have a bttv card use change the video0 to video1
+	that should work
+	Enjoy !!
+	

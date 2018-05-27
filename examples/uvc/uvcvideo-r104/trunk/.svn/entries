@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="103"
+   name=""
+   committed-date="2007-05-07T08:42:00.508937Z"
+   url="http://svn.berlios.de/svnroot/repos/linux-uvc/linux-uvc/trunk"
+   last-author="pinchartl"
+   kind="dir"
+   uuid="790547d8-3c09-0410-a358-857946b093de"
+   repos="http://svn.berlios.de/svnroot/repos/linux-uvc"
+   revision="104"/>
+<entry
+   committed-rev="103"
+   name="uvc_ctrl.c"
+   text-time="2007-05-08T15:51:20.000000Z"
+   committed-date="2007-05-07T08:42:00.508937Z"
+   checksum="871ceeaebe6b10ce97f9221c6c8619e9"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-05-08T15:51:20.000000Z"/>
+<entry
+   committed-rev="70"
+   name="uvc_queue.c"
+   text-time="2007-01-06T09:50:30.000000Z"
+   committed-date="2006-12-07T11:10:52.985616Z"
+   checksum="4eb7b9be5f372024112b79dbeca3b09f"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-01-06T09:50:30.000000Z"/>
+<entry
+   committed-rev="99"
+   name="uvc_video.c"
+   text-time="2007-05-08T15:51:20.000000Z"
+   committed-date="2007-04-25T20:17:35.744628Z"
+   checksum="0d704281465ce4d3487e974cd8f85b43"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-05-08T15:51:20.000000Z"/>
+<entry
+   committed-rev="102"
+   name="uvc_v4l2.c"
+   text-time="2007-05-08T15:51:20.000000Z"
+   committed-date="2007-05-05T12:20:55.176735Z"
+   checksum="8eca0ba76364b2a136e32b693c79b306"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-05-08T15:51:20.000000Z"/>
+<entry
+   committed-rev="73"
+   name="uvc_compat.h"
+   text-time="2007-01-06T09:50:30.000000Z"
+   committed-date="2006-12-13T22:18:30.012809Z"
+   checksum="469fb22f172897c3a2ba308bc414ec28"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-01-06T09:50:30.000000Z"/>
+<entry
+   committed-rev="103"
+   name="uvc_driver.c"
+   text-time="2007-05-08T15:51:20.000000Z"
+   committed-date="2007-05-07T08:42:00.508937Z"
+   checksum="4fe9935ca9a1f4a78fb8f5b0ad17a672"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-05-08T15:51:20.000000Z"/>
+<entry
+   committed-rev="103"
+   name="uvcvideo.h"
+   text-time="2007-05-08T15:51:20.000000Z"
+   committed-date="2007-05-07T08:42:00.508937Z"
+   checksum="3ede6064b9bb7083bda827d07454d6e3"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-05-08T15:51:20.000000Z"/>
+<entry
+   committed-rev="70"
+   name="Makefile"
+   text-time="2007-01-06T09:50:30.000000Z"
+   committed-date="2006-12-07T11:10:52.985616Z"
+   checksum="c93028edc78c41858afaa4c926013ecc"
+   last-author="pinchartl"
+   kind="file"
+   prop-time="2007-01-06T09:50:30.000000Z"/>
+</wc-entries>

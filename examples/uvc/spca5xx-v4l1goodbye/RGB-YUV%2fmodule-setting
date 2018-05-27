@@ -1,0 +1,20 @@
+Some usefull setting for the module:
+KERNEL 2.6.x ONLY
+/******************************************************************/
+IMPORTANT !!!!
+you need to close and reopen the device to get the change active.
+/******************************************************************/
+ you can also use sysfs kernel 2.6.x like this:
+echo "4" > /sys/module/spca5xx/gamma
+echo "217" > /sys/module/spca5xx/GRed
+should set the gamma parameters to 4 and GRed to 217
+The Gimp is usefull to get the good value :)
+KERNEL 2.6.x AND KERNEL 2.4.x
+otherwhise load the module for example with :
+
+modprobe spca5xx GRed=217 GBlue=300 GGreen=224 gamma=4 
+or
+modprobe spca5xx OffRed=16 OffGreen=-32 OffBlue=-16 GBlue=288 GGreen=288 
+or 
+you can set up that option in the modprobe.conf or modules.conf
+options spca5xx GRed=217 GBlue=300 GGreen=224 gamma=4 

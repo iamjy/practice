@@ -1,0 +1,19 @@
+Dear users,
+For some strange reason "Luca Risolia" is setting a lot of drivers inside the main
+Kernel tree, specially those chips supported by spca5xx. Maybe there are not enought hardware to Hack:)
+As a consequence, you have to choice between spca5xx or the others. The problem is, hotplug will detect, the in kernel driver
+and maybe  reject spca5xx claim.
+If you load the spca5xx first with 
+modprobe spca5xx
+there are no problem.
+You can also blacklist the in kernel driver:)
+
+.If you get problem with the main kernel drivers, don't ask me please, you should ask here to get help: 
+linux-usb-devel@lists.sourceforge.net 
+or here for the v4l2 features :)
+video4linux-list@redhat.com
+
+best regards
+Michel Xhaard
+http://mxhaard.free.fr
+  

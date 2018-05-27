@@ -1,0 +1,136 @@
+#!/bin/ksh
+#
+# @OPENGROUP_COPYRIGHT@
+# COPYRIGHT NOTICE
+# Copyright (c) 1990, 1991, 1992, 1993 Open Software Foundation, Inc.
+# Copyright (c) 1996, 1997, 1998, 1999, 2000 The Open Group
+# ALL RIGHTS RESERVED (MOTIF). See the file named COPYRIGHT.MOTIF for
+# the full copyright text.
+# 
+# This software is subject to an open license. It may only be
+# used on, with or for operating systems which are themselves open
+# source systems. You must contact The Open Group for a license
+# allowing distribution and sublicensing of this software on, with,
+# or for operating systems which are not Open Source programs.
+# 
+# See http://www.opengroup.org/openmotif/license for full
+# details of the license agreement. Any use, reproduction, or
+# distribution of the program constitutes recipient's acceptance of
+# this agreement.
+# 
+# EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS
+# PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY
+# WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY
+# OR FITNESS FOR A PARTICULAR PURPOSE
+# 
+# EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT
+# NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT,
+# INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED
+# AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+# ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE
+# EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGES.
+#
+#
+# HISTORY
+#
+#   $XConsortium: xmfile /main/5 1995/07/14 10:04:31 drk $
+
+# set file search path for Xlib to find locale defs with Ximp
+XFILESEARCHPATH=/usr/lib/X11/nls/%L/%N:/usr/lib/X11/nls/Ximp/%L/%N
+# set file search path for Xlib to find locale defs with Xsi
+XNLSPATH=/usr/lib/X11/nls/Xsi
+if (test $# -lt 1)
+then
+        language=french
+else
+        language=$1
+fi
+# set XAPPLRESDIR for UIL to find its files
+
+# set user file search path for Xt to find app-default file
+# XUSERFILESEARCHPATH=$XAPPLRESDIR/%C/%L/%N:$XAPPLRESDIR/%C/%l/%N:$XAPPLRESDIR/%C/%t/%N:$XAPPLRESDIR/%C/%N:$XAPPLRESDIR/%L/%N:$XAPPLRESDIR/%l/%N:$XAPPLRESDIR/%t/%N:$XAPPLRESDIR/%N:$HOME%N
+
+export LANG XFILESEARCHPATH XAPPLRESDIR XNLSPATH
+typeset sysname=
+if [ -n "$(whence uname)" ]
+then 
+	typeset sysname=$(uname -s)
+else
+	typeset sysname="unix"
+fi
+case $sysname in
+	HP-UX | ULTRIX | OSF1 )
+	echo Operating System is $sysname
+	;;
+	* )
+	echo Operating System is unknown !!!
+	echo You should update xmfile script to support your OS
+	;;
+esac
+
+case $language in
+  french)
+        XAPPLRESDIR=$(pwd)/french
+	case $sysname in
+	HP-UX)
+		LANG=french.iso88591
+		;;
+	ULTRIX)
+		LANG=FRE_FR.8859
+		;;
+	OSF1)
+		LANG=fr_FR.ISO88591
+		;;
+	* )
+		LANG=french
+		;;
+	esac
+	;;
+
+  english | american )
+        XAPPLRESDIR=$(pwd)/american
+        case $sysname in
+	HP-UX)
+		LANG=american
+		;;
+	ULTRIX)
+		LANG=ENG_GB.8859
+		;;
+	OSF1)
+		LANG=en_US.ISO88591
+		;;
+	* )
+		LANG=american
+		;;
+	esac
+	;;
+
+  german)
+        XAPPLRESDIR=$(pwd)/german
+        case $sysname in
+	HP-UX)
+		LANG=german.iso88591
+		;;
+	ULTRIX)
+		LANG=GER_GE.8859
+		;;
+	OSF1)
+		LANG=en_US.ISO88591
+		;;
+	* )
+		LANG=german
+		;;
+	esac
+	;;
+
+ * )
+	echo unknown language $language -- try running in C locale
+        XAPPLRESDIR=$(pwd)
+	unset LANG
+	;;	
+esac
+./fileview -ok

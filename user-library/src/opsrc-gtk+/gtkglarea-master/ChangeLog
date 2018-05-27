@@ -1,0 +1,464 @@
+2012-02-06  C.J. Adams-Collier <cjac@uw.edu>
+	* configure.ac: bumped version to 2.0.2, added -lm to default CFLAGS
+	* AUTHORS: added Ryan and Iwan to contributors, changed my email addr
+2011-02-15  Sam Hocevar  <sam@hocevar.net>
+	* examples/shaders.c: tweak shader syntax for better compatibility.
+
+2011-02-01  Sam Hocevar  <sam@hocevar.net>
+	* autogen.sh: fix ages old typo.
+
+2009-07-18  Sam Hocevar  <sam@hocevar.net>
+	* configure.ac: set version to 2.0.1 and change tarball name to
+	gtkgl for simplicity.
+	* AUTHORS NEWS README README.mingw: reorganise documentation and
+	write a news entry for the release.
+	* gtkglarea.spec: remove that file; it is 10 years old and
+	unmaintained.
+
+2009-07-18  Sam Hocevar  <sam@hocevar.net>
+	* AUTHORS README TODO docs/HOWTO.txt: update documentation.
+
+2009-02-19  Sam Hocevar  <sam@hocevar.net>
+	* gtkgl/gdkgl.c: fix a pointer/int confusion warning on Win32.
+
+2009-02-19  Sam Hocevar  <sam@hocevar.net>
+	* gtkgl/gdkgl.c: fix the Win32 build by defining PLATFORM everywhere.
+
+2009-02-18  Sam Hocevar  <sam@hocevar.net>
+	* gtkgl/gdkgl.c: emit a warning if the GL context could not be shared.
+
+2008-10-20  Sam Hocevar  <sam@hocevar.net>
+	* configure.ac: get rid of USE_WIN32, glib.h knows our windowing
+	platform better than us.
+
+2008-10-20  Sam Hocevar  <sam@hocevar.net>
+	* autogen.sh: regenerate config.h.in by running autoheader with the
+	--force flag.
+
+2008-10-20  Sam Hocevar  <sam@hocevar.net>
+	Bug 384072 – Add stubs for other windowing platforms
+
+	* gdkgl.c gtkglarea.c: use GDK_WINDOWING_WIN32 etc. instead of
+	USE_WIN32 macros.
+
+	* gdkgl.c gtkglarea.c: add stubs for unsupported windowing platforms.
+
+2008-10-20  Sam Hocevar  <sam@hocevar.net>
+	* gdkgl.c gtkglarea.c: minor code factorisation.
+
+2008-09-22  Sam Hocevar  <sam@hocevar.net>
+	* shaders.c: gl_TexCoord is read-only in a fragment shader; use a
+	temporary variable instead.
+
+2008-09-22  Sam Hocevar  <sam@hocevar.net>
+	* examples/shaders.c: improve code readability.
+
+2008-09-22  Sam Hocevar  <sam@hocevar.net>
+	* Cosmetic fix: remove trailing spaces from source files.
+
+2008-09-22  Sam Hocevar  <sam@hocevar.net>
+	* examples/shaders.c: fix shader syntax by replacing (float)xxx with
+	float(xxx).
+
+2008-09-05  Sam Hocevar  <sam@hocevar.net>
+	* examples/zktor.c: cosmetic gcc warning fix.
+
+2007-06-18  Sam Hocevar  <sam@hocevar.net>
+	* gtkgl/gdkgl.c: fix a signed/unsigned compilation warning.
+
+2007-04-01  Sam Hocevar  <sam@hocevar.net>
+	* Proper GL shader extensions checks for the shader example, courtesy
+	of Éric Beets.
+
+2007-03-07  Sam Hocevar  <sam@hocevar.net>
+	* Fix a minor warning by changing char * to char const * in a prototype.
+
+2007-03-07  Sam Hocevar  <sam@hocevar.net>
+	* Get rid of WinMain in viewlw.c and simple.c, the other examples don't
+	have it and work like a charm.
+
+2007-03-07  Sam Hocevar  <sam@hocevar.net>
+	* Build with -Wall by default.
+	* Replace BASE_DEPENDENCIES_* with GTK_* for better readability.
+
+2007-03-07  Sam Hocevar  <sam@hocevar.net>
+	* Starting the gtkgl.c reorganisation.
+
+2007-03-07  Sam Hocevar  <sam@hocevar.net>
+	* Merged gdkgl.c and gdkgl-win32.c. No refactoring yet, just code
+	copies.
+
+2007-03-07  Sam Hocevar  <sam@hocevar.net>
+	* Converted all text files to UTF-8.
+
+2007-03-07  Sam Hocevar  <sam@hocevar.net>
+	* Put uninteresting autotools files in the .auto subdirectory.
+	* Get rid of outdated ltmain.sh and run libtoolize in autogen.sh
+	instead.
+	* Run autoconf, autoheader and automake in the proper order.
+	* Create a config.h file instead of passing countless -D options to
+	gcc.
+	* Use more modern AC_INIT syntax in configure.ac.
+
+2007-03-06  Sam Hocevar  <sam@hocevar.net>
+	* Remove the executable property from gtkgl/gdkgl-win32.c.
+
+2007-03-06  Sam Hocevar  <sam@hocevar.net>
+	* Add svn:ignore properties to hide various autotools-generated files.
+
+2007-03-06  Sam Hocevar  <sam@hocevar.net>
+	* Support for automake 1.10.1 in autogen.sh. The second comma was
+	triggering a shell test error.
+
+2007-03-06  Sam Hocevar  <sam@hocevar.net>
+	* Add a small message to warn the user that even if they see the
+	texture, fragment shaders are only working properly if it is coloured.
+
+2007-11-22  Sam Hocevar  <sam@hocevar.net>
+	* Added a fragment shader and vertex shader test example.
+
+2007-11-22  Sam Hocevar  <sam@hocevar.net>
+	* Add a configure check for OpenGL shader support (2.0 only) by
+	looking for glCreateProgram().
+
+2007-11-03  Sam Hocevar  <sam@hocevar.net>
+	* Fix compiler warnings due to missing <string.h> includes.
+
+2007-11-03  Sam Hocevar  <sam@hocevar.net>
+	* Cosmetic fix in a debug message.
+
+2007-11-03  Sam Hocevar  <sam@hocevar.net>
+	* Fix compiler warnings due to improper or missing casts.
+
+2007-11-03  Sam Hocevar  <sam@hocevar.net>
+	* Fix autogen support for newer (1.10+) versions of automake.
+
+2007-11-03  Sam Hocevar  <sam@hocevar.net>
+	* Fixed native Win32 build detection on Cygwin.
+	* Removed entries for non-existent Makefiles.
+
+2007-11-03  Sam Hocevar  <sam@hocevar.net>
+	* Fixing the MAINTAINERS file format and recklessly adding myself.
+
+2006-12-07  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* README.mingw
+	- created this file and put some tips in it
+	* examples/simple.c, examples/viewlw.c
+	- made the WinMain definition match what's declared in winbase.h
+
+2006-12-06T1944  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* configure.ac
+	- changed OpenGL from lib list to a boolean
+	* examples/simple.c, examples/viewlw.c
+	- fixed line endings
+
+2006-12-06T1928  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* autogen.sh
+	- applied a patch from muntyan that removes the assumption that
+	the build and source directories are the same
+	* gtkgl/gdkgl.def
+	- removed macro symbols
+	* GtkGLArea.vcproj
+	- renamed project from GtkGLArea to gtkglare-2.0
+
+2006-12-06T1431  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* replaced AM_PATH_GTK_2_0 with pkg-config bits
+
+2006-12-06  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* added #ifdef G_OS_WIN32 around WinMain functions in simple.c and
+	viewlw.c
+	* removed intltool from autogen.sh
+
+2006-12-05  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* added vs2k5 build infrastructure
+	* added WinMain() entry points to simple.c and viewlw.c
+	* status output at the end of configure.ac
+
+2006-12-02T1753  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* moved configure.in to configure.ac
+
+2006-12-02  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* TODO
+	- re-ordered priorities
+	- made into an ordered list
+	* autogen.sh
+	- copied autogen.sh from gtkglarea-sharp
+	
+2006-09-28  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* Makefile.am
+	- commented out the build/ directory (failing win32 build path)
+
+2006-04-12  C.J. Adams-Collier <cjcollier@colliertech.org>
+	* TODO
+	- Created
+	* AUTHORS
+	- added myself, moved Jan and Xavier to "retired"
+	* MAINTAINERS
+	- added myself, moved Jan and Xavier to "former"
+
+2003-05-04  Masahiro Sakai  <sakai@tom.sfc.keio.ac.jp>
+
+	* configure.in: check `$PKG_CONFIG --variable=target gtk+-2.0` and
+	define a conditional: WINDOWING_WIN32.
+
+	* gtkgl/Makefile.am:
+	(libgtkgl_2_0_la_LDFLAGS): use -no-undefined unconditionaly. I think
+	that no problem is caused by having -no-undefined on all
+	platforms, since examples in libtool tarball use -no-undefined
+	unconditionally.
+	(gdkgl): use WINDOWING_WIN32 to determine which of gdkgl.c and
+	gdkgl_win32.c to use.
+
+2002-01-16  Xavier Ordoquy  <xordoquy@wanadoo.fr>
+
+	* autogen.sh: added libtool
+
+2002-12-01  Xavier Ordoquy  <xordoquy@wanadoo.fr>
+
+	* MAINTAINER: updated
+
+2002-06-09  Shane Blackett
+
+	* gtkgl/gdkgl-win32.c:
+	Win32 fixes.
+
+2002-06-09  James Henstridge  <james@daa.com.au>
+
+	* gtkgl/gtkglarea.c (gtk_gl_area_destroy): use g_object_unref on
+	the GdkGLContext.
+
+	* gtkgl/gdkgl-win32.c: make equivalent changes here (but I haven't
+	tested them).
+
+	* gtkgl/gdkgl.[ch]: make GdkGLContext and GdkGLPixmap GObjects.
+
+2002-03-15  Tor Lillqvist  <tml@iki.fi>
+
+	Updates for Win32, (autoconfiscated) build. Examples seem to work OK.
+
+	* README: Edit Win32 text.
+
+	* configure.in: Set and substitute LT_CURRENT_MINUS_AGE like GLib
+	et al. Use AC_LIBTOOL_WIN32_DLL. Check for Win32. Check for MS
+	lib.exe. Use -lglu32 and -lopengl32.
+
+	* gtkgl/gtkgl.def: New file.
+
+	* gtkgl/Makefile.am: Use -no-undefined and -export-symbols.  Use
+	either gdkgl.c or gdkgl-win32.c. Generate MSVC import
+	library. Install gcc and MSVC import libraries.
+
+	* gtkgl/gdkgl-win32.c: Update for GTK+ 2.0.
+
+	* examples/glpixmap.c
+	* examples/gtkglarea_demo.c: Include <windows.h> on Win32.
+
+	* gtkgl/makefile.mingw.in
+	* examples/makefile.mingw.in: Mark as obsolete.
+
+2002-03-14  James Henstridge  <james@daa.com.au>
+
+	* gtkgl/gtkglarea.c (gtk_gl_area_size): remove deprecated function
+	(compatibility define in header).
+	(gtk_gl_area_swap_buffers): same here.
+	(gtk_gl_area_begingl): same here.
+	(gtk_gl_area_endgl): same here.
+
+2002-03-13  James Henstridge  <james@daa.com.au>
+
+	* configure.in: explicitly list the makefile.mingw files here, so
+	that automake produces correct rules, and does a make distcheck
+	correctly.
+
+2002-03-09  James Henstridge  <james@daa.com.au>
+
+	* gtkgl-2.0.pc.in (Version): pkg-config file for gtkgl.
+
+	* gtkgl/gtkglarea.c: update for GObject.
+
+	* gtkgl/gdkgl.c: remove some compatibility code for 1.2.
+
+	* gtkgl/Makefile.am: rename library to libgtkgl-2.0.la.
+
+	* configure.in: fix to correctly detect gtk 2.0.
+
+Mon Oct 22 19:55:22 2001  Janne Löf <jlof@paju.oulu.fi>
+
+	* gtkgl.m4: fixed a bug in prefix detection code.
+
+Sun Jul 30 21:04:09 2000  Janne Löf  <jlof@val24.oulu.fi>
+
+	* gtkgl.m4: AM_PATH_GTKGL has been completely reworked
+	by Branden N. McDaniel
+
+2000-07-21  Tor Lillqvist  <tml@iki.fi>
+
+	Improvements for Win32 build, make it use the current setup
+	used for GLib, GTK+, GIMP etc.
+
+	* include the "build" virtual module. With older CVS clients
+	you might need to reget gtkglarea. Or just do a cvs get build
+	in the top gtkglarea directory.
+
+	* makefile.cygwin: Remove. Instruct in README to build in gtkgl
+	and examples separately.
+
+	* README: Improve instructions for Win32 build.
+
+	* Makefile.am: Add the build subdirectory. Remove the
+	makefile.cygwin file.
+
+	* configure.in: Substiture also VERSION. Build also build/Makefile
+	and build/win32/Makefile.
+
+	* examples/makefile.cygwin: Remove.
+	* examples/makefile.mingw.in: New file. When building a distribution,
+	will produce makefile.mingw, with correct version number in the
+	library name.
+
+	* examples/Makefile.am: Corresponding changes.
+
+	* gtkgl/makefile.cygwin
+	* gtkgl/makefile.mingw.in
+	* gtkgl/Makefile.am: Ditto here.
+
+	* gtkgl/gdkgl-win32.c: Don't include <windows.h> here. No need to
+	define WIN32, I think.
+
+	* gtkgl/gdkgl.h: Include glib.h (for G_OS_WIN32). Remove cruft
+	definitions of STDCALL, CDECL, CALLBACK etc. Just include <windows.h>
+	always on Windows. Will need it for <GL/gl.h> anyway.
+
+	* gtkgl/gtkglarea.c: Conditionalise call to GTK+ 1.3.1 -only function.
+
+Sun Jun 11 15:27:46 2000  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gtkglarea.c (gtk_gl_area_init): disable double buffering.
+
+Wed Apr 26 19:59:18 2000  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gdkgl-win32.c (gdk_gl_context_share_new): forgot to ref the shared contex
+
+Tue Apr 25 23:12:17 2000  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gdkgl-win32.c:
+	Applied gdkgl-win32.c patch from Marc Flerackers
+
+Tue Feb 29 19:25:03 2000  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gdkgl.c (get_xvisualinfo):
+	tuple VisualID,screen,depth should be used to identify visual
+
+Tue Feb 22 20:27:21 2000  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* : gkglarea-1.2.2 released
+
+Fri Jan  7 14:42:33 2000  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* : rewrote windows port. It actually works now.
+
+Wed Dec 22 22:22:14 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+	
+	* gtkgl/gdkgl.c (gdk_gl_make_current): context switching tried to be too smart.
+
+1999-09-28  Janne Löf  <jlof@val334.oulu.fi>
+
+	* examples/*.c: added color buffer sizes to attribute lists.
+
+1999-09-25  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gdkgl.c (gdk_gl_make_current):
+	Do not call glXMakeCurrent if context is already current context.
+	
+
+1999-07-30  Jame Henstridge  <james@daa.com.au>
+
+	* gtkgl.m4: changed the order of libraries on the link lines.  If
+	you used static libraries, the tests would fail.
+
+Sun May 30 14:15:40 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gdkgl.c, gtkgl/gdkgl.h, gtkgl/gtkglarea.c:
+	attrlist is now passed to gdk_gl_context_share_new
+	* gtkgl/win32:
+	beginnings of windows port
+	
+
+Thu Apr 29 13:34:58 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gdkgl.c (gdk_gl_pixmap_new): buffer size test fixed.
+
+Sun Mar 28 22:06:44 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkgl/gtkglarea.c, gtkgl/gtkglarea.h:
+	Added gtk_gl_area_swap_buffers, fixes spelling of gtk_gl_area_swapbuffers.
+
+	* docs/HOWTO.txt, docs/gtkglarea.txt:
+	Updated documentation
+
+Wed Feb 24 17:41:35 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+	
+	* gtkgl/gtkglarea.h, gtkgl/gtkglarea.c:
+	Big change in achitecture, GtkGLArea is now derived from GtkDrawingArea
+	widget.
+
+	* README, gtkglarea.spec, docs/gtkglarea.txt:
+	similar to GtkDrawingArea -> derived from GtkDrawingArea
+
+
+Wed Feb 24 14:13:41 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkglarea.spec.in: Copyright is LGPL not GPL
+
+Wed Feb 24 13:49:34 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* Makefile.am, configure.in, gtkglarea.spec.in:
+	Generate RPM spec file automatically.
+
+	* examples/gdkfont.c, examples/glpixmap.c, examples/simple.c:
+	* examples/viewlw.c, examples/zktor.c:
+	Changed gtk_container_border_width() to gtk_container_set_border_width().
+	
+Sat Feb 20 03:47:36 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* gtkglarea.spec: RPM spec file, contributed by Ray Glendenning
+
+Wed Feb 17 13:36:19 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* configure.in: Library version number bumped up.
+
+	* gtkgl/gtkglarea.h, gtkgl/gtkglarea.c:
+	API change, use of gtk_gl_area_begingl()/gtk_gl_area_endgl() is now
+	discouraged altough they are still there, gtk_gl_area_make_current()
+	should be used instead.
+	
+	* README, docs/HOWTO.txt, docs/gtkglarea.txt, examples/README:
+	New API changes are now documented.
+	
+	* examples/gdkfont.c, examples/simple.c, examples/viewlw.c, examples/zktor.c:
+	Examples now use gtk_gl_area_make_current, zktor.c has rudimentary support for
+	3DFX acceleration, but this is #ifdef'ed out by default.
+	
+	* examples/object3d.h, examples/object3d.c:
+	Removed, I must have checked in some experimental version, these files dont belong here.
+	
+Wed Feb 17 01:58:41 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* configure.in:
+	* gtkgl.m4:
+	fixed a slight bug in library detection code
+
+	* glutil.h:
+	* glutil.c:
+	How did these get to CVS? They don't belong here.
+	
+Tue Feb  2 13:21:04 1999  Janne Löf  <jlof@mail.student.oulu.fi>
+
+	* autogen.sh: New file
+
+	* gtkgl.m4: New file, provides AM_PATH_GTKGL autoconf macro
+
+	* Makefile.am: installs gtkgl.m4 to $(datadir)/aclocal
+
+	* examples/Makefile.am: LDADD path now uses $top_builddir instead of $top_srcdir
+

@@ -1,0 +1,11 @@
+prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-gtk+/gtk+-3.22.30/output/x86_64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Gail
+Description: GNOME Accessibility Implementation Library
+Version: 3.22.30
+Requires: atk gtk+-3.0
+Libs: -L${libdir} -lgailutil-3
+Cflags: -I${includedir}/gail-3.0

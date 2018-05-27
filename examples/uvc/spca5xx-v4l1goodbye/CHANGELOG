@@ -1,0 +1,1063 @@
+This is the changelog for the SPCA5xx usb camera driver.
+Newest entries appear at the top of this file.
+/*Experimental spca5xx work based on spca50x module */
+Release 0.60.00.a
+	add logitech 0x092x
+	correct missing seq
+Release 0.60.00 as spca5xx-v4l1-goodbye
+	add Logitech Logitech QuickCam IM/Connect 0x046d, 0x08d9
+	add Logitech QuickCam Messenger 0x046d, 0x08da 
+	thanks Martin Rubli from logitech, for patch and testing.
+Release 0.57.12rc7 as spca5xx-v4l1-goodbye
+	add Logitech QCimage 0x046d:0x08a7 thanks Parag N for patch testing
+	add Logitech QC Cool 0x046d:0x08ac tahnks Carlos Z.F Liu for patch and testing
+	add Mustek MDC3500 0x055f:0xc232 thanks Jindra for patch and testing
+	add 1.3 Mpixels Sunplus 0x04fc:0x500c Thanks Steve Marshall for testing
+	improve the tv8532 decoder Thanks Djamel anonymous for your contribution :)
+Release 0.57.12rc6
+	tested with:
+	zc3xx ok (sometimes error -90 on open (close reopen FIX the problem)
+	spca561 rev 1 ok
+	spca561 rev 2 ok
+	et61151 ok
+	et61251 ok
+	pac207 ok
+	sonix sn9c101 sn9c102 ok
+	sonix sn9c105 sn9c120 sn9c120p ok
+	spca501 ok
+	spca504b spca504c ok
+	spca533 ok
+	tv 8532 ok
+	untested spca508a spca505a spca506a spca536a spca500a cx11646 mr87311 
+Release 0.57.12rc5
+	connect file operation to the interrupt handler
+	spca561 workd
+	zc3xxx broken ???
+Release 0.57.12rc4
+	connect camera file operations to the main struct
+	clean up and remove old function not need
+Release 0;57.12rc3
+	port spca500,
+	port spca505,
+	port spca506,
+	port CX11646 to the new API
+	remove old spca50x function(s) setting mode and size without Sensor
+	capabilities
+Release 0;57.12rc2
+	port spca508
+	port Tv8532 to the new API
+Release 0;57.12rc1
+	Start the big change:
+	port spca501 to the new API
+	remove old experimental code for brightness and colors setting
+	Someone need to read the spca501 documentation:) 
+	Set the brightness to RGB offset and change the RGB Matrix
+Release 0;57.11
+Release 0;57.11rc2
+	Improve spc200nc spc300nc detection, need to be run twice to get a stream 
+	Add Samsung Pleomax SAMPWC3800N VGA 0x0ac8:0x301b HV7131d
+Release 0;57.11rc1
+	Remove old bug when palette and size did not match in mmap:(
+Release 0.57.10 
+Release 0.57.10rc5
+	Add Sonix 0x0c45:0x6019 Sn9c101+Ov7630 
+	Add Sonix 0x0c45:0x6024 Sn9c102+Tas5130
+	Thanks  Angelo Giraldi for investigation and testing :)	
+Release 0.57.10rc4
+	Add SPC300NC preliminary 0x0471:0x0326 Vimicro vc0305 need test from
+	Joachim Franeck 
+Release 0.57.10rc3
+	Add pac207 autoexposure with Thomas Kaiser snoop comments that give better exposure
+	 in low light but the cost is the frame rate:(
+Release 0.57.10rc2
+	Add SPC600NC from Philips 0x0471:0x0327 Sonix sn9c105+MI0360
+Release 0.57.10rc1
+	Add sn9c101+tas5110D Thanks Haplo for testing
+Release 0.57.09
+	Change spcadecoder yuv420p jpeg.4.1.1 to avoid pixels saturation
+	test by Thomas Schorpp thanks 
+	Decrease the delay 150ms in the ov7630c detection routine, test by
+	Stephane Rosi thanks.	
+Release 0.57.09rc5
+	Add Philips SPC 700NC Sonix sn9c105 + MI0360 0x0471:0x0328 Thanks Juergen Lueters
+	from Intranet Engineering GmbH for the spc700nc donation :)
+	Adjust sn9cxx setting for the MI0360 sensor.
+	Quantization FIX on aiptek problem, hope the last one. 
+Release 0.57.09rc4
+	Add code for the 320x240 mode of zc030x + ov7630c untested
+Release 0.57.09rc3
+	Add Philips SPC 200 NC Vimicro VC0305 0x0471:0x0325 Thanks Jan Sigurd Refvik for testing.
+Release 0.57.09rc2
+	Add Creative Vista Plus 0x041e:0x4028 Pac207 chipset this is a work of Waldemar Celuch :)
+Release 0.57.09rc1
+	Add OV7630C detection routine to thz zc030x chips
+	Add Empress PC390 webcam based on OV7630C sensor + vm0302 Thanks Stéphane Rosi <steph at via.ecp.fr> snoop and testing :)
+	Add Genius VideoCam NB 0x0c45:0x6001 Tas5110 Thanks Andrea Dangel for the patch and maybe others i forget 
+Release 0.57.08
+	FIX some quantization problem with the spca500 spca504 spca533 chips  
+	Thanks Carlos Martínez Lozano to point the bug 
+Release 0.57.08rc4
+	Add Chuntex (CTX) M730V TFT-Display UsbId 0x0698:0x2003 Thanks Thilo
+	Martens for the patch :)
+	the patch 
+Release 0.57.08rc3
+	Add Aiptek Slim 3000F 0x08ca:0x2020 Thanks Renaud for patch and testing :)
+Release 0.57.08rc2
+	Fix problem when the webcam report palette 0 if VIDIOCSPICT is not used
+	Add Logitech QC IM 0x046d:0x08a6 zc0302 + HV7131R Thanks Brian G. Maddox :)
+Release 0.57.08rc1
+	Vimicro vm303 0x0ac8:0x303b add new sensor detection and sensor setting
+	use spca50x->chip_revision to switch the change.
+	This sensor look like a MI0360 or PB0330 with others registers setting.
+	thanks Juergen Lueters from Intranet Engineering GmbH for the PC Camera:)	
+Release 0.57.07
+	Add ioctl() private to set
+	qtable index
+	time_interval between frame acquisition
+	auto exposure on off spca561 spca504c zc030x chipsets
+	Add a time_interval in the interrupt handler, allow change of the frame
+	rate for each webcam between the available full frame rate to a slower
+	one.
+	Fix some old bugs in process context and the wait queue. VIDIOCSYNCHRO
+	should wait for the frame instead of the spca5xx general wait queue only
+	used by the read() method.
+	-DSPCA5XX_ENABLE_REGISTERPLAY can be used for all spca5xx based webcam 
+	becare this option is Dangerous you can break your chipset (allow
+	registers setting on the fly with sysfs !! 
+Release 0.57.06rc6
+	Improve sensor detection for the zc03xx chipset
+	Add quality index for the jpeg webcam
+	Set default Index to 2 for all zc030x 
+	Change initialize of qtable according the new index field
+	Change brightness contrast setting for the zc030x webcams
+	set autobrightness module param for the zc030x /spca561/Etoms webcam
+Release 0.57.06rc5
+	FIX Genius Look 312p initialize correctly Thanks Cristophe and all from Interireur.gouv.fr:)
+	FIX hv7131r sensor drift on frame rate Thanks Simon Morlat for testing (linphone) :)
+Release 0.57.06rc4
+	Add zx3xx routine for a sensor PB0330 or MI0330 8b <- dc
+	Reduce the FrameBuffer to two. Look like footprint decrease without loss of performance :)  
+Release 0.57.06rc3
+	Add Genius GF112 0x093a:0x2470 PAC207-BCA thanks ???? at land.ru.
+Release 0.57.06rc2
+	Add Mercury Cyberpix S550V 0x0733:0x3281 thanks Jross for testing :)
+Release 0.57.06rc1
+	Add decompression for the pac207 this a work of Bertrick Sikken
+	Thomas Kaiser and me :)
+	use with modprobe spca5xx compress=1
+Release 0.57.05
+	FIX compilation problem in 2.4.x thanks Sven Lindberg :)
+Release 0.57.04 final 2005:11:01
+Release 0.57.04rc6
+	FIX a small bug introduce by me in the sonix decompressor
+	update the readme
+Release 0.57.04rc5
+	FIX from Bretrik Stikken sonix decompressor
+	Thanks Thomas Kaiser pixart_preprocess now handle all pixels :)
+	remove old code for the SAA7113 not need
+	correct all sensor unknow with SENSOR_INTERNAL
+	move all spca50x i2c code in spca506.h as it is only used by this chips
+	remove autoexposure and the Bottom Half un need and crash the kernel
+	remove all un need parameters :
+	ccd, cams, osd, and so on
+Release 0.57.04rc4		
+	Add 0x093a:0x2460 Pac207 Qtec Webcam Thanks Gerard Klaver 
+	Add 0x093a:0x2471 Pac207 Genius Videocam GE111 Thanks Tomas Groth and Unknow from IRC channel:)
+	Add Vimicro 0x0ac8:0x303b Thanks Fionn Brehens and Will Crozier :)
+Release 0.57.04rc3
+	FIX Endpoint bug in the pixart Pac207 
+	Add control brightness pac207
+	Add control contrast pac207
+Release 0.57.04rc2
+	Add Pixart Pac207 0x093a:0x2468 This is a work of Thomas Kaiser :)	
+Release 0.57.04rc1
+	FIX compilation with kernel > 2.6.14 thanks Kel Modderman and all :)
+Release 0.57.03 2005/10/01
+	FIX PC Cam350 offset data wrong value
+	Add Creative Pccam350 0x041e:0x4012 thanks JULIANO CESAR CAMARGO for snoop and test:)
+0.57.03rc7
+	FIX bug in VIOCSPICT only change format if need
+	Remove a lock reduce latencies to serve the ioctl
+	Add Smile International 0x0497:0xc001 spca501c webcam Thanks Rex Tsai for
+	the patch :)
+0.57.03rc6
+	spca504a spca504b spca504c spca533 and spca536 go out
+	instead sp5xxfw2.h and sp5xxfw2.dat do the job
+	sp5xxgfw2 is tested with a pocket DVII spca533 a Gsmart mini2 spca504a a
+	aiptek 1.3 spca504a and Maxell 1.3 spca504b
+	I did not have a pccma600 to test spca504c and a spca536 webcam if
+	someone can test an report thanks:)
+	sp5xxfw2 is now set with the new camlib API look dummy_cam.h 
+	Add JVC GC-A50 spca504 fw2 0x04f1:0x1001 thanks  Tobias Wolf for testing
+	:)
+0.57.03rc5
+	Add Labtec Webcam Notebook 0x046d:0x08aa thanks Martin Weber for test
+	and patch :)
+	FIX a typo in zc03xx.h rapported by Gabriel Sere thanks :)
+0.57.03rc4
+	Add Logitech Notebook Deluxe Zc0302 0x046d:0x08a9 thanks Anthony B. Coates for testing:)
+	FIX the i2c routine for the sn9cxxx chips need a small delay Thanks Derzu for test and patch :)
+0.57.03rc3
+	FIX Bug with the new spca561 decompressor add new stream S561 instead of GBRG Etoms chips rework
+	Add Led feature for the sn9c101 sn9c102 chips
+0.57.03rc2	
+	FIX some typo for the 0x60fc Lic-300 Sensor should be set to HV7131R
+	spca50x->i2c_base and spca50x->i2c_ctrl_reg set with the good value for the Sonix chips
+	Add preliminary sn9c102+pas202 0x0c45:6028 BTC PC380 need gamma=5
+0.57.03rc1
+	Rewrite the bayer decoder with some usefull Macro :)
+	Add Fix a strange bug with UV in bayer decoder :(
+Release 0.57.02
+	FIX forget to set the zc305b sorry Otavio Salvadore
+Release 0.57.01
+0.57.01rc6
+	Add some gain to the MI0360 need to be adjusted 
+	FIX bug in the sonix_config() with jpeg and CIF size
+	The SN9C102P SN9C105 SN9C120 familly is know as BRIDGE SN9CXXX :)
+	and SN9C101 SN9C102 SN9C103 as BRIDGE SONIX
+	customid field now identify the chips
+0.57.01rc5
+	FIX VGA sn9c105 + MI0360
+	Add Polaroid Ion80 spca504b 0x0546:0x3191 thanks Michel Memeteau for
+	snoop and test
+0.57.01rc4
+	Add MI0360 sensor sn9c105 + MI0360 is now working in 320x240 full size 
+	did not work ATM
+0.57.01rc3
+	Add sonix sn9c120 HV7131R 0x0c45:0x613c 
+	Add sn9c120 MI0360 0x0c45:0x6130 preliminary not working
+	Add sn9c105 MI0360 0x0c45:0x60c0 "
+	Add sn9c105 HV7131R 0x0c45:0x60fc should work ?
+0.57.01rc2
+	Add sonix Sweex Tas5110 0x0c45:0x6005 thanks Gerard Klaver
+	Add sonix Lic-200 Hv7131r 0x0c45:602d thanks Leonardo R. Chrudina for snoop and
+	testing :)
+0.57.01rc1
+	Add spca561 decompressor from Andrzej Szombierski thanks Andrzej very good works :)
+	Add Mustek MDC4000 Spca533 0x055f:0x0630 thanks Gerard Delafond :)
+	Add Logitech Communicate STX zc030x 0x046d:0x08ad thanks Birger Koblitz
+	for patch and testing
+	Add Vimicro VC0305 0x0ac8:0x305b Thanks Otavio Salvador for feedback patch and testing :)
+Release 0.57.00
+Change in this release:
+0.57.00 final
+	Add 0x0458:0x7006 Genius Dsc 1.3 spca504B-P3 thanks Dmitriy Zasiadiko
+	Kharkiv (Ukraine) for patch and opening the cam with a screw driver :)
+0.57.00rc7
+	Rewrite the jpeg decoder
+	Each webcam have is own rgb table
+	jpeg decode now is per webcam 
+	jpeg quantization table is set on probe
+	Connect the Mars-Semi jpeg decoding
+	Rewrite gamma and RGB table per webcams
+0.57.00rc6
+	Add PRELIMINARY Mars-Semi Pcam works from Brad <bradlch@hotmail.com> :)
+	Bridge MR97311 Sensor MT9M001 jpeg camera 0x093a:0x050f
+	
+0.57.00rc5
+	reverse sn9c102 + ov7630 brightness until Menezes test :(
+	FIX interrupt_sleep_on() deprecated in 2.6.x
+	kernel lock policy rewrite brr :) 
+	add one tasklet per device for multi-webcams purpose
+	lot of code clean up
+	add exposure for the spca561 rev 012a
+	add a field chip_revision to the main structure spca50x
+0.57.00rc4
+	Add experimental brightness for the ov7630
+	Add experimental sonix sn9c102 ov7630 0x0c45:0x602c
+	Add experimental sonix sn9c101 ov7630 0x0c45:0x602e
+	thanks Carlos Eduardo Dantas de Menezes for snoop and testing :)
+0.57.00rc3
+	A lot of change in the spca561 lib allow contrast brightness
+	Add Logitec QC Notebook 0x046d:0x08ae Thanks Thomas Kaiser for the patch
+	Add Mustek WCam300AN 0x055f:0xd004 Thanks Leslie Katz for the INF file
+	:)
+	Add Labtec Webcam Plus 0x046d:0x092b thanks Andrei Soukharev for the feedback
+0.57.00rc2
+	*Switch the spca561 with new webcam API
+	Improve colors for the creative Vista 0x403b 
+	tested with Creative vista 0x403b Ic50c 0x0561 Genius V2 0x0561
+	Hope the Logitech Express Echl2 works too :)	
+	*Switch the Etoms with the new webcam API
+	correct return value
+	tested with Sangha Et61x151+Pas106 Generic+Tas5130c
+0.57.00rc1
+	*Switch the sonix with the new webcam API
+	Improve the sonix PAS106 frame rate is now upto 22 fp/s
+	Improve sonix TAS5130c Exposure
+	Add autobrightness autoexposure for the sonix chips in the todo list
+	test with Trust spaceCam120 SIF and shangha Tas5130c VGA	
+Release 0.56.03
+Changes in this release:
+0.56.03rc5
+	Many thanks for Thomas Kaiser for the Creative NX patch code test snoop :))
+	Connect the new functions in the core driver for the zc030x only as a
+	experimental test :)
+	Create spca5xx_restartMode()
+	Create spca5xx_setMode()
+	FIX a small bug in spca5xx_getDefaultMode 
+	Create spca5xx_setFrameDecoder()
+	Create spca5xx_initDecoder()
+	new kernel lock policy tested on an Dual Athlon2.2 M SMP box seem strong as
+	a rock :)
+0.56.03rc4
+	create spca5xx_getDefaultMode() set webcam default mode (working on
+	zc030x actually)
+	Modify spca50x_configure according that change
+0.56.03rc3
+	Add Creative NX usbid 0x041e:0x401c
+	Add Creative Instant 0x041e:0x4034
+	Add Creative Instant 0x041e:0x4035
+	FIX qtable index for some zc030x webcam (should make Dr.beco and Ulisses
+	Happy)
+	Change Webcam API experiment on the zc030x chips
+	Create a Dummy_cam.h the minimal set of webcam functions
+	re-visit kernel locking policy :)
+	remove all locks in_interrupt() context (brr historical design need some
+	toilet).
+	remove deferred work by timer on close
+	remove PENDING DEALLOC 
+	remove timer 	
+0.56.03rc2
+	Improve stability 
+	Add exposure for the sn9c102p coupled with brightness
+	rework disconnect open close FIX Ooops or deadlock on disconnect
+	remove not need timer function on disconnect.
+	open should quit with an error now if somethings goes wrong
+	tested with Suse 2.4.21-199 athlon 
+		Vanilla 2.4.25
+		Vanilla 2.6.9
+	Add a new function spca5xx_kill_isoc in case submit fail on open
+	
+Release 0.56.03rc1
+	Add Concord 3045  0x0733:0x3261 spca536a Thanks Adam Majewski for feedback and testing :)
+	Add Mercury 2.1Mp 0x0733:0x1314 spca533a Thanks Pawel Kotynia <thepako@wp.pl> for the patch :)
+Release 0.56.02
+Changes in this release:
+24/04/2005:
+	Add Bridge Sonix sn9c102p jpeg Experimental
+	Add Sonix 0x0c45:0x607c WC311P jpeg Vga sensor Hv7131R
+	Add Logitech QC chat 0x046d:0x092c thanks Karl Jarrod Hyder for feedback
+	and testing:)
+	FIX Endian problem for ppc and a spca561a chips
+	FIX from Ulisses De Penna Kernel problem with 2.4.23 :)
+	
+Release 0.56.01
+Changes in this release:
+19/04/2005:
+	Add Optimedia UsbId 0x06be:0x0800 spca500a
+	Add Toptro Industrial UsbId 0x2899:0x012c spca500a
+	Add Agfa ephoto CL20 UsbId 0x06bd:0x0404 spca500a
+15/04/2005:
+	Change version with three part major.minor.edit need for Debian packet
+	all byte change in the code should increment edit by one :)
+	Fix Bug in packet size for buggy chips or Suse kernel Many thanks
+	Antoine Callemeyn for all test and helping:)
+14/04/2005:
+	Add Generic 0x04fc:0x7333 as PalmPix DC85 thanks Erick Izquierdo de la
+	Cruz for test snoop :)
+09/04/2005:
+	Merge of the Et61xx51 driver in spca5xx works for the Et61x151 and
+	Et61x251 and TAS5130c. 
+08/04/2005:
+	Seem Benq 3410 is a spca533 with Firmware 
+	[spca50x_GetFirmware:446] FirmWare : 24 10 0 5 4 
+	Thanks Ricardo Sanz for test :)
+07/04/2005:
+	module can compile now for the old 2.4.x series 
+	tested on 2.4.10 as a lot of embedded system use old series:)
+	restore the le16_to_cpu() for kernel up to 2.6.11
+	usb_control_msg set TimeOut in ms feature kernel 2.6.12
+05/04/2005:
+	FIX a bug in EXPERIMENTAL for the spca501 thanks Eric Lunchpail for the patch :)
+	If people need more with the spca501 or the spca508 i did not own webcams with these chips
+	and cannot buy all webcams supported by spca5xx so MAKE a DONATION !!
+30/03/2005:
+	only for the spca561a rev 072a:
+	As the Sun in Las Vegas is a strong one :) improve the autobrightness to
+	deal with time-exposure and sensor gain Thanks Chris Cothrun and
+	http://clonepc.biz for testing :)
+	testing
+	FIX a bug the auto brightness now work in read mode instead mmap
+	the small led now go off on close :)
+28/03/2005:
+	Set an autobrightness feature for the spca561chips rev 0x072a did not
+	work with the rev 0x012a found in the creative Vista 0x403b for others
+	sorry i did not own those webcams .
+	Add Typhon Webshoot II 0x10fd:0x0128 zc030x Tas5130c thanks Alex Keller for the feedback
+27/03/2005:
+	Add Labtec Webcam Elch 2 spca561 Usbid 0x046d:0x0929 thanks Jason
+	Griffiths for feedback and testing :)
+19/03/2005:
+	revert the le16_to_cpu() as Tomas (tgc) Ken Huang report code broken
+	with ppc and Arm processor ?
+15/03/2005:
+	version:56.03.15:
+	Add MicroInnovation 0x0461:0x0a00 zc030x chips
+	Add Aiptek PocketCam 4 M 0x08ca:0x2028 spca533
+	Add Aiptek Pocket DV5100 0x08ca:0x2042 spca536
+	Add Aiptek Pocket DV5300 0x08ca:0x2060 spca536
+	Add Sunplus Generic 0x04fc:0x5360 spca536
+	Add Logitech Quick Cam IM +sound 0x046d:0x08a1
+	Add Logitech QuickCam Chat 0x046d:0x08a3
+	Add Logitech QuicCam IM 0x046d:0x08B9 
+13/03/2005:
+	Add Logitech QC IM 0x046d:0x08a0 hdcs2020 thanks Gaby_gaim :)
+02/03/2005
+	version:56.03.02:
+	FIX mirror x axis for the HV7131B :)
+	endian FIX le16_to_cpu() a kernel people feature:)
+	
+01/03/2005:
+	version:56.03.01:
+	FIX bug in saturation yuv420p with the LG-Lic100 zc0301P camera Thanks Ulisses Penna 
+	with your camera that is more easy :) 
+	Add Polaroid PDC3070 Usbid 0x0546:0x3155 spca533a Thanks Mickael for the
+	Patch :)
+	Memory management change 2.6.11 kernel Thanks Brice Goglin and Laurent Riffard for the patch :)
+	Add for test Logitech Quickcam Express Etch2 0x046d:0x0928 Thanks Rick Sewill for
+	testing :)
+	Add for test Logitech Quickam Notebooks 0x046d:0x092a
+	FIX spca5xx_get_depth() according V4L spec driver should answer -EINVAL
+	if a palette is not available only jpeg camera can access the jpeg
+	palette now
+	ALLOW user to change picture parameters trought sysfs as root
+	echo "1" > /sys/module/spca50x/gamma
+	change the gamma value to 1 (for others parameters please read the
+	README)
+	read a parameter
+	cat /sys/module/spca50x/gamma	
+	you need to stop the camera then restart to take effect :)
+	improve tasklet ask 
+	Change the module name to spca5xx to avoid confusion with the now historical spca50x 
+	
+06/02/2005:
+	version:56.02.06
+	Set up version to release.mounth.day
+	Set up tv8532_preprocess to remove miss align pixels sequence
+	move_data did not cut any thing and transmit the whole frame to the
+	decoder with line EOL and packet header
+	Set up Brightness for tv8532 chips
+	Allow yuv420p to use gamma and pictures setting in bayer decode.
+	Good results are get with 
+	modprobe spca50x GRed=217 GBlue=300 GGreen=224 gamma=4
+	Remove Historic BUG in spca50x :)confuse about && and & Thanks
+	Alexander :)
+	FIX bug in Icm105a when restart in large Thanks Chris Cothrun with your 
+	Icm105a webcamera that is more easy:)
+29/01/2005:
+	Remove big array for the tv8532 and write some usefuff functions instead
+	Fix spca504a when firmware is not get, probe return now -ENODEV :)
+	
+26/01/2005:
+	version:5626
+	Modify spca50x core to accept iso stream for the tv8532
+	Allow tv8532 to accept 176x144 in hardware and 320x240 software
+	
+19/01/2005:
+	Add Typhon Webshoot II 0x10fd:0x8050 Thanks Salvador for the patch :)
+16/01/2005:
+	version 0.5616
+	Creative Vista now start each times :)
+	352x288 9fp/s 320x240 9fp/s 176x144 16fp/s 160x120 25 fp/s
+	spca561 code give now better results Genius VideoCam V2
+	352x288 9fp/s 320x240 9fp/s 176x144 17fp/s 160x120 27fp/s
+	For some strange reason Vista contrast did not work ATM :(
+	Know Vista problem a little bit too dark :(
+15/01/2005:
+Big changes in the structure of the module needed by a strong migration 
+all cameras code should goes temporary in a .h file and offer a single interface.
+	Add Creative Vista 0x041e:0x403b experimental work in 352x288 9fp/s:)
+	Know problem very very dark, sometimes need a replug to restart :(
+13/01/2005
+	Find a new hardware setting for the HDCS2020, Many thanks Ulisses Penna
+	for snoop and testing :)
+11/01/2005
+	FIX Bug in the jpeg422 kernel decoder :)
+10/01/2005:
+	FIX a bug in the Cx11646 stop isoc :)
+09/01/2005:
+	version 0.569
+	Add colors setting for the cx11646
+	Clean the isoc handler ( lot of stuff from spca50x without any use )
+	Preliminary code Creative Vista 0x403b (ATM did not work:) )
+	Added support for 2 Veo Stingray: 0x0545:0x8333 and 0x0545:0x808b, the latter
+	one has not been confirmed, and is only there for testing purpose!(Tomas works)
+07/01/2005:
+	Add contrast brightness for the Cx11646 chips
+	Fix bug when frame asked and get are different
+	Add Sensor CS2102  for the zc030x Thanks Alvaro Salmador for a lot of patchs and test :)
+	Improve Initialize of the tv8532 chips
+01/01/2005:
+Happy New Year :)
+	Add Creative Live! zc0301 chips UsbId 0x041e:0x4036 Thanks Hans Petter Janson :)
+	Add Mercury Digital Pro 3.1Mp UsbId 0x0733:0x2221 Thanks Scott Cameron :)
+	Add Mustek Wcam300a zc0302 UsbId 0x055f:0xc005 Test are needed  
+	
+31/12/2004
+	Add Gsmart 300 UsbId 0x055f:0xc200 Thanks Stas Bevc for the pacth and
+	testing :)
+	
+25/12/2004:
+Add the work of Tomas Groth for the tv8532 chips Thanks tgc for the patch :)
+Changelog of the Tomas branch follow:
+	*/25122004:
+	*/Re-sync with spca5xx to fix support for > 2.6.5 kernels.
+
+	*/19122004:
+	*/Sync with spca5xx to make it compile with gcc 3.4.3 and to make it work with
+	*/linux 2.6.10.
+	*/Added patch by Sam Engstrom for better picture quality.
+
+	*/23062004:
+	*/It turns out that spca532==icm532, and there actually exist a
+	*/public availble datasheet for that chip :D
+	*/Also there exist a sourceforge project for this chips 
+	*/(icm532.sf.net), which supports a lot of cams, which i can gladly
+	*/here: Biolux 654 microscope, Ezonics EZCam USB II (uvt8532),
+	*/Ezonics EZCam USB III, TerraCam USB, Stick Webcam, Mini WebCam,
+	*/Tucan PenCam, Che-ez! Webbie, SNAKE EYE SI-8480/8481, PC CAM CP03,
+	*/WEB Camera PBC0006, Clipcam.
+	*/I hope that i can help the icm532 team and the other way around too.
+
+
+	*/20062004:
+	*/Re-sync with spca5xx experimental driver from mxhaard.free.fr so
+	*/that it will work with linux 2.6.7 and above.
+
+
+	*/030622004:
+	*/Re-sync with spca5xx experimental driver from mxhaard.free.fr
+	*/Fixed a bug which makes gnomemeeting think the webcam can do 
+	*/different resolutions, wich it ATM can't.
+
+	*/25052004:
+	*/Re-sync with spca5xx experimental driver from mxhaard.free.fr
+	*/Made the colors better by switching the bayer-color setup.
+Release 0.55
+Changes in this release:
+------------
+24/12/2004:
+Add bridge cx11646 should be the Creative Notebook PD1170 chips ? Thanks Paolo
+Gai for sending me a Camera to test :)
+Add support for the bridge and sensor cxlib.h cx11646.h
+Add restart marker handle in the jpeg4.2.2 decoder for the cx11646 camera
+Add JPGC type for that stream
+FIX problem with old kernel 2.6.4 thanks Tomas (tgc) 
+Add Sunplus 0x08ca:0x2022 Spca533a Aiptek Slim3200 Thanks Daniel Gollub :)
+
+Release 0.54
+------------
+Changes in this release:
+12/12/2004:
+Add module_param() feature Thanks Reza (timebomb) and me (why not) :)
+plp can now set some parameters as root trought sysfs
+echo "2" > /sysfs/module/spca50x/debug
+then read 
+cat /sysfs/module/spca50x/debug
+you need to stop the camera then restart to take effect :)
+FIX an Historical spca50x Bug Thanks Alvaro for the patch :)
+10/12/2004:
+FIX stack problem with Fedora Kernel with a little stack
+Remove some field not used in the struct frame
+Remove static variable not used
+FIX V4l read method only set the real amount of available data
+Make the code reentrant when needed
+Lot of cleanup
+Release 0.53
+------------
+Changes in this release:
+08/12/2004:
+Add sensor hv7131c for the z-star chips thanks Cristophe Zaragoza for testing :)
+07/12/2004: 
+FIX bug on the ClickSmart310 Gnomemeeting should work now:)
+06/12/2004:
+Implement generic Z-star Vimicro 0x0ac8:0x0302 from Chris Cothrun snoop should
+be an ICM105A Thanks Chris for testing :)
+04/12/2004:
+Implemente Z-star~vimicro Sensor detection Tested with PB0330 ICM105A HDCS2020 HV7131B TAS5130C
+HV7131C is untested.For Others contact the Autor mxhaard@free.fr 
+01/12/2004:
+Add new spca536 camera Kowa Bs-888e Usbid 0x055f:0xc211 Thanks (nx5)
+Allow 640x480 jpeg for the spca536 chips 
+30/11/2004
+Sonix decompressor by B.S. is implemented in spcadecoder many Thanks for the
+great job of B.S.
+Sonix cam now stream in compressed mode camera type is set to SN9C
+Update Sonix setting according new frame rate VGA 8~10fp/s CIF 15~18 fp/s QCIF
+25~30 fp/s tested with Tas5130 and Pas106 Sensors
+Fix problem with wMaxPacketSize on zc030x chips wMaxPacketSize is get now from
+the usb struct enumeration
+Find some hardware problem with Via VT82C586 Usb controller chips and the Z-Star
+Vimicro WebCam :( Used an PCI/USB Card with a NEC chips solve the problem :(
+21/11/2004
+Fix problem on zc030x bridge close (Labtec Pro should stop the light now )
+Fix unlink urb or kill urb on close
+Add contrast and brightness for the zc030x chips
+Add small udelay between initialize command
+18/11/2004
+Add for test Creative Nx Pro 2 usbid 0x041e:0x403a Thanks Leonardo Lanzi for
+testing:)
+16/11/2004
+Add Digitrex 2110 usbid 0x04fc:0x5330 Thanks Eric Sanden for testing
+Add Gsmart D30 usbid 0x055f:0xc540 spca533 weird resolution thanks Andrea
+Musuruane
+Add for test only Wasam  0x0ac8:0x301b Thanks Gerard Klaver for snoop and test 
+
+Release 0.52
+------------
+07/11/2004
+Add Sonix webcam 0x0c45:0x6029 this is a work from Stefano Mozzi
+Add Sonix 0x0c45:6009 and 0x0c45:600d Pas106 Sensor
+Make brightness and contrast working for the Sonix Camera
+06/11/2004
+use spca50x->present in case of camera disconnect
+change in usb disconnect to wait on close for release the ressource in case
+camera is opened
+FIXME historical reason make the release of ressources hugly call back timer ..
+that need to rewrite that stuff, disconnect should works but spca50x remain busy
+:(
+Remove spin_lock seem not need to protect usb_kill_urb()
+30/10/2004
+Add Creative Nx Pro zc0301 bridge hv7131b sensor UsbId: 0x041e:0x401e
+Add Quantization table for the zc030x bridge Allow init_jpeg_decoder to
+initialize thz good table
+Some Clean on Labtec Pro Camera code maybe more stable :)
+27/10/2004
+FIX inline code in spcadecoder.c gcc3.4.2 should be happy now changed by Tomas Groth Thanks :)
+22/10/2004
+Add usb_kill_urb() for the 2.6.9 kernel
+Get best performance for the labtec Pro in large.
+FIX a bug on open isoc urb come before spca50x->user is set for some camera.
+14/10/2004
+Add New !! Genius VideoCam Express V2 0x0458:0x700f Zc0301P bridge Tas5130c
+Sensor Thanks Flavio Pescuma for patch and testing :)
+12/10/2004
+Creative Mobile works now !! 
+08/10/2004
+Add support for the Labtec Pro 0x046d:0x08a2 Thanks "Ellisys" for the 
+usb tracker 110 :)
+Fix Makefile when the install dir didn't exist. Thanks Marko Djukic :) 
+change version number for the spca5xx spca5xx-08102004 become spca5xx-20041008
+01/10/2004
+Add support for my Creative Webcam Notebook PD1171 0x041e:0x401f 
+Preleminary support for Creative Mobile PD1090 0x041e:0x4017 (thanks Laurent
+Cheylus for snoop and testing)
+Add Bridge ZC3XX for those zc301 zc302 chips
+Add support for stream JPGH (jpeg 4.2.2) in spcadecoder
+camera JPEG 4.1.1 and 4.2.2 can use VIDEO_PALETTE_JPEG now
+Add alternate resolution CIF and QCIF for those VGA SIF chips
+
+Release 0.51
+------------
+10/09/2004
+FIX a bug in gsmart mini2 maybe 3 initialize (one line whas missed during 2.6.x
+port)(mxhaard)
+Add preliminary support Creative Vista 0x041e:0x4018 thanks Nuno Tavares for the
+patch (Nuno Tavares && mxhaard)
+Philips K007 spca504a FW 2 1 1 5 2 is supported as the Terratec thanks Marcel
+Van Nies for the feedback
+Add Polaroid PDC2030 spca504b 0x0546:0x3273 thanks Stilgar for the feedback  
+30/08/2004 (mxhaard)
+Supp Dolphin camera ( Same as AiptekPocketCam 3m 0x2010)
+Add new palette VIDEO_PALETTE_JPEG application can ask true jpeg now .
+VIDEO_PALETTE_RAW_JPEG is only here for compatibility but need to be rename as
+VIDEO_PALETTE_RAW_DATA 
+28/08/2004 (Tomasz Zablocki && mxhaard ) 
+Add support for the Creative NX ultra This is the work of  Tomasz Zablocki (patch test ..) Thanks Tomasz :)
+Thanks to Semi Malinem for very good snoops with the NX ultra:)
+Usbid 0x041e:0x401d should be the same with 0x041e:0x4021 ?
+Merge all command with the spca505 code need to be tested 
+Add enigma dream Epsilon1.3 spca533 
+Add Dolphin PowerCam2M 0x08ca:0x2011 spca533 Thanks Simon Naunton for the patch :)
+Add AiptekPocketCam2M 0x08ca:0x2016 spca504b Thanks Jali .. for the patch :)
+Add 3DemonUsbGrabber 0x0734:0x043b spca506+SAA7113 aka PV321c Thanks Ricardo Ribalda Delgato for the patch :)
+23/08/2004(mxhaard)
+Add contrast and brightness feature for the spca561 
+no need of force_rgb for the spca561 and sonix chips 
+change setting for sonix contrast  
+17/08/2004(mxhaard)
+Sonix 0x0c45:0x6025 works in 640x480 now. I get with spcaview:
+2fp/s 640x480 ; 10 fp/s 320x240 ; 15 fp/s 160x120
+If someone can help i need the  Tasc sensor documentation tas5130d1b. All the result for the sonix chips are get with errors and try again :)
+Add contrast setting
+11/08/2004(mxhaard)
+FIX the bug in the Iso frame detector !! ( a missing case :( )
+10/08/2004(mxhaard)
+Damned a bug in the Iso machine with framestart with spca561 spca501 that should
+be corrected
+10/07/2004(mxhaard)
+Add support for my  sonix sn9c102 Usbid 0x0c45:0x6025 Xcam Shanga tested under Kernel 2.4.26 and 2.6.7
+Work at 320x240 and 160x120 with brightness command. ATM 640x480 did not work 
+04/07/2004 (mxhaard)
+Add DigitalDream Enigma 1.3 Usbid: 0x05da:0x1018 spca504b  Thanks Dave Truman patch and testing :)
+03/07/2004
+Add ClickSmart820 Usbid 0x046d:0x0905 spca533 FW 2 00 00 05 04 (Experimental) Thanks Paul Odin for testing and snoop :)
+Change max resolution for the MegapixV' and clicksmart820
+16/06/2004
+Change alternatesetting regime to cur_altsetting as need with kernel 2.6.7
+Add macro to use the new delay helper safe instead of wait_ms()
+02/06/2004
+Preliminary work on spca536 chips
+Aiptek DV3500 0x08ca 0x2024
+Mustek DV4000 0x055f 0xc360
+24/05/2004
+Add Terratec 2 move 1.3 Usbid 0x04fc:0x504a that camera is an spca504b :) so add a firmware test to choice the good one.
+20/05/2004
+FIX problem with 2.6.x kernel as usb_set_interface break the usb_submit_urb for
+the Clicksmart310 spca500 camera.That way the camera should start in any case.
+Add an info for all the spca500 chip so we can get what sensor is available.
+17/05/2004
+FIX Oops with spca500_synch310() on open.Seem the alternate setting change need for the clicksmart 310 cause the problem when
+init_source() initialize the cam  
+16/05/2004
+Add a Bridge list 
+VIDIOCGCAP return in field name the camera name know in Clist[]
+VIDIOCGCHAN return in field name the bridge know in bridge list
+These change allow userspace apps to probe the spca5xx camera.
+spca500 add a request to find what chip sensor is available the i2c chip address should appears in the syslog output
+Add Clicksmart310 UsbId 0x046d:0x0900 spca500 and HDCS1020 from Agilent . this camera work in 352x288 and sometimes 176x144
+If the chips did not start close or Kill video grabber apps replug the cam then restart that should work.
+As i can see with my Ellysis usb analyser windoze driver on probe start a process to ping the cam every 300ms .
+20/04/2004
+FIX bug in wakeup that corrupt frame data on smp box
+Sysfs update the stream_id and add picture parameters
+19/04/24
+Add Mustek Gsmart Mini Usbid 0x055f:0xc220 Spca500c thanks Ricardo Ferreira
+For snoop and testing
+Add Jenoptik JDC21LCD Usbid 0x0733:0x2211 Spca533a thanks Ronan Waide for the
+patch and testing 
+16/04/2004
+Add a struct pictparam to the decoder. all picture setting is carried to the decoder that way
+Initial data are set by module parameters (gamma, force_rgb, OffsetRed, OffsetBlue, OffsetGreen, Gain Red, Gain Blue, and Gain Green)
+Those parameters will change soon trought sysfs feature :)
+Spcatools will be helping to choose the good setting 
+ATM rgb 16 rgb 24 and rgb 32 are implemented for all cameras
+Add Instand VCD grabber spca506 and SAA7113 Usbid 0x06e1:0xa190 
+14/04/2004
+Rewrite spca506 SAA7113 code for the usb grabber, WORKS!! fine now :) 
+Allow size to change between 160x120 to 640x480 640x480 need to be interpolate from
+640x240 as the windoze driver do :)
+Allow norme and channel in the VIDIOCSCHAN ioctl norme should be :
+VIDEO_MODE_PAL, VIDEO_MODE_SECAM, VIDEO_MODE_NTSC NTSC need to be tested i don't own any camera with that feature 
+Channel should be [0..3] for CBVS composite input [6..9] for S-VIDEO input
+08/04/2004
+Add autobrightness for the spca561 as suggest Saltiel Kenny Thanks :)
+Change Makefile according autobrightness define
+07/04/2004
+Add Flycam usb100 Usbid 0x10fd:0x7e50
+26/03/2004
+FIX bug on wrong pipe handle in 2.4.x -ENXIO message
+we use urb->next so remove the usb_submit_usb() in the interrupt handler
+Clean up Makefile
+24/03/2004
+Add Logitech QuickCam Traveler USB id 0x046d 0x0890
+Change in spca50x_probe() no need to test vendorClass and subClass
+Test probe only on Interface 0
+21/03/2004
+Change makefile according advise by Luca Risolia for modules versions set to Yes	
+14/03/2004
+FIX bug in Control Buffer allocation need GFP_KERNEL
+init_jpeg_decoder is now on open if necessary
+Add Creative PCCam750 Usb id 0x041e 0x4013
+Add Maxell PM3        Usb id 0x060b 0xa001
+Add Benq DC1016       Usb id 0x04a5 0x300c
+Add Benq DC3410       Usb id 0x04a5 0x300a
+Add Micro Innovation  Usb id 0x0461 0x0815
+Change  spcaCameraStart();
+	spcaCameraStop();
+12/03/2004
+FIX compilation problem under kernel 2.4.24
+01/03/2004
+FIX a small bug in bayer decode YUV or YVU tha's the question
+28/02/2004
+change down(&spca50x->buf_lock) to down_trylock(&spca50x->buf_lock);
+Thanks Brian Perkins for the advise
+FIX bug in bayer decoder 
+Thanks Jakub Krajcovic for the spca561 raw data from spcaview -v
+FIX bug in crop feature with no jpeg camera 
+Thanks Peter Cook for the spca501 raw data from spcaview -v
+FIX force_rgb for VIDEO_PALETTE_RGB565
+Add Mustek DV3000  spca533  UsbId 0x055f:0xc440 Thanks Arne Georg Gledish
+Add HamaSightcam 2 spca508  UsbId 0x0af9:0x0011 Thanks Tomas Groth (Tgc)
+Add Benq DC1300    spca504b UsbId 0x04a5:0x3003 Thanks Mick Hellstrom
+22/02/2004
+Merge 2.4.x and 2.6.x change
+08/02/2004
+Port the change for 2.6.x Kernel thanks Reza Jelveh  
+Split the code in spcaCompat for v4l layer
+rewrite the Makefile according all changes
+28/01/2004
+ClickSmart 510 have 3 interfaces FIX the probe function to support that feature
+FIX the autodetect of cam, UsbId 0x0000 0x0000 is set at the end of the list
+24/01/2004
+Add ClickSmart 510 Experimental Untested Usbid 0x046d:0x0901
+Allow Spca505 to work under Gnomemeeting
+Add Spca505 resolution 320x240 
+07/01/2003
+Add Benq DC1500 spca533 need test from Isabel (spain)Usbid 0x04a5:0x3008
+Add Logitech Cliksmart 420 spca504 FW near PCCAM 600 Usbid 0x046d:0x0960
+Thanks Bummerlord for the Patch 
+28/12/2003
+Add yuv420p to the bayer_decode() 
+Also block the drop frame feature for spca501 testing in 640x480
+27/12/2003
+Add bayer_decode() for GBRG spca561 camera RGB16 RGB24 RGB 32 is allowed 
+26/12/2003
+Change spca50x_smallest_index to avoid pipe size according width and height
+Add on open default palette to RGB24 allow gqcam to work fine in all case :)
+Add spca50x->minwidth and spca50x->minheight Configure sensor take care of min too
+25/12/2003
+Add yuyv yyuv to yuv_decode
+Add RGGB Bayer type for the spca501 cam in native stream format
+Prototype bayer_decode() for those cams
+Add spca5xx_gamma.h allow 6 gamma tables to correct cams stream
+A static int gCor select the Table for all the cams in rgb mode
+value 0 to 6 is allowed 0->2.2, 1->1.7, 2->1.45, 3->1, 4->0.6896, 5->0.5882, 6->0.4545
+Big Cut in the interrupt Handler all cam process the Tasklet:)
+Change read function according that change
+Configure sensor now take care of the maxheight and maxwidth of each cam
+send to Tomas Groth (tgc) for spca508 testing.
+send to Linus McCabe (McCabe) for spca501 testing.
+16/12/2003
+Fix the rgb for spca508 thanks Tomas (tgc) for the LastTestOfTheNight :)
+15/12/2003 
+yuv420p ok with spca508 need more test on rgb
+14/12/2003
+Add yuvy_decode() for video_palette rgb 16 24 32 and yuv420p with cropping feature for the spca508 
+that need tgc test
+12/12/2003
+Add enum type for native cam stream jpeg yuvy yyuv yuyv grey
+Add field cameratype in spca50x_frame to get the good outpout method for that cam
+Add Pure Digital Dakota UsbId 0x04fc:0xffff camera Thanks Thomas Steffen for the patch
+30/11/2003
+Add the same init code for the Intel Cam CS630 spca500a
+Thanks Rob Roschewsk for testing
+29/11/2003
+The spca500 from FamilyCam and pocket DV also i think clicksmart510 need to initialise with the size set to 640x480 and the corresponding
+usb pipe set to 1023.Unfortunately our driver start with the smallest one.I have made a change to allow these cams to work with all size
+640x480 320x240 and 176x144 the large size auto init without unplug and replug the cam the others need that:(
+Need more test for the pocketDV owner.
+23/11/2003
+Tempory FIX for Trust familycam@300 work on 640x480 and 320x240 need to remove the cable between every
+usage.The frame rate is function of light exposure between 4fps for dark to 14fps in daylight.Thanks for Denis Pitzalis
+who give me a cam for testing
+16/11/2003
+Remove the vfree a line 1094 seem to be a bug in case of camera disconnect.Dealloc do the job too ?
+FIX bug with the Suse Kernel on close function
+14/11/2003
+schedule a outpict tasklet in the interrupt handler we work fine now at all resolutions all palettes all sizes:)
+For a (small computer < Pentium or athlon) please change  the active Makefile to Makefile.i386 Thanks Stephane and Marek for Testing.
+11/11/2003
+All the crop feature are now implemented and work fine for the spca504a and spca504b camera
+the spca533a work fine in 320x240 194x144 176x144 the others want the multiply and is not implemented ATM
+I hope this code have not break the others cam.If you got problem or working please feedback to mxhaard@magic.fr
+The hint message have move to "SPCA5XX Usb Camera" to allow all the palette working on gnomemeeting.
+Thanks to Damien Sandras and Fabrice (Gnomemeeting Team) for help and testing the YUV420P feature.
+A preliminary code to drop frame is also implemented this drop occurs when the userspace ask for RGB
+in full size 640x480 like "gqcam".
+(That is not really a good idea, we want 18.43Mb/s to push a whole frame in RGB24 and the kernel didn't like that:) )
+a better idea is to use yuv420p with spcaview that need only 9.21 Mb/s with the same quality.
+IMHO the decoder to RGB feature didn't have a place in a Linux kernel:)
+This module need a good processor to work fine and is optimize for i686 familly ( PIV and Athlon)
+07/11/2003
+Start to implement the output feature for sif qsif cif qcif vga qpal
+Encode the struct spca5xx_ext_mode to allow a hardware width and heigth
+and a software methode the lower nibble give the code for hardware the height
+give the method 0-> nothing 1-> cropping 2-> divide 4-> multiply
+value1 give a X value and value2 give the Y.
+cropping method
+each X or Y value is used for a macroblock 16x16 pixels if X is not odd
+then the first crop begin at the left is more shorter (1) than the other
+each crop is perform in center method.
+divide
+divide is a crop pixel on the surface and is perform in X width and Y height
+multiply
+add a new pixel every X in the width axis (need for the spca533a)
+02/11/2003
+FIX a bug in spca50x_read function producer to comsumer if the comsumer ask n bytes the producer give n bytes.
+That fix the read function with spcaview in yuv420p and rawjpeg data
+29/10/2003
+Add VIDEO_PALETTE_RGB565 for the rawjpeg camera
+21/10/2003
+Expand the macro of IDCT to remove a lot of exchange perform IMULT with long
+Start to implement crop feature for rawjpeg cam this will need for all the resolutions
+20/10/2003
+Test the idct and profile to get best performance now work best with full size in real times 16fps in my Athlon
+2.2Ghz
+15/10/2003
+rewrite the rgb decoder for 24 and 32 bits; you can change the color space in the code uncomment the relevant
+line in jpegdecoder.c
+initcol() is not need because break the yuv colors space.
+14/10/2003
+some cleanup rewrite the main loop of jpegdecode
+seem the huffman/idct in large with a good light take about 3ms
+13/10/2003
+rearrange the jpegdecode function look at the UV plan and remove the rescale when
+YUVP is asked ( work with large resolution in low light, need optimisations)
+11/10/2003
+Implement YUV420P for the spca500 spca504a spca504b spca533a in libjpeg decoder
+unlock VIDEO_PALETTE_YUV420P in spca50x for those chips (2628)
+01/10/2003
+Add Code from snoop for the mysterious cam 0x0000 0x0000
+27/09/2003
+Make the code in accord with CVS TREE
+Try the mysterious cam from Ori Usbid 0x0000 0x0000
+Code seem like the Arowana
+14/09/2003
+Add Code for the Aiptek PocketDV UsbId 0x08ca:0x0103 For testing Marek Blasko
+31/08/2003
+Add Code for Megapix V4 for testing Snoopy file and test from Jï¿½g Bï¿½nke
+30/08/2003
+Add Mustek mdc5500z Thanks Piotr Pawlow for patch
+23/08/2003
+Fix Aiptek 1.3 drop packets
+Works 640x480 and 320x240 Thanks Fransico Ramiro Pereira,Scott Barnes and Gregor Hoffleit.
+Make own procedure for Aiptek1.3
+12/08/2003
+Add Code for Mustek Gsmart LCD3 Snoopy file and test from Piotr Pawlow Thanks
+Works 320x240 and 464x352 Thanks Piotr
+6/08/2003
+Seem the code found on Macam project work for the gsmart mini not for Aiptek
+Fix Aiptek 1.3 command loop
+4/08/2003
+Add: Aiptek PenCam SD 2 0x08ca 0x2018 thanks Wolfang Samsinger.
+Add: Aiptek mini PenCam 1.3 Mega
+Help with the code found on Macam project (Mac OSX)
+
+* Temporary fixes for the Intel Pocket PC Camera and the DSC-350. Both
+  cameras are spca500a based, and require a qtable to be defined. The
+  temporary fix makes these two cameras use the Creative PC-CAM 300 qtable,
+  but ideally, they would use the same qtable as the windows driver
+  (polesworth).
+* Support for spca504 based cams with a firmware version 2 (spca504b) (mxhaard).
+* Conditionally follow memory management API changes backported to 2.4.20 
+  in redhat 9 (Chris Parker <chris.parker@marinerhealthcare.com>).
+* Imported Creative PC-CAM 600 patches from <http://www.galeon.com/scartwb/>
+  by <scar_t_@hotmail.com>, and tidied them up (polesworth).
+* Ratified spca504 code to use the same Q-table support code as spca500,
+  and moved all Q-tables into their own header file (polesworth).
+* Fix for WOLT kernel. pte_offset changed to pte_offset_kernel (polesworth).
+* Fix for a link error. The option '--relocateable' doesn't exist in all
+  versions of ld. Instead, use '-r' which should work on all platforms
+  (pancake <pancake@phreaker.net>).
+* Support for the Hama USB Sightcam 100 (tgc).
+* Added missing entries for Aiptek MegaCam (polesworth).
+* Support for the Arowana 300k CMOS Camera (Daniele Gozzi - codeatnight).
+* Makefile cleanups (Anders Kaseorg - anders1).
+* Added support for (mxhaard):
+  - Aiptek PocketDVII 1.3;
+  - Aiptek Pencam SD 2M;
+  - Mustek MDC5500Z;
+  - Megapix V4;
+  - Aiptek PocketDV;
+  - Mystery Camera (from Ori).
+* Cleaned up internal camera id allocation, including removal of unnecessary
+  checks against USB vendor/device id (polesworth).
+* Various tidying up - mainly white space changes (polesworth).
+* Merged in patch #802598 (SPCA561 alpha support), which provides support
+  for the Genius VideoCAM Express V2 (spca561a) (enjolras).
+* Reformatting changes, mainly in spca50x.h (polesworth).
+
+Release 0.30
+
+------------
+This release coordinated by Miah Gregory (polesworth) and Till Adam (tillsan).
+
+Binary and source packages available for this release.
+
+Changes in this release:
+* Fixes for compilation against 2.4.20 kernels (polesworth).
+* Couple of fixups for gcc 3.2 pedantics (polesworth).
+* Fixed destroy proc debug code, which used an uninitialised variable 'name'.
+  Now the variable is displayed after it has been initialised (Andrea Mennucc).
+* Added support for spca504 based cameras (tillsan, feber).
+* Added support for spca500 based cameras (polesworth).
+* As part of the spca500/spca504 support, added jpeg decompression code
+  (feber, polesworth, tillsan).
+* Increased MAX_FRAME_SIZE to allow 32 bit V4L modes (tillsan).
+* Changed default debug level to 0 (polesworth).
+* Added raw proc entry support - useful for debugging (polesworth).
+* Added support for:
+  - Mustek gSmart mini 2;
+  - Mustek gSmart mini 3;
+  - Creative PC-CAM 300;
+  - D-Link DSC-350;
+  - Creative PC-CAM 600;
+  - Intel Pocket PC Camera.
+* Fix deadlock when shutting down the camera while used by a program (feber).
+* Merged in patch #505324 (Patch for the Intel PC Camera CS110) (polesworth).
+* Merged in patch #589680 (Prelim 3Com HomeConnect Lite Support) (polesworth).
+* Fixed spca50x_probe, which was handling some cameras with known vendor
+  ids but unknown device ids incorrectly. Found this bug whilst looking into
+  support for the Kodak EZ200 (polesworth).
+* Fixed driver to select smallest available resolution for a particular
+  bridge, rather than using a hardcoded value (polesworth).
+* Tidied up the jpeg decoder, which turned out to be including userspace
+  header files, and added a return value to jpeg_decode (polesworth).
+* spca500: changing mode now works correctly (polesworth).
+* spca500: enabled subsampling for modes smaller than 640x480 (polesworth).
+* spca500: added rudimentary picture quality controls (polesworth).
+* Added support for the Kodak EZ200 camera, which is spca500 based (polesworth).
+* Added in some changes for spca505 and maybe spca506 which apparently make
+  the brightness levels usable (Keith MacLeod / Eric Preston).
+
+Release 0.20
+------------
+This release coordinated by Miah Gregory (polesworth).
+
+For this release, it was decided to package up source only, and not binaries.
+This will change in the future, once the driver stabilises.
+
+Changes in this release:
+* Fix bug with probe function handling in kernels > 2.3.x (Leonardo Milano).
+* Removed XawTV hack (use XawTV >= 3.65) (Leonardo Milano/korovkin).
+* Added SPCA508 support for the ViewQuest VQ110 (David Adler).
+* Spca50x_read infinite loop protection check (David Adler).
+* Palette mode check (David Adler).
+* VQ M318B description (David Adler).
+* Added Kodak DVC-325 to supported cam list (Sebastian Voitzsch).
+* Moved initialisation code to seperate header files (korovkin).
+* Added some experimental code for brightness autoadjustment (korovkin).
+* Change from tq_scheduler to schedule_task (dscottie).
+* Quick fix for Gnomemeeting/PWLib problems seen on SPCA50X;
+  VIDIOCSWIN sets size of frame[0] to new size (dscottie).
+* Forced driver to say which resolutions it supports, in order to force
+  gnomemeeting to emulate the mode, if it's not supported.
+* Added control proc entry, which allows the user to change driver parameters
+  without reinserting the module (korovkin).
+* Added "whiteness" autoadjustment feature (korovkin).
+* Fixed bug in VIDIOCSPICT ioctl handling in SPCA501 (korovkin).
+* Fixed bridge type check in spca50x_close (korovkin).
+* Fixed memory leak bug in spca50x_alloc (Amit Bhalla/korovkin).
+* Added average R-6/B-6 in prox/.../spca50x/videoX entry (korovkin).
+* Added ability to adjust red/blue offsets via Hue and Color settings
+  (korovkin).
+* Added GPL Licence information, for 2.4 series kernels (polesworth).
+* Rejigged the Makefile and #defines (polesworth).
+* Fixed bug in procfs support, whereby control file was created multiple
+  times, but with the same name. We now create /proc/video/spca50x/controlX.
+  (polesworth/korovkin).
+* Various other minor changes/fixes.
+
+Release 0.10
+------------
+This release coordinated by Darrell Scott (dscottie).
+
+Changes in this release:
+* Added support for ViewQuest M318B (0733:0402) (Leonardo Milano)
+* Improved support for XawTV (korovkin)
+* Improved Intel Create and Share (SPCA501-based cams) support (korovkin)
+* Fixed initialization bug for connection/disconnection support (korovkin)
+
+Release 0.9
+-----------
+This release coordinated by Joel Crisp (cydergoth).
+
+Changes in this release:
+* Fixed compile with CONFIG_FB and no video/font.h 
+* Changed decode of 501 data - may now work.
+* Updated some documentation
+
+
+Previous releases not documented here.

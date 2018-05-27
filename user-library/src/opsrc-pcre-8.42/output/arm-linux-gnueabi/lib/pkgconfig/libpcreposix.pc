@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/iamjy1005/work/lab/practice/user-library/src/opsrc-pcre-8.42/output/arm-linux-gnueabi
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcreposix
+Description: PCREPosix - Posix compatible interface to libpcre
+Version: 8.42
+Libs: -L${libdir} -lpcreposix
+Cflags: -I${includedir} 
+Requires.private: libpcre

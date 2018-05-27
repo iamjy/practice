@@ -1,0 +1,2 @@
+set CC_FOR_TARGET "arm-linux-gnueabi-gcc"
+set CXX_FOR_TARGET "arm-linux-gnueabi-g++"

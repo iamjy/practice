@@ -1,0 +1,21 @@
+EXPORTS
+	ggla_choose_visual
+	ggla_context_attrlist_share_new
+	ggla_context_new
+	ggla_context_share_new
+	ggla_get_config
+	ggla_get_info
+	ggla_make_current
+	ggla_pixmap_make_current
+	ggla_pixmap_new
+	ggla_query
+	ggla_swap_buffers
+	ggla_use_gdk_font
+	ggla_wait_gdk
+	ggla_wait_gl
+	ggla_area_get_type
+	ggla_area_make_current
+	ggla_area_new
+	ggla_area_new_vargs
+	ggla_area_share_new
+	ggla_area_swap_buffers

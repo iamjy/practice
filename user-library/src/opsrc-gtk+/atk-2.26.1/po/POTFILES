@@ -1,0 +1,3 @@
+     ../atk/atkhyperlink.c \
+     ../atk/atkobject.c \
+     ../atk/atkvalue.c

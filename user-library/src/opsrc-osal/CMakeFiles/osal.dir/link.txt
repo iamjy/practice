@@ -1,0 +1,2 @@
+arm-none-linux-gnueabi-ar qc libosal.a  CMakeFiles/osal.dir/src/os/posix/osfileapi.c.o CMakeFiles/osal.dir/src/os/posix/osnetwork.c.o CMakeFiles/osal.dir/src/os/posix/osloader.c.o CMakeFiles/osal.dir/src/os/posix/osfilesys.c.o CMakeFiles/osal.dir/src/os/posix/ostimer.c.o CMakeFiles/osal.dir/src/os/posix/osapi.c.o CMakeFiles/osal.dir/src/bsp/pc-linux/src/bsp_start.c.o CMakeFiles/osal.dir/src/bsp/pc-linux/src/bsp_voltab.c.o
+arm-none-linux-gnueabi-ranlib libosal.a

@@ -1,0 +1,16 @@
+This driver is Experimental :
+
+Sometimes colors are strange, Automatic Bayer align need some light to work
+please move the camera to get more ligth at the top left of your picture.
+
+Good setting can be get when loading the module with:
+modprobe spca5xx GRed=217 GBlue=300 GGreen=224 gamma=4 
+
+or using sysfs under 2.6.x
+echo "4" > /sys/module/spca5xx/gamma
+echo "217" > /sys/module/spca5xx/GRed
+should set the gamma parameters to 4 and GRed to 217
+
+read a parameters is easy
+cat /sys/module/spca5xx/GRed
+Enjoy !!

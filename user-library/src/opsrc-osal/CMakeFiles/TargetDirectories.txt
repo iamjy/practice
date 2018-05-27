@@ -1,0 +1,4 @@
+/home/iamjy1005/work/lab/practice/user-library/src/opsrc-osal/CMakeFiles/test.dir
+/home/iamjy1005/work/lab/practice/user-library/src/opsrc-osal/CMakeFiles/edit_cache.dir
+/home/iamjy1005/work/lab/practice/user-library/src/opsrc-osal/CMakeFiles/rebuild_cache.dir
+/home/iamjy1005/work/lab/practice/user-library/src/opsrc-osal/CMakeFiles/osal.dir

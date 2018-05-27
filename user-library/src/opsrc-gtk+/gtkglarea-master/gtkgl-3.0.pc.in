@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: GtkGLArea
+Description: an OpenGL widget for GTK+
+Version: @VERSION@
+Requires: gtk+-3.0
+Libs: -L${libdir} -lgtkgl-3.0 @GL_LIBS@
+Cflags: -I${includedir}/gtkgl-3.0 @GL_CFLAGS@

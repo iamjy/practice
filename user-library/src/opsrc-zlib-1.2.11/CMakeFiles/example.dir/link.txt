@@ -1,0 +1,1 @@
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     CMakeFiles/example.dir/test/example.o  -o example -rdynamic libz.so.1.2.11 -Wl,-rpath,/home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11 

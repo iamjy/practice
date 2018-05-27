@@ -1,0 +1,243 @@
+The system is: Linux - 4.13.0-39-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/3.5.1/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f185d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f185d.dir/build.make CMakeFiles/cmTC_f185d.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f185d.dir/testCCompiler.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     -o CMakeFiles/cmTC_f185d.dir/testCCompiler.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f185d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f185d.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_f185d.dir/testCCompiler.c.o  -o cmTC_f185d -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_315b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_315b5.dir/build.make CMakeFiles/cmTC_315b5.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     -o CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_315b5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_315b5.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc      -v CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o  -o cmTC_315b5 -rdynamic  
+Using built-in specs.
+Target: arm-none-linux-gnueabi
+Configured with: /scratch/julian/2009q3-respin-linux-lite/src/gcc-4.4/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --disable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery G++ Lite 2009q3-67' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin
+Thread model: posix
+gcc version 4.4.1 (Sourcery G++ Lite 2009q3-67) 
+COMPILER_PATH=/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../libexec/gcc/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/
+LIBRARY_PATH=/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/lib/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_315b5' '-rdynamic' '-march=armv5te' '-funwind-tables'
+ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2 --sysroot=/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_315b5 /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/lib -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-linux-gnueabi-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_315b5/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_315b5.dir/build.make CMakeFiles/cmTC_315b5.dir/build]
+  ignore line: [make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     -o CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_315b5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_315b5.dir/link.txt --verbose=1]
+  ignore line: [/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc      -v CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o  -o cmTC_315b5 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: arm-none-linux-gnueabi]
+  ignore line: [Configured with: /scratch/julian/2009q3-respin-linux-lite/src/gcc-4.4/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:]
+  ignore line: [:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --disable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery G++ Lite 2009q3-67' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.4.1 (Sourcery G++ Lite 2009q3-67) ]
+  ignore line: [COMPILER_PATH=/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../libexec/gcc/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/lib/:/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_315b5' '-rdynamic' '-march=armv5te' '-funwind-tables']
+  link line: [ /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2 --sysroot=/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_315b5 /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/lib -L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o /media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+    arg [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2] ==> ignore
+    arg [--sysroot=/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_315b5] ==> ignore
+    arg [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o] ==> ignore
+    arg [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o] ==> ignore
+    arg [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o] ==> ignore
+    arg [-L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1] ==> dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1]
+    arg [-L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc] ==> dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc]
+    arg [-L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib] ==> dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib]
+    arg [-L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/lib] ==> dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/lib]
+    arg [-L/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib]
+    arg [CMakeFiles/cmTC_315b5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o] ==> ignore
+    arg [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1] ==> [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/lib/gcc/arm-none-linux-gnueabi/4.4.1]
+  collapse library dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc] ==> [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/lib/gcc]
+  collapse library dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib] ==> [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/arm-none-linux-gnueabi/lib]
+  collapse library dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/lib] ==> [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/arm-none-linux-gnueabi/libc/lib]
+  collapse library dir [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/lib/gcc/arm-none-linux-gnueabi/4.4.1;/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/lib/gcc;/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/arm-none-linux-gnueabi/lib;/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/arm-none-linux-gnueabi/libc/lib;/media/iamjy1005/978ada6f-9596-4951-b412-6e8a78f4241d/backup/root/opt/toolchain/arm/linux/arm-2009q3-67/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_70e2b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_70e2b.dir/build.make CMakeFiles/cmTC_70e2b.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70e2b.dir/feature_tests.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc    -std=c99 -o CMakeFiles/cmTC_70e2b.dir/feature_tests.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/feature_tests.c
+Linking C executable cmTC_70e2b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70e2b.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_70e2b.dir/feature_tests.c.o  -o cmTC_70e2b -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c89] compiler features compiled with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_13ce0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_13ce0.dir/build.make CMakeFiles/cmTC_13ce0.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13ce0.dir/feature_tests.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc    -std=c89 -o CMakeFiles/cmTC_13ce0.dir/feature_tests.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/feature_tests.c
+Linking C executable cmTC_13ce0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13ce0.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_13ce0.dir/feature_tests.c.o  -o cmTC_13ce0 -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b5d39/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5d39.dir/build.make CMakeFiles/cmTC_b5d39.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5d39.dir/CheckIncludeFile.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     -o CMakeFiles/cmTC_b5d39.dir/CheckIncludeFile.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b5d39
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5d39.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_b5d39.dir/CheckIncludeFile.c.o  -o cmTC_b5d39 -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20c92/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20c92.dir/build.make CMakeFiles/cmTC_20c92.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20c92.dir/CheckIncludeFile.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     -o CMakeFiles/cmTC_20c92.dir/CheckIncludeFile.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_20c92
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20c92.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_20c92.dir/CheckIncludeFile.c.o  -o cmTC_20c92 -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aa096/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aa096.dir/build.make CMakeFiles/cmTC_aa096.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa096.dir/CheckIncludeFile.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     -o CMakeFiles/cmTC_aa096.dir/CheckIncludeFile.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_aa096
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa096.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_aa096.dir/CheckIncludeFile.c.o  -o cmTC_aa096 -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+Determining size of off64_t passed with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b5dfe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5dfe.dir/build.make CMakeFiles/cmTC_b5dfe.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5dfe.dir/OFF64_T.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc  -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1   -o CMakeFiles/cmTC_b5dfe.dir/OFF64_T.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CheckTypeSize/OFF64_T.c
+Linking C executable cmTC_b5dfe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5dfe.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_b5dfe.dir/OFF64_T.c.o  -o cmTC_b5dfe -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f33b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f33b2.dir/build.make CMakeFiles/cmTC_f33b2.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f33b2.dir/CheckFunctionExists.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc    -DCHECK_FUNCTION_EXISTS=fseeko   -o CMakeFiles/cmTC_f33b2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f33b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f33b2.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc   -DCHECK_FUNCTION_EXISTS=fseeko    CMakeFiles/cmTC_f33b2.dir/CheckFunctionExists.c.o  -o cmTC_f33b2 -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cffbc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cffbc.dir/build.make CMakeFiles/cmTC_cffbc.dir/build
+make[1]: Entering directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cffbc.dir/CheckIncludeFile.c.o
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc     -o CMakeFiles/cmTC_cffbc.dir/CheckIncludeFile.c.o   -c /home/iamjy1005/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cffbc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cffbc.dir/link.txt --verbose=1
+/opt/toolchain/arm/linux/arm-2009q3-67/bin/arm-none-linux-gnueabi-gcc       CMakeFiles/cmTC_cffbc.dir/CheckIncludeFile.c.o  -o cmTC_cffbc -rdynamic 
+make[1]: Leaving directory '/media/iamjy1005/97b53b95-bba5-4bcc-ab12-5539c6a738ef/work/lab/practice/user-library/src/opsrc-zlib-1.2.11/CMakeFiles/CMakeTmp'
+
+
