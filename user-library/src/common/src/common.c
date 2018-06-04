@@ -62,7 +62,7 @@ int dbg_printf (char *fmt, ...)
   char buf[256] = {'\0',};
   va_list ap;
 
-  strcpy(buf, );
+//  strcpy(buf, );
   va_start(ap, fmt);
   vsprintf(buf + strlen(buf), fmt, ap);
   va_end(ap);
@@ -75,7 +75,7 @@ int info_printf (char *fmt, ...)
   char buf[256] = {'\0',};
   va_list ap;
 
-  strcpy(buf, );
+//  strcpy(buf, );
   va_start(ap, fmt);
   vsprintf(buf + strlen(buf), fmt, ap);
   va_end(ap);

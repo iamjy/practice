@@ -1,6 +1,6 @@
 ##
-#CROSSPREFIX := /opt/toolchain/arm/linux/buildroot/host-v6.4.0-2017.08.1-gnueabi/bin/arm-buildroot-linux-gnueabi-
-CROSSPREFIX :=
+#CROSSPREFIX :=
+CROSSPREFIX := /opt/toolchain/arm/linux/linaro/latest-4/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 ##
 CC      := $(CROSSPREFIX)gcc

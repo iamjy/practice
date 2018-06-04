@@ -9,18 +9,6 @@
 #ifndef _COMMON_H_
 #define _COMMON_H_
 
- /*****************************************************************************
-  * Inclusion
-  *****************************************************************************/
-#include <stdint.h>
-#include <stdbool.h>
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <errno.h>
-#include <fcntl.h>
-
 /*****************************************************************************
  * Header files
  *****************************************************************************/
@@ -29,15 +17,20 @@
 #include <stdio.h>
 #include <string.h>
 #else
+#include <limits.h>
 #include <stdint.h>
-#include <stdio.h>
+#include <stdbool.h>
 #include <stddef.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
 #include <errno.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <assert.h>
 #include <time.h>
+#include <pthread.h>
 #endif
 
 /*****************************************************************************

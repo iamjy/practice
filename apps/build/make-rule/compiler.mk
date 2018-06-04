@@ -1,6 +1,6 @@
 ##
-#CROSS_PREFIX := /opt/toolchain/arm/linux/linaro/gcc-linaro-5.4.1-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
-CROSS_PREFIX :=
+CROSS_PREFIX := /opt/toolchain/arm/linux/linaro/latest-4/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-
+#CROSS_PREFIX := /opt/toolchain/arm/linux/linaro/latest-4/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 ##
 CC      := $(CROSS_PREFIX)gcc        # GNU c compiler
