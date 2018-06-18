@@ -17,9 +17,6 @@
 /*****************************************************************************
  * Type definitions
  *****************************************************************************/
-typedef struct _CHAIR CHAIR_T;
-typedef void (* input_chair_t)(CHAIR_T *pChair);
-typedef void (* output_chair_t)(CHAIR_T *pChair);
 
 /*****************************************************************************
  * Macro definitions
@@ -31,14 +28,6 @@ typedef void (* output_chair_t)(CHAIR_T *pChair);
 /**
  *
  */
-typedef struct _CHAIR {
-  char model[256];
-  uint32_t price;
-  uint32_t size;
-
-  input_chair_t inchair;
-  output_chair_t outchair;
-} CHAIR_T;
 
 /*****************************************************************************
  * Global variables
@@ -60,7 +49,5 @@ typedef struct _CHAIR {
   *  @param
   *  @return
   */
-void input_chair(CHAIR_T *pChair);
-void output_chair(CHAIR_T *pChair);
 
 #endif /* _MAIN_H_ */

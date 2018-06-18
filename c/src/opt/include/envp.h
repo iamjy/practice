@@ -6,8 +6,8 @@
  * @see
  */
 
-#ifndef _GETOPT_H_
-#define _GETOPT_H_
+#ifndef _ENVP_H_
+#define _ENVP_H_
 
 /*****************************************************************************
  * Header files
@@ -49,7 +49,6 @@
   *  @param
   *  @return
   */
-void my_getopt_usage (char *cmd);
-int my_getopt (int argc, char **argv);
+int my_envp (char **envp);
 
-#endif /* _GETOPT_H_ */
+#endif /* _ENVP_H_ */

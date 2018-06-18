@@ -41,71 +41,46 @@
 /*****************************************************************************
  * Function prototypes
  *****************************************************************************/
-static func_t get_func_ptr (uint32_t i);
 
 /*****************************************************************************
  * Function definitions
  *****************************************************************************/
 int main (int arTgc, char const *argv[])
 {
-  int i = -1;
-
 #if 1
-  func_t func = NULL;
-
-  func = get_func_ptr(2);
-
-  func(0, 0);
 #endif
-#if 1
-  printf("2 : ");
-  scanf("%d", &i);
+#if 0
+	int32_t array[3] = {1,2,3};
+	int32_t array2[][3] = {
+				{1,2,3},
+				{4,5,6}
+			 };
+	int32_t array3[][3][3] = {
+				{ {1,2,3}, {4,5,6}, {7,8,9} },
+				{ {1,2,3}, {4,5,6}, {7,8,9} }
+			};
 
-  switch (i) {
-  case 1:
-    proxy_function(func_a, 1, 1);
-    break;
-  case 2:
-    proxy_function(func_b, 2, 2);
-    break;
-  case 3:
-    proxy_function(func_c, 3, 3);
-    break;
-  default:
-    break;
-  }
+	printf("%ld\n", sizeof(array));
+	printf("%ld\n", sizeof(array + 0));
+	printf("%ld\n", sizeof(array + 1));
+	printf("%ld\n", sizeof(array + 2));
+	printf("%p %p %p\n", (array + 0), (array + 1), (array + 2));
+	printf("%p %p %p\n", &array[0], &array[1], &array[2]);
+	printf("%d %d %d\n", *(array + 0), *(array + 1), *(array + 2));
+	printf("%d %d %d\n\n", array[0], array[1], array[2]);
+
+	printf("%ld\n", sizeof(array2));
+	printf("%ld %ld\n", sizeof(*array2), sizeof(array2[0]));
+	printf("%ld %ld\n", sizeof(**array2), sizeof(array2[0][0]));
+	printf("%p %p %p\n\n", array2, array2[0], &array2[0][0]);
+
+	printf("%ld\n", sizeof(array3));
+	printf("%ld %ld\n", sizeof(*array3), sizeof(array3[0]));
+	printf("%ld %ld\n", sizeof(**array3), sizeof(array3[0][0]));
+	printf("%ld %ld\n", sizeof(***array3), sizeof(array3[0][0][0]));
+	printf("%p %p %p %p\n", array3, array3[0], array3[0][0], &array3[0][0][0]);
+	printf("%p %p\n", array3[0], array3[1]);
+	printf("%p %p\n", (array3 + 0), (array3 + 1));
 #endif
-
-  return 0;
-}
-
-func_t get_func_ptr (uint32_t i)
-{
-  switch (i) {
-  case 1:
-    return func_a;
-  case 2:
-    return func_b;
-  case 3:
-    return func_c;
-  default:
-    break;
-  }
-
-  return NULL;
-}
-
-void proxy_function(func_t func, int i, int j)
-{
-  func(i, j);
-}
-
-void input_chair(CHAIR_T *pChair)
-{
-  printf("%s\n", __FUNCTION__);
-}
-
-void output_chair(CHAIR_T *pChair)
-{
-  printf("%s\n", __FUNCTION__);
+	return 0;
 }

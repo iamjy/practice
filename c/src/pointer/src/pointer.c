@@ -45,17 +45,4 @@
 /*****************************************************************************
  * Function definitions
  *****************************************************************************/
-void func_a (int i, int j)
-{
-  info_printf("%s is called!\n", __FUNCTION__);
-}
-
-void func_b (int i, int j)
-{
-  info_printf("%s is called!\n", __FUNCTION__);
-}
-
-void func_c (int i, int j)
-{
-  info_printf("%s is called!\n", __FUNCTION__);
-}
+ 

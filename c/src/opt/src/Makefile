@@ -7,6 +7,7 @@ include ../../../build/make-rule/compile-path.mk
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
 BIN_DIR := $(UP_DIR)/bin
+TARGET_INSTALL := /export
 
 INCLUDE := \
 	-I$(COMMON_DIR)/include \
@@ -14,10 +15,11 @@ INCLUDE := \
 
 SRCS := \
 	$(SRC_DIR)/envp.c \
-	$(SRC_DIR)/getopt.c \
+	$(SRC_DIR)/opt.c \
 	$(SRC_DIR)/main.c
 
 INCS := \
+	$(INC_DIR)/envp.h \
 	$(INC_DIR)/opt.h \
 	$(INC_DIR)/main.h
 
@@ -39,7 +41,15 @@ $(TARGET) : $(OBJS)
 
 install:
 	@cp $(TARGET) $(BIN_DIR)
-	strip $(BIN_DIR)/$(TARGET)
+	$(STRIP) $(BIN_DIR)/$(TARGET)
+	@if [ -d "$(TARGET_INSTALL)" ]; then \
+		for search in $(TARGET_INSTALL)/*; \
+		do \
+			if [ -d "$$search" ]; then \
+				[ -f $(BIN_DIR)/$(TARGET) ] && sudo cp -f "$(BIN_DIR)/$(TARGET)" "$$search"; \
+			fi \
+		done \
+	fi
 
 clean:
 	@-rm $(TARGET)

@@ -17,18 +17,17 @@
 #include <stdio.h>
 #include <string.h>
 #else
-#include <limits.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <stddef.h>
 #include <stdio.h>
+#include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
 #include <errno.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include <assert.h>
+#include <unistd.h>
+#include <getopt.h>
 #include <time.h>
 #include <pthread.h>
 #endif
@@ -36,6 +35,16 @@
 /*****************************************************************************
  * Macro definitions
  *****************************************************************************/
+#ifndef DEBUG
+#define libprintf(...) \
+            printf("%s:%s():%d: ", \
+                    __FILE__, __FUNCTION__, __LINE__, \
+                    __VA_ARGS__)
+#define gpinrtf(fmt, x...) printf("%s: "fmt, __FUNCTION__, ##x)
+#else
+#define libprintf(x) do {} while (0)
+#define gprintf(x...) do {} while (0)
+#endif
 
 /*****************************************************************************
  * Type definitions
@@ -51,19 +60,6 @@
 /**
  *
  */
-typedef struct STRUCT_COMMON_H {
-  int i;
-
-} STRUCT_COMMON_H;
-
-#ifndef DEBUG
-#define LIB_DEBUG_PRINT(...) \
-            printf("%s:%s():%d: ", \
-                    __FILE__, __FUNCTION__, __LINE__, \
-                     __VA_ARGS__)
-#else
-#define LIB_DEBUG_PRINT(x) do {} while (0)
-#endif
 
 /*****************************************************************************
  * Structures

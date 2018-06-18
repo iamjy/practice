@@ -5,7 +5,6 @@ include ../../../build/make-rule/compile-path.mk
 
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
-OBJ_DIR := $(UP_DIR)/obj
 LIB_DIR := $(UP_DIR)/lib
 TARGET_INSTALL := /export
 
@@ -44,7 +43,6 @@ all: $(BUILD_ALL)
 
 BUILD: $(SRCS)
 	$(CC) $(CFLAGS) $(LDFLAGS) -c $^ $(INCLUDE) $(LIBS)
-	@cp -f $(CUR_DIR)/*.o $(OBJ_DIR)
 
 $(STATIC_LIB): $(OBJS)
 	$(AR) cr $(STATIC_LIB) $^
@@ -59,8 +57,8 @@ install:
 		for search in $(TARGET_INSTALL)/*; \
 		do \
 			if [ -d "$$search" ]; then \
-				sudo cp -f "$(LIB_DIR)/$(STATIC_LIB)" "$$search"; \
-				sudo cp -f "$(LIB_DIR)/$(DYNAMIC_LIB)" "$$search"; \
+				[ -f $(LIB_DIR)/$(STATIC_LIB) ] && sudo cp -f "$(LIB_DIR)/$(STATIC_LIB)" "$$search"; \
+				[ -f $(LIB_DIR)/$(DYNAMIC_LIB) ] && sudo cp -f "$(LIB_DIR)/$(DYNAMIC_LIB)" "$$search"; \
 			fi \
 		done \
 	fi
@@ -71,4 +69,3 @@ clean:
 	-@rm -f $(CUR_DIR)/$(DYNAMIC_LIB)
 	-@rm -f $(LIB_DIR)/$(DYNAMIC_LIB)
 	-@rm -f $(CUR_DIR)/*.[iso]
-	-@rm -f $(OBJ_DIR)/*.o

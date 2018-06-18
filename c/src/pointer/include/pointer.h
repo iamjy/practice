@@ -17,7 +17,6 @@
 /*****************************************************************************
  * Type definitions
  *****************************************************************************/
-typedef void (* func_t) (int, int);
 
 /*****************************************************************************
  * Macro definitions
@@ -50,8 +49,5 @@ typedef void (* func_t) (int, int);
  *  @param
  *  @return
  */
-void func_a (int i, int j);
-void func_b (int i, int j);
-void func_c (int i, int j);
 
 #endif /* _POINTER_H_ */
