@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	cout << endl;
 
 	vector<int>::iterator iter2;
-	
+
 	iter2 = iter + 2;
 	cout << *iter2 << endl;
 

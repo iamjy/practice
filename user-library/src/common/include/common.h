@@ -9,6 +9,18 @@
 #ifndef _COMMON_H_
 #define _COMMON_H_
 
+ /*****************************************************************************
+  * Inclusion
+  *****************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <fcntl.h>
+
 /*****************************************************************************
  * Header files
  *****************************************************************************/
@@ -18,7 +30,6 @@
 #include <string.h>
 #else
 #include <stdint.h>
-#include <stdbool.h>
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
@@ -26,8 +37,6 @@
 #include <stdarg.h>
 #include <errno.h>
 #include <assert.h>
-#include <unistd.h>
-#include <getopt.h>
 #include <time.h>
 #include <pthread.h>
 #endif
@@ -49,6 +58,13 @@
 /*****************************************************************************
  * Type definitions
  *****************************************************************************/
+ #define ANSI_COLOR_RED     "\x1b[31m"
+ #define ANSI_COLOR_GREEN   "\x1b[32m"
+ #define ANSI_COLOR_YELLOW  "\x1b[33m"
+ #define ANSI_COLOR_BLUE    "\x1b[34m"
+ #define ANSI_COLOR_MAGENTA "\x1b[35m"
+ #define ANSI_COLOR_CYAN    "\x1b[36m"
+ #define ANSI_COLOR_RESET   "\x1b[0m"
 
 /*****************************************************************************
  * Enumerations

@@ -1,35 +1,22 @@
 /**
- * @file	main.h
- * @author	iamjy1005@gmail.com <Jinyoung Park>
- * @date	2018.06.18
- * @brief	Practice macro syntax in C
+ * @file
+ * @author
+ * @date
+ * @brief
  * @see
  */
 
-#ifndef _MAIN_H_
-#define _MAIN_H_
-
-/*****************************************************************************
- * Header files
- *****************************************************************************/
 #include "common.h"
-
-/*****************************************************************************
- * Type definitions
- *****************************************************************************/
-typedef struct sleep_save SLEEP_SAVE;
+#include "main.h"
 
 /*****************************************************************************
  * Macro definitions
  *****************************************************************************/
-#define __iomem
-#define __force
+#define TEST_DEVICE    "/dev/mycdrv_generic_dev"
 
-#define S3C_ADDR_BASE		0xF6000000
-#define S3C_ADDR(x)			((void __iomem __force *)S3C_ADDR_BASE + (x))
-#define S5P_VA_CMU			S3C_ADDR(0x02100000)
-#define EXYNOS_CLKREG(x)	(S5P_VA_CMU + (x))
-#define EXYNOS4_CLKSRC_CAM	EXYNOS_CLKREG(0x0C220)
+/*****************************************************************************
+ * Enumerations
+ *****************************************************************************/
 
 /*****************************************************************************
  * Structures
@@ -37,10 +24,6 @@ typedef struct sleep_save SLEEP_SAVE;
 /**
  *
  */
-struct sleep_save {
-	void *reg;
-	unsigned long val;
-};
 
 /*****************************************************************************
  * Global variables
@@ -57,14 +40,37 @@ struct sleep_save {
 /*****************************************************************************
  * Function prototypes
  *****************************************************************************/
- /** @brief
-  *  @param
-  *  @param
-  *  @return
-  */
-void test_function_0 ();
-void test_function_1 ();
-void test_function_2 ();
-void test_function_3 ();
 
-#endif /* _MAIN_H_ */
+/*****************************************************************************
+ * Function definitions
+ *****************************************************************************/
+int main(int argc, char const *argv[])
+{
+	int fd = -1;
+	char buff[128] = {0};
+	uint32_t cnt = 10;
+	int read_val = 0;
+
+	fd = open(TEST_DEVICE, O_RDWR | O_NDELAY);
+	if (fd < 0) {
+		return -1;
+	}
+
+	printf("wait... input\n");
+
+	while (1) {
+		static int i = 0;
+
+		if (cnt == 0)
+			break;
+
+		read_val = read(fd, buff, cnt);
+		for (i = 0; i < cnt; i++) {
+			printf("[%d]read data : [%02X]\n", read_val, buff[i]);
+		}
+	}
+
+	printf("input ok...\n");
+
+	return 0;
+}
