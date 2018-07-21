@@ -51,6 +51,7 @@ $(STATIC_LIB): $(OBJS)
 
 $(DYNAMIC_LIB): $(OBJS)
 	$(CC) -shared -Wl,-soname,$(DYNAMIC_LINK) -o $(DYNAMIC_LIB) $(OBJS)
+	@[ -d $(LIB_DIR) ] || mkdir $(LIB_DIR)
 	@mv -f $(DYNAMIC_LIB) $(LIB_DIR)
 	@[ -f $(LIB_DIR)/$(DYNAMIC_LINK) ] || ln -s $(LIB_DIR)/$(DYNAMIC_LIB) $(LIB_DIR)/$(DYNAMIC_LINK)
 
