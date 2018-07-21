@@ -6,40 +6,44 @@ include ../../../build/make-rule/compile-path.mk
 
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
-OBJ_DIR := $(UP_DIR)/obj
 BIN_DIR := $(UP_DIR)/bin
 TARGET_INSTALL := /export
 
 INCLUDE := \
 	-I$(COMMON_DIR)/include \
-	-I$(INC_DIR)
+	-I$(INC_DIR) \
 
 SRCS := \
-	$(SRC_DIR)/api.cpp \
-	$(SRC_DIR)/main.cpp
+	$(SRC_DIR)/main.c \
+	$(SRC_DIR)/c-extensions.c \
+	$(SRC_DIR)/func-attr.c \
+	$(SRC_DIR)/inline-asm.c \
+	$(SRC_DIR)/builtin-prefetch.c \
+	$(SRC_DIR)/trace.c
 
 INCS := \
-	$(INC_DIR)/api.hpp \
-	$(INC_DIR)/main.hpp
+	$(INC_DIR)/main.h \
+	$(INC_DIR)/c-extensions.h \
+	$(INC_DIR)/func-attr.h \
+	$(INC_DIR)/inline-asm.h \
+	$(INC_DIR)/builtin-prefetch.h \
+	$(INC_DIR)/trace.h
 
 LIBRARY := \
-	-L$(USR_LIB_DIR)/base/lib
+	-L$(COMMON_DIR)/lib
 
 LIBS := \
-	-lbase
+	-lcommon -lrt
 
-OBJS := $(SRCS:.cpp=.o)
+OBJS := $(SRCS:.c=.o)
 
-TARGET := base
-CPPFLAGS += -g --save-temps
-CPPFLAGS += $(INCLUDE) $(LIBRARY)
-LDFLAGS += $(LIBS)
+TARGET := gcc-test
+CFLAGS += -g --save-temps
+CFLAGS += $(INCLUDE) $(LIBRARY)
+LFLAGS += $(LIBS)
 
 $(TARGET) : $(OBJS)
-	$(CC) -o $@ $^ $(CPPFLAGS) $(LDFLAGS)
-
-%.o: %.cpp
-	$(CC) -c $< $(CPPFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LFLAGS)
 
 install:
 	@cp $(TARGET) $(BIN_DIR)
@@ -57,6 +61,5 @@ clean:
 	@-rm $(TARGET)
 	@-rm $(BIN_DIR)/$(TARGET)
 	@-rm $(SRC_DIR)/*.[iso]
-	@-rm $(SRC_DIR)/*.ii
 
 $(OBJS): $(INCS)

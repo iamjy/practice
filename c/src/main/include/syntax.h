@@ -6,67 +6,26 @@
  * @see
  */
 
-#ifndef _COMMON_H_
-#define _COMMON_H_
-
- /*****************************************************************************
-  * Inclusion
-  *****************************************************************************/
+#ifndef _KEYWORD_H_
+#define _KEYWORD_H_
 
 /*****************************************************************************
  * Header files
  *****************************************************************************/
-#ifdef __cplusplus
-#include <iostream>
-#include <cstdio>
-#include <deque>
-#include <vector>
-#include <list>
-#include <algorithm>
-#else
-#include <stdint.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include <stddef.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdarg.h>
-#include <unistd.h>
-#include <errno.h>
-#include <assert.h>
-#include <getopt.h>
-#include <time.h>
-#include <fcntl.h>
-#include <pthread.h>
-#endif
-
-/*****************************************************************************
- * Macro definitions
- *****************************************************************************/
-#ifndef DEBUG
-#define libprintf(...) \
-            printf("%s:%s():%d: ", \
-                    __FILE__, __FUNCTION__, __LINE__, \
-                    __VA_ARGS__)
-#define gpinrtf(fmt, x...) printf("%s: "fmt, __FUNCTION__, ##x)
-#else
-#define libprintf(x) do {} while (0)
-#define gprintf(x...) do {} while (0)
-#endif
 
 /*****************************************************************************
  * Type definitions
  *****************************************************************************/
- #define ANSI_COLOR_RED     "\x1b[31m"
- #define ANSI_COLOR_GREEN   "\x1b[32m"
- #define ANSI_COLOR_YELLOW  "\x1b[33m"
- #define ANSI_COLOR_BLUE    "\x1b[34m"
- #define ANSI_COLOR_MAGENTA "\x1b[35m"
- #define ANSI_COLOR_CYAN    "\x1b[36m"
- #define ANSI_COLOR_RESET   "\x1b[0m"
 
 /*****************************************************************************
- * Enumerations
+ * Enumeration
+ *****************************************************************************/
+enum UBYTE {a=0u, b=0xffu};
+enum UWORD {c=0u, d=0xffffu};
+enum ULONG {e=0u, f=0xffffffffu};
+
+/*****************************************************************************
+ * Macro definitions
  *****************************************************************************/
 
 /*****************************************************************************
@@ -75,10 +34,21 @@
 /**
  *
  */
+typedef struct _A {
+  char a;
+  short b;
+  char c;
+} A;
 
-/*****************************************************************************
- * Structures
- *****************************************************************************/
+typedef struct _B {
+  char a;
+  A a_st;
+} __attribute__((packed))B;
+
+typedef struct _C {
+  uint8_t a : 1;
+  uint64_t b : 63;
+} C;
 
 /*****************************************************************************
  * Global variables
@@ -104,27 +74,5 @@
  *  @param
  *  @return
  */
-void error_exit (char *message);
 
-/** @brief
- *  @param
- *  @param
- *  @return
- */
-int error_printf (char *fmt, ...);
-
-/** @brief
- *  @param
- *  @param
- *  @return
- */
-int debug_printf (char *fmt, ...);
-
-/** @brief
- *  @param
- *  @param
- *  @return
- */
-int info_printf (char *fmt, ...);
-
-#endif /* _COMMON_H_ */
+#endif /* _KEYWORD_H_ */

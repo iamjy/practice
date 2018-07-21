@@ -6,40 +6,38 @@ include ../../../build/make-rule/compile-path.mk
 
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
-OBJ_DIR := $(UP_DIR)/obj
 BIN_DIR := $(UP_DIR)/bin
 TARGET_INSTALL := /export
 
 INCLUDE := \
 	-I$(COMMON_DIR)/include \
-	-I$(INC_DIR)
+	-I$(INC_DIR) \
 
 SRCS := \
-	$(SRC_DIR)/api.cpp \
-	$(SRC_DIR)/main.cpp
+	$(SRC_DIR)/api.c \
+	$(SRC_DIR)/syntax.c \
+	$(SRC_DIR)/main.c
 
 INCS := \
-	$(INC_DIR)/api.hpp \
-	$(INC_DIR)/main.hpp
+	$(INC_DIR)/api.h \
+	$(INC_DIR)/syntax.h \
+	$(INC_DIR)/main.h
 
 LIBRARY := \
-	-L$(USR_LIB_DIR)/base/lib
+	-L$(COMMON_DIR)/lib
 
 LIBS := \
-	-lbase
+	-lcommon
 
-OBJS := $(SRCS:.cpp=.o)
+OBJS := $(SRCS:.c=.o)
 
-TARGET := base
-CPPFLAGS += -g --save-temps
-CPPFLAGS += $(INCLUDE) $(LIBRARY)
-LDFLAGS += $(LIBS)
+TARGET := c-test
+CFLAGS += -g --save-temps
+CFLAGS += $(INCLUDE) $(LIBRARY)
+LFLAGS += $(LIBS)
 
 $(TARGET) : $(OBJS)
-	$(CC) -o $@ $^ $(CPPFLAGS) $(LDFLAGS)
-
-%.o: %.cpp
-	$(CC) -c $< $(CPPFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LFLAGS)
 
 install:
 	@cp $(TARGET) $(BIN_DIR)
@@ -57,6 +55,5 @@ clean:
 	@-rm $(TARGET)
 	@-rm $(BIN_DIR)/$(TARGET)
 	@-rm $(SRC_DIR)/*.[iso]
-	@-rm $(SRC_DIR)/*.ii
 
 $(OBJS): $(INCS)

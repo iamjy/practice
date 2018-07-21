@@ -51,6 +51,7 @@ $(STATIC_LIB): $(OBJS)
 $(DYNAMIC_LIB): $(OBJS)
 	$(CC) -shared -Wl,-soname,$(DYNAMIC_LINK) -o $(DYNAMIC_LIB) $(OBJS)
 	@mv -f $(DYNAMIC_LIB) $(LIB_DIR)
+	@[ -f $(LIB_DIR)/$(DYNAMIC_LINK) ] || ln -s $(LIB_DIR)/$(DYNAMIC_LIB) $(LIB_DIR)/$(DYNAMIC_LINK)
 
 install:
 	@if [ -d "$(TARGET_INSTALL)" ]; then \
@@ -68,4 +69,5 @@ clean:
 	-@rm -f $(LIB_DIR)/$(STATIC_LIB)
 	-@rm -f $(CUR_DIR)/$(DYNAMIC_LIB)
 	-@rm -f $(LIB_DIR)/$(DYNAMIC_LIB)
+	-@rm -f $(LIB_DIR)/$(DYNAMIC_LINK)
 	-@rm -f $(CUR_DIR)/*.[iso]

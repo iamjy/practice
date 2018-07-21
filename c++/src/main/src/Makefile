@@ -15,22 +15,26 @@ INCLUDE := \
 	-I$(INC_DIR)
 
 SRCS := \
+	$(SRC_DIR)/stl.cpp \
 	$(SRC_DIR)/api.cpp \
+	$(SRC_DIR)/syntax.cpp \
 	$(SRC_DIR)/main.cpp
 
 INCS := \
+	$(INC_DIR)/stl.hpp \
 	$(INC_DIR)/api.hpp \
+	$(INC_DIR)/syntax.hpp \
 	$(INC_DIR)/main.hpp
 
 LIBRARY := \
-	-L$(USR_LIB_DIR)/base/lib
+	-L$(USR_LIB_DIR)/common/lib
 
 LIBS := \
-	-lbase
+	-lcommon
 
 OBJS := $(SRCS:.cpp=.o)
 
-TARGET := base
+TARGET := cplus-test
 CPPFLAGS += -g --save-temps
 CPPFLAGS += $(INCLUDE) $(LIBRARY)
 LDFLAGS += $(LIBS)
