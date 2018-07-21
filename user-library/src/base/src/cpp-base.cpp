@@ -6,35 +6,10 @@
  * @see
  */
 
-#ifndef _C_BASE_H_
-#define _C_BASE_H_
-
 /*****************************************************************************
  * Header files
  *****************************************************************************/
-#ifdef __cplusplus
-#include <iostream>
-#include <cstdio>
-#include <deque>
-#include <vector>
-#include <list>
-#include <algorithm>
-#else
-#include <stdint.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include <stddef.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdarg.h>
-#include <unistd.h>
-#include <errno.h>
-#include <assert.h>
-#include <getopt.h>
-#include <time.h>
-#include <fcntl.h>
-#include <pthread.h>
-#endif
+#include "base.hpp"
 
 /*****************************************************************************
  * Macro definitions
@@ -63,10 +38,8 @@
 /*****************************************************************************
  * Function definitions
  *****************************************************************************/
-/** @brief
- *  @param
- *  @param
- *  @return
- */
+void c_function_in_cpp (void)
+{
+    printf("%s() is called!\n", __FUNCTION__);
+}
 
-#endif /* _C_BASE_H_ */

@@ -5,7 +5,6 @@ include ../../../build/make-rule/compile-path.mk
 
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
-
 LIB_DIR := $(UP_DIR)/lib
 TARGET_INSTALL := /export
 
@@ -14,11 +13,17 @@ DYNAMIC_LIB  := libbase.so.0.0.0
 DYNAMIC_LINK := libbase.so
 TARGET_DEFS := -D__ARM__ -D__LINUX_OS__
 
-SRCS := $(strip $(shell ls $(SRC_DIR)/*.c))
-OBJS := $(SRCS:.c=.o)
+CSRCS := $(strip $(shell ls $(SRC_DIR)/*.c))
+CPPSRCS += $(strip $(shell ls $(SRC_DIR)/*.cpp))
+OBJS := $(CSRCS:.c=.o)
+OBJS += $(CPPSRCS:.cpp=.o)
 
 INCLUDE := \
 	   -I$(INC_DIR)
+
+INCS := \
+	$(INC_DIR)/base.h \
+	$(INC_DIR)/base.hpp
 
 LIBS := \
 	-lpthread \
@@ -27,33 +32,39 @@ LIBS := \
 	-lm
 
 ifeq ($(STATIC_BUILD), y)
-CFLAGS  +=
+CFLAGS   +=
+CPPFLAGS +=
 else
-CFLAGS  += -fPIC
+CFLAGS   += -fPIC
+CPPFLAGS += -fPIC
 endif
-CFLAGS  += $(TARGET_DEFS)
-LDFLAGS +=
+CFLAGS   += $(TARGET_DEFS) $(INCLUDE) $(LIBS)
+CPPFLAGS += $(TARGET_DEFS) $(INCLUDE) $(LIBS)
+LDFLAGS  +=
 
 ifeq ($(STATIC_BUILD), y)
-BUILD_ALL = BUILD $(STATIC_LIB)
+BUILD_ALL = $(STATIC_LIB)
 else
-BUILD_ALL = BUILD $(DYNAMIC_LIB)
+BUILD_ALL = $(DYNAMIC_LIB)
 endif
 
 all: $(BUILD_ALL)
-
-BUILD: $(SRCS)
-	$(CC) $(CFLAGS) $(LDFLAGS) -c $^ $(INCLUDE) $(LIBS)
 
 $(STATIC_LIB): $(OBJS)
 	$(AR) cr $(STATIC_LIB) $^
 	@mv -f $(STATIC_LIB) $(LIB_DIR)
 
 $(DYNAMIC_LIB): $(OBJS)
-	$(CC) -shared -Wl,-soname,$(DYNAMIC_LINK) -o $(DYNAMIC_LIB) $(OBJS)
+	$(CXX) -shared -Wl,-soname,$(DYNAMIC_LINK) -o $(DYNAMIC_LIB) $(OBJS)
 	@[ -d $(LIB_DIR) ] || mkdir $(LIB_DIR)
 	@mv -f $(DYNAMIC_LIB) $(LIB_DIR)
 	@[ -f $(LIB_DIR)/$(DYNAMIC_LINK) ] || ln -s $(LIB_DIR)/$(DYNAMIC_LIB) $(LIB_DIR)/$(DYNAMIC_LINK)
+
+%.o: %.c
+	$(CC) -c $< $(CFLAGS)
+
+%.o: %.cpp
+	$(CXX) -c $< $(CPPFLAGS)
 
 install:
 	@if [ -d "$(TARGET_INSTALL)" ]; then \
@@ -73,3 +84,6 @@ clean:
 	-@rm -f $(LIB_DIR)/$(DYNAMIC_LIB)
 	-@rm -f $(LIB_DIR)/$(DYNAMIC_LINK)
 	-@rm -f $(CUR_DIR)/*.[iso]
+
+$(OBJS): $(INCS)
+
