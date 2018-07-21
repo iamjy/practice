@@ -6,8 +6,8 @@
  * @see
  */
 
-#ifndef _SYNTAX_H_
-#define _SYNTAX_H_
+#ifndef _CPP_SYNTAX_H_
+#define _CPP_SYNTAX_H_
 
 /*****************************************************************************
  * Header files
@@ -80,4 +80,4 @@ public:
  *  @return
  */
 
-#endif /* _SYNTAX_H_ */
+#endif /* _CPP_SYNTAX_H_ */

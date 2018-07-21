@@ -12,7 +12,11 @@
 /*****************************************************************************
  * Header files
  *****************************************************************************/
+#include "common.hpp"
+extern "C" {
 #include "common.h"
+#include "csyntax.h"
+}
 
 /*****************************************************************************
  * Type definition
@@ -71,19 +75,5 @@ private:
  *  @param
  *  @return
  */
-int function(void)
-{
-  std::cout << "%s(void) call" << __FUNCTION__ << std::endl;
-}
-
-int function(char c)
-{
-  std::cout << "%s(char c) call" << __FUNCTION__ << std::endl;
-}
-
-int function(int a, int b)
-{
-  std::cout << "%s(int a, int b) call" << __FUNCTION__ << std::endl;
-}
 
 #endif /* _MAIN_H_ */
