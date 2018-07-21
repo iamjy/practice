@@ -10,36 +10,57 @@ OBJ_DIR := $(UP_DIR)/obj
 BIN_DIR := $(UP_DIR)/bin
 TARGET_INSTALL := /export
 
+TARGET := base
+TARGET_DEFS := -D__ARM__ -D__LINUX_OS__
+
+CPPSRCS := \
+	$(SRC_DIR)/api.cpp \
+	$(SRC_DIR)/cpp-syntax.cpp \
+	$(SRC_DIR)/main.cpp
+
+CSRCS := \
+	$(SRC_DIR)/c-syntax.c
+
+OBJS := $(CPPSRCS:.cpp=.o)
+OBJS += $(CSRCS:.c=.o)
+
 INCLUDE := \
 	-I$(COMMON_DIR)/include \
 	-I$(INC_DIR)
 
-SRCS := \
-	$(SRC_DIR)/api.cpp \
-	$(SRC_DIR)/main.cpp
-
 INCS := \
 	$(INC_DIR)/api.hpp \
+	$(INC_DIR)/c-syntax.hpp \
+	$(INC_DIR)/cpp-syntax.hpp \
 	$(INC_DIR)/main.hpp
 
 LIBRARY := \
 	-L$(USR_LIB_DIR)/base/lib
 
 LIBS := \
-	-lbase
+	-lbase \
+	-lpthread \
+	-lrt \
+	-ldl \
+	-lm
 
 OBJS := $(SRCS:.cpp=.o)
 
 TARGET := base
 CPPFLAGS += -g --save-temps
-CPPFLAGS += $(INCLUDE) $(LIBRARY)
-LDFLAGS += $(LIBS)
+CFLAGS   += -g --save-temps
+CPPFLAGS += $(TARGET_DEFS) $(INCLUDE) $(LIBRARY)
+CFLAGS   += $(TARGET_DEFS) $(INCLUDE) $(LIBRARY)
+LDFLAGS  += $(INCLUDE) $(LIBRARY) $(LIBS)
 
 $(TARGET) : $(OBJS)
-	$(CC) -o $@ $^ $(CPPFLAGS) $(LDFLAGS)
+	$(CXX) -o $@ $^ $(LDFLAGS)
+
+%.o: %.c
+	$(CC) -c $< $(CFLAGS)
 
 %.o: %.cpp
-	$(CC) -c $< $(CPPFLAGS)
+	$(CXX) -c $< $(CPPFLAGS)
 
 install:
 	@cp $(TARGET) $(BIN_DIR)

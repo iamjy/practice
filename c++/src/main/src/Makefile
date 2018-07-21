@@ -16,11 +16,11 @@ TARGET_DEFS := -D__ARM__ -D__LINUX_OS__
 CPPSRCS := \
 	$(SRC_DIR)/stl.cpp \
 	$(SRC_DIR)/api.cpp \
-	$(SRC_DIR)/cppsyntax.cpp \
+	$(SRC_DIR)/cpp-syntax.cpp \
 	$(SRC_DIR)/main.cpp \
 
 CSRCS := \
-	$(SRC_DIR)/csyntax.c
+	$(SRC_DIR)/c-syntax.c
 
 OBJS := $(CPPSRCS:.cpp=.o)
 OBJS += $(CSRCS:.c=.o)
@@ -32,8 +32,8 @@ INCLUDE := \
 INCS := \
 	$(INC_DIR)/stl.hpp \
 	$(INC_DIR)/api.hpp \
-	$(INC_DIR)/csyntax.h \
-	$(INC_DIR)/cppsyntax.hpp \
+	$(INC_DIR)/c-syntax.h \
+	$(INC_DIR)/cpp-syntax.hpp \
 	$(INC_DIR)/main.hpp
 
 LIBRARY := \
