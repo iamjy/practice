@@ -15,6 +15,7 @@
  * Namespace
  *****************************************************************************/
 using namespace std;
+using A_COM::function2;
 
 /*****************************************************************************
  * Type definition
@@ -49,6 +50,7 @@ using namespace std;
 /*****************************************************************************
  * Static variables
  *****************************************************************************/
+static int val = 100;
 
 /*****************************************************************************
  * Extern variables
@@ -61,13 +63,11 @@ using namespace std;
 /*****************************************************************************
  * Function definitions
  *****************************************************************************/
-void function(int a = 20, int b = 21)
-{
-  cout << __FUNCTION__ << ' ' << a << ' ' << b << endl;
-}
-
 int main (int arTgc, char const *argv[], char const *envp[])
 {
+  int val = 200;
+  int &ref = val;
+
   c_function();
   c_function_in_cpp("hello");
 
@@ -75,5 +75,16 @@ int main (int arTgc, char const *argv[], char const *envp[])
 
   function(10);
 
+  function2();
+  B_COM::function2();
+
+  cout << "val = " << ::val << endl;
+  cout << "ref = " << ref << endl;
+
   return 0;
+}
+
+void function(int a, int b)
+{
+  cout << __FUNCTION__ << ' ' << a << ' ' << b << endl;
 }

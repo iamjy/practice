@@ -13,6 +13,8 @@
  * Header files
  *****************************************************************************/
 #include "common.hpp"
+#include "cpp-syntax.hpp"
+#include "api.hpp"
 extern "C" {
 #include "common.h"
 #include "c-syntax.h"
@@ -75,5 +77,6 @@ private:
  *  @param
  *  @return
  */
+void function(int a = 20, int b = 21);
 
 #endif /* _MAIN_H_ */

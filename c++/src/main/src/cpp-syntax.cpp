@@ -58,3 +58,18 @@ using namespace std;
 /*****************************************************************************
  * Function definitions
  *****************************************************************************/
+namespace A_COM
+{
+	void function2(void)
+	{
+		std::cout << "A_COM::" << __FUNCTION__ << std::endl;
+	}
+}
+
+namespace B_COM
+{
+	void function2(void)
+	{
+		std::cout << "B_COM::" << __FUNCTION__ << std::endl;
+	}
+}

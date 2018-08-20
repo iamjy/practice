@@ -38,26 +38,6 @@
 /**
 *
 */
-class Book {
-private:
-	char title[32];
-	int price;
-	int page;
-
-public:
-	Book (const char *_title, int _price, int _page)
-		: price (_price), page (_page) {
-
-	}
-
-	void input () {
-
-	}
-
-	void output () {
-
-	}
-};
 
 /*****************************************************************************
  * Global variables
