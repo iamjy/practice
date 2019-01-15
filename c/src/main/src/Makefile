@@ -31,7 +31,7 @@ LIBS := \
 
 OBJS := $(SRCS:.c=.o)
 
-TARGET := c-test
+TARGET := main
 CFLAGS += -g --save-temps
 CFLAGS += $(INCLUDE) $(LIBRARY)
 LFLAGS += $(LIBS)
