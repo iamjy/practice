@@ -63,7 +63,7 @@ static int val = 100;
 /*****************************************************************************
  * Function definitions
  *****************************************************************************/
-int main (int arTgc, char const *argv[], char const *envp[])
+int main (int argc, char const *argv[], char const *envp[])
 {
   int val = 200;
   int &ref = val;

@@ -37,7 +37,7 @@ CFLAGS += $(INCLUDE) $(LIBRARY)
 LFLAGS += $(LIBS)
 
 $(TARGET) : $(OBJS)
-	$(CC) -o $@ $^ $(CFLAGS) $(LFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LFLAGS) --save-temps
 
 install:
 	@cp $(TARGET) $(BIN_DIR)

@@ -16,7 +16,9 @@ BUILD_BASE	:= base
 BUILD_MAIN	:= main
 
 
-all: $(BUILD_BASE) $(BUILD_MAIN)
+#all: $(BUILD_MAIN)
+all: $(BUILD_BASE)
+#all: $(BUILD_BASE) $(BUILD_MAIN)
 
 $(BUILD_BASE):
 	$(MAKE) -C $(SRC_BASE)
@@ -25,10 +27,6 @@ $(BUILD_BASE):
 $(BUILD_MAIN):
 	$(MAKE) -C $(SRC_MAIN)
 	$(MAKE) -C $(SRC_MAIN) install
-
-$(BUILD_BASIC):
-	$(MAKE) -C $(SRC_BASIC)
-	$(MAKE) -C $(SRC_BASIC) install
 
 install:
 	$(MAKE) -C $(SRC_BASE) install

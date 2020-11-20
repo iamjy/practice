@@ -17,7 +17,7 @@ CPPSRCS := \
 	$(SRC_DIR)/stl.cpp \
 	$(SRC_DIR)/api.cpp \
 	$(SRC_DIR)/cpp-syntax.cpp \
-	$(SRC_DIR)/main.cpp \
+	$(SRC_DIR)/main.cpp
 
 CSRCS := \
 	$(SRC_DIR)/c-syntax.c

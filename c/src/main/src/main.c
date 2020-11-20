@@ -14,6 +14,9 @@
 /*****************************************************************************
  * Type definitions
  *****************************************************************************/
+typedef uint32_t phys_addr_t;
+typedef struct membank;
+typedef struct meminfo;
 
 /*****************************************************************************
  * Enumerations
@@ -34,18 +37,94 @@
 
 #define SAVE_ITEM(x)    { .reg = (x) }
 
+#define GCC_VERSION (__GNUC__ * 10000 \
+		   + __GNUC_MINOR__ * 100 \
+		   + __GNUC_PATCHLEVEL__)
+
+#define DT_MACHINE_START(_name, _namestr)		\
+static const struct machine_desc __mach_desc_##_name	\
+ __attribute__((__section__(".arch.info.init"))) = {	\
+	.nr		= ~0,				\
+	.name		= _namestr,		\
+ };
+
+#if __GNUC__ > 3 || \
+    (__GNUC__ == 3 && (__GNUC_MINOR__ > 2 || \
+                       (__GNUC_MINOR__ == 2 && \
+                        __GNUC_PATCHLEVEL__ > 0)))
+#else
+#endif
+
 /*****************************************************************************
  * Structures
  *****************************************************************************/
 /**
  * 상품 재고 관리용 inventory 구조체 정의
  */
-typedef struct inventory {
+ typedef struct inventory {
 	char *number; ///< 상품 번호
 	char *name;   ///< 상품명
 	int volume;   ///< 재고 수량
 	int leadtime; ///< 매입 일수
 } INVENTORY;
+
+struct machine_desc {
+	unsigned int		nr;				/* architecture number	*/
+	const char			*name;			/* architecture name	*/
+	unsigned long		atag_offset;	/* tagged list (relative) */
+	const char *const 	*dt_compat;		/* array of device tree
+									 	* 'compatible' strings	*/
+
+	unsigned int		nr_irqs;		/* number of IRQs */
+
+	unsigned long		dma_zone_size;	/* size of DMA-able area */
+
+	unsigned int		video_start;	/* start of video RAM	*/
+	unsigned int		video_end;		/* end of video RAM	*/
+
+	unsigned char		reserve_lp0 :1;	/* never has lp0	*/
+	unsigned char		reserve_lp1 :1;	/* never has lp1	*/
+	unsigned char		reserve_lp2 :1;	/* never has lp2	*/
+	char				restart_mode;	/* default restart mode	*/
+	struct smp_operations	*smp;		/* SMP operations	*/
+	void	(*fixup)(struct tag *, char **, struct meminfo *);
+	void	(*reserve)(void);	/* reserve mem blocks	*/
+	void	(*map_io)(void);	/* IO mapping function	*/
+	void	(*init_early)(void);
+	void	(*init_irq)(void);
+	void	(*init_time)(void);
+	void	(*init_machine)(void);
+	void	(*init_late)(void);
+	void	(*handle_irq)(struct pt_regs *);
+	void	(*restart)(char, const char *);
+};
+
+struct smp_operations {
+	void (*smp_init_cpus)(void);
+	void (*smp_prepare_cpus)(unsigned int max_cpus);
+	void (*smp_secondary_init)(unsigned int cpu);
+	int  (*smp_boot_secondary)(unsigned int cpu, struct task_struct *idle);
+	int  (*cpu_kill)(unsigned int cpu);
+	void (*cpu_die)(unsigned int cpu);
+	int  (*cpu_disable)(unsigned int cpu);
+};
+
+struct pt_regs {
+	uint32_t var;
+};
+
+struct task_struct {
+	uint32_t var;
+};
+
+struct membank {
+	phys_addr_t start;
+	phys_addr_t size;
+};
+
+struct meminfo {
+	struct membank bank[10];
+};
 
 /*****************************************************************************
  * Global variables
@@ -71,6 +150,7 @@ static int token9 = 9;
  *****************************************************************************/
 int main (int arTgc, char const *argv[])
 {
+	DT_MACHINE_START(EXYNOS4210_DT, "Samsung Exynos4 Flattened Device Tree)");
 #if 0 // Sample 5.6
 	FILE *pf = NULL;
 	char *f_name = "README";

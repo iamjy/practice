@@ -22,10 +22,10 @@ INCS := \
 	$(INC_DIR)/main.h
 
 LIBRARY := \
-	-L$(USR_LIB_DIR)/common/lib
+	-L$(USR_LIB_DIR)/base/lib
 
 LIBS := \
-	-lcommon
+	-lbase
 
 OBJS := $(SRCS:.c=.o)
 

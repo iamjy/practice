@@ -3,7 +3,7 @@
 include ../../../build/make-rule/compiler.mk
 include ../../../build/make-rule/compile-option.mk
 include ../../../build/make-rule/compile-path.mk
-
+ 
 SRC_DIR := $(CUR_DIR)
 INC_DIR := $(UP_DIR)/include
 OBJ_DIR := $(UP_DIR)/obj
@@ -30,7 +30,7 @@ INCLUDE := \
 
 INCS := \
 	$(INC_DIR)/api.hpp \
-	$(INC_DIR)/c-syntax.hpp \
+	$(INC_DIR)/c-syntax.h \
 	$(INC_DIR)/cpp-syntax.hpp \
 	$(INC_DIR)/main.hpp
 
@@ -44,9 +44,6 @@ LIBS := \
 	-ldl \
 	-lm
 
-OBJS := $(SRCS:.cpp=.o)
-
-TARGET := base
 CPPFLAGS += -g --save-temps
 CFLAGS   += -g --save-temps
 CPPFLAGS += $(TARGET_DEFS) $(INCLUDE) $(LIBRARY)
