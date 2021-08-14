@@ -67,24 +67,25 @@ int main (int argc, char const *argv[], char const *envp[])
 {
   int val = 200;
   int &ref = val;
+  int64_t val1 = 10, val2 = 20;
+  char name[256] = {'\0',};
 
   c_function();
   c_function_in_cpp("hello");
 
   info_printf("%s\n", __FUNCTION__);
 
-  function(10);
+  function9(val1, val2);
 
   function2();
   B_COM::function2();
 
-  cout << "val = " << ::val << endl;
-  cout << "ref = " << ref << endl;
+  function("asdf");
 
   return 0;
 }
 
-void function(int a, int b)
+void function9(int32_t a, int32_t b)
 {
   cout << __FUNCTION__ << ' ' << a << ' ' << b << endl;
 }

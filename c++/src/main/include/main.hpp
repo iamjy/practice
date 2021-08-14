@@ -14,6 +14,7 @@
  *****************************************************************************/
 #include "common.hpp"
 #include "cpp-syntax.hpp"
+#include "function_overloading.hpp"
 #include "api.hpp"
 extern "C" {
 #include "common.h"
@@ -77,6 +78,6 @@ private:
  *  @param
  *  @return
  */
-void function(int a = 20, int b = 21);
+void function9(int32_t a, int32_t b);
 
 #endif /* _MAIN_H_ */

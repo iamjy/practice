@@ -37,7 +37,7 @@ INCS := \
 	$(INC_DIR)/main.hpp
 
 LIBRARY := \
-	-L$(USR_LIB_DIR)/common/lib
+	-L$(COMMON_DIR)/lib
 
 LIBS := \
 	-lcommon \
@@ -46,11 +46,13 @@ LIBS := \
 	-ldl \
 	-lm
 
-CPPFLAGS += -g --save-temps
-CFLAGS   += -g --save-temps
-CPPFLAGS += $(TARGET_DEFS) $(INCLUDE) $(LIBRARY)
-CFLAGS   += $(TARGET_DEFS) $(INCLUDE) $(LIBRARY)
-LDFLAGS  += $(INCLUDE) $(LIBRARY) $(LIBS)
+CPPFLAGS += -g
+CPPFLAGS += --save-temps
+CFLAGS   += -g
+CFLAGS   += --save-temps
+CPPFLAGS += $(TARGET_DEFS) $(INCLUDE)
+CFLAGS   += $(TARGET_DEFS) $(INCLUDE)
+LDFLAGS  += -Wl,-rpath $(COMMON_DIR)/lib $(LIBRARY) $(LIBS)
 
 $(TARGET) : $(OBJS)
 	$(CXX) -o $@ $^ $(LDFLAGS)

@@ -16,8 +16,8 @@ BUILD_BASE	:= base
 BUILD_MAIN	:= main
 
 
-#all: $(BUILD_MAIN)
-all: $(BUILD_BASE)
+all: $(BUILD_MAIN)
+#all: $(BUILD_BASE)
 #all: $(BUILD_BASE) $(BUILD_MAIN)
 
 $(BUILD_BASE):

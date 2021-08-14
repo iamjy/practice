@@ -12,119 +12,23 @@
 #include "main.h"
 
 /*****************************************************************************
+ * Macro definitions
+ *****************************************************************************/
+
+/*****************************************************************************
  * Type definitions
  *****************************************************************************/
-typedef uint32_t phys_addr_t;
-typedef struct membank;
-typedef struct meminfo;
 
 /*****************************************************************************
  * Enumerations
  *****************************************************************************/
 
 /*****************************************************************************
- * Macro definitions
- *****************************************************************************/
-#define BUFF_SIZE    256
-#define stringer( x )    printf( #x "\n" )
-
-#define F    abc
-#define B    def
-#define FB(arg)    #arg
-#define FB1(arg)   FB(arg)
-
-#define paster( n )    printf( "token" #n " = %d\n", token##n )
-
-#define SAVE_ITEM(x)    { .reg = (x) }
-
-#define GCC_VERSION (__GNUC__ * 10000 \
-		   + __GNUC_MINOR__ * 100 \
-		   + __GNUC_PATCHLEVEL__)
-
-#define DT_MACHINE_START(_name, _namestr)		\
-static const struct machine_desc __mach_desc_##_name	\
- __attribute__((__section__(".arch.info.init"))) = {	\
-	.nr		= ~0,				\
-	.name		= _namestr,		\
- };
-
-#if __GNUC__ > 3 || \
-    (__GNUC__ == 3 && (__GNUC_MINOR__ > 2 || \
-                       (__GNUC_MINOR__ == 2 && \
-                        __GNUC_PATCHLEVEL__ > 0)))
-#else
-#endif
-
-/*****************************************************************************
  * Structures
  *****************************************************************************/
 /**
- * 상품 재고 관리용 inventory 구조체 정의
+ *
  */
- typedef struct inventory {
-	char *number; ///< 상품 번호
-	char *name;   ///< 상품명
-	int volume;   ///< 재고 수량
-	int leadtime; ///< 매입 일수
-} INVENTORY;
-
-struct machine_desc {
-	unsigned int		nr;				/* architecture number	*/
-	const char			*name;			/* architecture name	*/
-	unsigned long		atag_offset;	/* tagged list (relative) */
-	const char *const 	*dt_compat;		/* array of device tree
-									 	* 'compatible' strings	*/
-
-	unsigned int		nr_irqs;		/* number of IRQs */
-
-	unsigned long		dma_zone_size;	/* size of DMA-able area */
-
-	unsigned int		video_start;	/* start of video RAM	*/
-	unsigned int		video_end;		/* end of video RAM	*/
-
-	unsigned char		reserve_lp0 :1;	/* never has lp0	*/
-	unsigned char		reserve_lp1 :1;	/* never has lp1	*/
-	unsigned char		reserve_lp2 :1;	/* never has lp2	*/
-	char				restart_mode;	/* default restart mode	*/
-	struct smp_operations	*smp;		/* SMP operations	*/
-	void	(*fixup)(struct tag *, char **, struct meminfo *);
-	void	(*reserve)(void);	/* reserve mem blocks	*/
-	void	(*map_io)(void);	/* IO mapping function	*/
-	void	(*init_early)(void);
-	void	(*init_irq)(void);
-	void	(*init_time)(void);
-	void	(*init_machine)(void);
-	void	(*init_late)(void);
-	void	(*handle_irq)(struct pt_regs *);
-	void	(*restart)(char, const char *);
-};
-
-struct smp_operations {
-	void (*smp_init_cpus)(void);
-	void (*smp_prepare_cpus)(unsigned int max_cpus);
-	void (*smp_secondary_init)(unsigned int cpu);
-	int  (*smp_boot_secondary)(unsigned int cpu, struct task_struct *idle);
-	int  (*cpu_kill)(unsigned int cpu);
-	void (*cpu_die)(unsigned int cpu);
-	int  (*cpu_disable)(unsigned int cpu);
-};
-
-struct pt_regs {
-	uint32_t var;
-};
-
-struct task_struct {
-	uint32_t var;
-};
-
-struct membank {
-	phys_addr_t start;
-	phys_addr_t size;
-};
-
-struct meminfo {
-	struct membank bank[10];
-};
 
 /*****************************************************************************
  * Global variables
@@ -133,7 +37,6 @@ struct meminfo {
 /*****************************************************************************
  * Static variables
  *****************************************************************************/
-static int token9 = 9;
 
 /*****************************************************************************
  * Extern variables
@@ -142,15 +45,71 @@ static int token9 = 9;
 /*****************************************************************************
  * Function prototypes
  *****************************************************************************/
- void operationError(char *fmt, ...);
- void dispInventory(INVENTORY *ip);
 
 /*****************************************************************************
  * Function definitions
  *****************************************************************************/
 int main (int arTgc, char const *argv[])
 {
+	BOOK books[ARRAY_SIZE];
+	BOOK input;
+	BOOK *find = NULL;
+
+	init_books(books, ARRAY_SIZE);
+
+	qsort(books, ARRAY_SIZE, sizeof(books[0]), compare_title);
+	print_books(books, ARRAY_SIZE);
+
+	printf("[종료] quit 입력\n");
+
+	while (1) {
+		printf("제목: ");
+		fgets(input.title, sizeof(input.title), stdin);
+		input.title[strlen(input.title) - 1] = '\0';
+		printf("%ld\n", strlen(input.title));
+		fflush(stdin);
+
+		if (strcmp(input.title, "quit") == 0)
+			break;
+
+		find = bsearch(&input, books, ARRAY_SIZE, sizeof(books[0]),
+						compare_title);
+
+		if (find != NULL)
+			printf("결과: %s %d %d\n", find->title, find->price, find->page);
+		else
+			printf("결과: 없음\n");
+		
+	}
+#if 0
+	int (* compare_funcs[])(const void *, const void *) = {
+		NULL,
+		compare_title,
+		compare_price,
+		compare_page
+	};
+	BOOK books[ARRAY_SIZE];
+	int select;
+
+	init_books(books, ARRAY_SIZE);
+
+	printf("[정렬 이전]\n");
+	print_books(books, ARRAY_SIZE);
+
+	while (1) {
+		select = select_menu();
+
+		if (select == QUIT)
+			break;
+
+		qsort(books, ARRAY_SIZE, sizeof(books[0]), compare_funcs[select]);
+		print_books(books, ARRAY_SIZE);
+	}
+#endif
+
+#if 0
 	DT_MACHINE_START(EXYNOS4210_DT, "Samsung Exynos4 Flattened Device Tree)");
+#endif
 #if 0 // Sample 5.6
 	FILE *pf = NULL;
 	char *f_name = "README";
@@ -338,66 +297,4 @@ int main (int arTgc, char const *argv[])
 	printf("%p %p\n", (array3 + 0), (array3 + 1));
 #endif
 	return 0;
-}
-
-void operationError(char *fmt, ...)
-{
-  char buff[BUFF_SIZE] = {'\0'};
-  va_list ap;
-
-  strcpy(buff, "ERROR: ");
-  va_start(ap, fmt);
-  vsprintf(buff + strlen(buff), fmt, ap);
-  va_end(ap);
-
-  if (puts(buff) == EOF) {
-    printf("Failed to write data to stdout!");
-  }
-
-  exit(1);
-}
-
-void dispInventory(INVENTORY *ip) {
-  printf("상품명 : %s\n", ip->name);
-  printf("상품번호 : %s\n", ip->number);
-  printf("재고 수량 : %d\n", ip->volume);
-  printf("매입 일수 : %d\n", ip->leadtime);
-}
-
-void my_sleep(int cnt) {
-  clock_t t = clock() * (1000 / CLOCKS_PER_SEC);
-  clock_t tterm = t + cnt;
-
-  while (t < tterm) {
-    t = clock() * (1000 / CLOCKS_PER_SEC);
-  }
-}
-
-void test_function_0 ()
-{
-	stringer(In quotes in the printf function call);
- 	stringer("In quotes when printed to the screen");
- 	stringer("This: \"  prints an escaped double quote");
-}
-
-void test_function_1 ()
-{
-	FB(F B);
-	FB1(F B);
-}
-
-void test_function_2 ()
-{
-	paster(9);
-}
-
-void test_function_3()
-{
-#if 0
-	SLEEP_SAVE slpsv[] = {
-		SAVE_ITEM(EXYNOS4_CLKSRC_CAM),
-	};
-
-	printf("EXYNOS4_CLKSRC_CAM (0x%x)\n", slpsv[0].reg);
-#endif
 }
