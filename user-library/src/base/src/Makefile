@@ -29,7 +29,9 @@ LIBS := \
 	-lpthread \
 	-lrt \
 	-ldl \
-	-lm
+	-lm \
+    -lstdc++ \
+    -lstdc
 
 ifeq ($(STATIC_BUILD), y)
 CFLAGS   +=
