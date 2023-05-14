@@ -1,0 +1,1393 @@
+Command line: --prefix=/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/output
+executing config test use_gold_linker
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests && g++ -fuse-ld=gold -o conftest-out conftest.cpp
+test config.qtbase.tests.use_gold_linker succeeded
+executing config test machineTuple
++ g++ -dumpmachine
+> x86_64-linux-gnu
+test config.qtbase.tests.machineTuple succeeded
+executing config test verifyspec
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/verifyspec && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/verifyspec
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/verifyspec && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/verifyspec -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o verifyspec.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/verifyspec/verifyspec.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o verifyspec verifyspec.o    
+test config.qtbase.tests.verifyspec succeeded
+executing config test alloca_h
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/alloca_h && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/alloca_h
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/alloca_h && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o alloca_h main.o    
+test config.qtbase.tests.alloca_h succeeded
+executing config test architecture
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/arch && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/arch
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/arch && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/arch -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o arch.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/arch/arch.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o arch arch.o    
+Detected architecture: x86_64 (mmx sse sse2)
+test config.qtbase.tests.architecture gave result x86_64
+executing config test sse2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -msse2 -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o sse2 main.o    
+test config.qtbase.tests.sse2 succeeded
+executing config test sse3
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse3 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse3
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse3 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -msse3 -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o sse3 main.o    
+test config.qtbase.tests.sse3 succeeded
+executing config test ssse3
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ssse3 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ssse3
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ssse3 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -mssse3 -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o ssse3 main.o    
+test config.qtbase.tests.ssse3 succeeded
+executing config test sse4_1
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse4_1 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse4_1
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse4_1 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -msse4.1 -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o sse4_1 main.o    
+test config.qtbase.tests.sse4_1 succeeded
+executing config test sse4_2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse4_2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse4_2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sse4_2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -msse4.2 -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o sse4_2 main.o    
+test config.qtbase.tests.sse4_2 succeeded
+executing config test avx
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -mavx -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx main.o    
+test config.qtbase.tests.avx succeeded
+executing config test avx2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -mavx2 -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx2 main.o    
+test config.qtbase.tests.avx2 succeeded
+executing config test avx512f
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=F /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -mavx512f -O2 -w -fPIC -DAVX512WANT=F -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512f succeeded
+executing config test avx512bw
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=BW /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512bw -O2 -w -fPIC -DAVX512WANT=BW -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512bw succeeded
+executing config test avx512cd
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=CD /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512cd -O2 -w -fPIC -DAVX512WANT=CD -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512cd succeeded
+executing config test avx512dq
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=DQ /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512dq -O2 -w -fPIC -DAVX512WANT=DQ -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512dq succeeded
+executing config test avx512er
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=ER /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512er -O2 -w -fPIC -DAVX512WANT=ER -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512er succeeded
+executing config test avx512ifma
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=IFMA /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512ifma -O2 -w -fPIC -DAVX512WANT=IFMA -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512ifma succeeded
+executing config test avx512pf
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=PF /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512pf -O2 -w -fPIC -DAVX512WANT=PF -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512pf succeeded
+executing config test avx512vbmi
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=VBMI /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512vbmi -O2 -w -fPIC -DAVX512WANT=VBMI -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512vbmi succeeded
+executing config test avx512vl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" AVX512=VL /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/avx512 && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f avx512.o
+> rm -f *~ core *.core
+> g++ -c -pipe -mavx512vl -O2 -w -fPIC -DAVX512WANT=VL -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o avx512.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/avx512/avx512.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o avx512 avx512.o    
+test config.qtbase.tests.avx512vl succeeded
+executing config test c++14
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/c++14 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/c++14
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/c++14 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -std=gnu++1y -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o c++14 main.o    
+test config.qtbase.tests.c++14 succeeded
+executing config test c++1z
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/c++1z && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/c++1z
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/c++1z && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -std=gnu++1z -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o c++1z main.o    
+test config.qtbase.tests.c++1z succeeded
+executing config test pkg-config
+Found pkg-config from path: /usr/bin/pkg-config
+test config.qtbase.tests.pkg-config succeeded
+looking for library dbus
+Trying source 0 (type pkgConfig) of library dbus ...
++ /usr/bin/pkg-config --exists --silence-errors dbus-1 '>=' 1.2
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library dbus ...
+  => source failed condition 'config.win32'.
+Trying source 2 (type inline) of library dbus ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/dbus && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -ldbus-1' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/dbus
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/dbus && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: dbus/dbus.h: No such file or directory
+>  #include <dbus/dbus.h>
+>           ^~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:165: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.qtbase.libraries.dbus FAILED
+executing config test enable_new_dtags
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests && g++ -fuse-ld=gold -Wl,--enable-new-dtags -o conftest-out conftest.cpp
+test config.qtbase.tests.enable_new_dtags succeeded
+executing config test f16c
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/f16c && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/f16c
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/f16c && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -mf16c -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o f16c main.o    
+test config.qtbase.tests.f16c succeeded
+looking for library host_dbus
+Trying source 0 (type pkgConfig) of library host_dbus ...
++ /usr/bin/pkg-config --exists --silence-errors dbus-1 '>=' 1.2
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library host_dbus ...
+ => source accepted.
+test config.qtbase.libraries.host_dbus succeeded
+looking for library libudev
+Trying source 0 (type pkgConfig) of library libudev ...
++ /usr/bin/pkg-config --exists --silence-errors libudev
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library libudev ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libudev && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -ludev' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libudev
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libudev && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: libudev.h: No such file or directory
+>  #include <libudev.h>
+>           ^~~~~~~~~~~
+> compilation terminated.
+> Makefile:165: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.qtbase.libraries.libudev FAILED
+executing config test posix_fallocate
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/posix_fallocate && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/posix_fallocate
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/posix_fallocate && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o posix_fallocate main.o    
+test config.qtbase.tests.posix_fallocate succeeded
+executing config test precompile_header
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/common/pch && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/common/pch
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/common/pch && MAKEFLAGS= /usr/bin/make
+> g++ -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/common/pch -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -x c++-header -c /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/common/pch/header.h -o .pch/pch.gch/c++
+> g++ -c -include .pch/pch -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/common/pch -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o source.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/common/pch/source.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o pch source.o    
+test config.qtbase.tests.precompile_header succeeded
+executing config test reduce_exports
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/reduce_exports && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/reduce_exports
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/reduce_exports && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -fvisibility=hidden -fvisibility-inlines-hidden -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> rm -f libreduce_exports.so.1.0.0 libreduce_exports.so libreduce_exports.so.1 libreduce_exports.so.1.0
+> g++ -Wl,-O1 -fuse-ld=gold -shared -Wl,-soname,libreduce_exports.so.1 -o libreduce_exports.so.1.0.0 main.o    
+> ln -s libreduce_exports.so.1.0.0 libreduce_exports.so
+> ln -s libreduce_exports.so.1.0.0 libreduce_exports.so.1
+> ln -s libreduce_exports.so.1.0.0 libreduce_exports.so.1.0
+test config.qtbase.tests.reduce_exports succeeded
+executing config test reduce_relocations
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/reduce_relocations && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/reduce_relocations
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/reduce_relocations && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> rm -f libreduce_relocations.so.1.0.0 libreduce_relocations.so libreduce_relocations.so.1 libreduce_relocations.so.1.0
+> g++ -Wl,-O1 -fuse-ld=gold -shared -Wl,-Bsymbolic-functions -Wl,-soname,libreduce_relocations.so.1 -o libreduce_relocations.so.1.0.0 main.o    
+> ln -s libreduce_relocations.so.1.0.0 libreduce_relocations.so
+> ln -s libreduce_relocations.so.1.0.0 libreduce_relocations.so.1
+> ln -s libreduce_relocations.so.1.0.0 libreduce_relocations.so.1.0
+test config.qtbase.tests.reduce_relocations succeeded
+executing config test stl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/stl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/stl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/stl && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/stl -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o stltest.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/stl/stltest.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o stl stltest.o    
+test config.qtbase.tests.stl succeeded
+looking for library zlib
+Trying source 0 (type inline) of library zlib ...
+  => source failed condition 'config.msvc'.
+Trying source 1 (type inline) of library zlib ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/zlib && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lz' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/zlib
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/zlib && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o zlib main.o   -lz 
+ => source accepted.
+test config.qtbase.libraries.zlib succeeded
+looking for library librt
+Trying source 0 (type inline) of library librt ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/librt && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/librt
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/librt && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o librt main.o    
+ => source accepted.
+test config.corelib.libraries.librt succeeded
+executing config test clock-monotonic
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/clock-monotonic && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/clock-monotonic
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/clock-monotonic && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o clock-monotonic main.o    
+test config.corelib.tests.clock-monotonic succeeded
+looking for library libdl
+Trying source 0 (type inline) of library libdl ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libdl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libdl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libdl && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o libdl main.o    
+> main.o:main.cpp:function main: error: undefined reference to 'dlopen'
+> main.o:main.cpp:function main: error: undefined reference to 'dlclose'
+> main.o:main.cpp:function main: error: undefined reference to 'dlsym'
+> main.o:main.cpp:function main: error: undefined reference to 'dlerror'
+> collect2: error: ld returned 1 exit status
+> Makefile:65: recipe for target 'libdl' failed
+> make: *** [libdl] Error 1
+ => source failed verification.
+Trying source 1 (type inline) of library libdl ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libdl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -ldl' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libdl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libdl && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o libdl main.o   -ldl 
+ => source accepted.
+test config.corelib.libraries.libdl succeeded
+executing config test eventfd
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/eventfd && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/eventfd
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/eventfd && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o eventfd main.o    
+test config.corelib.tests.eventfd succeeded
+looking for library glib
+Trying source 0 (type pkgConfig) of library glib ...
++ /usr/bin/pkg-config --exists --silence-errors glib-2.0 gthread-2.0
++ /usr/bin/pkg-config --modversion glib-2.0 gthread-2.0
+> 2.56.4
+> 2.56.4
++ /usr/bin/pkg-config --libs-only-L glib-2.0 gthread-2.0
++ /usr/bin/pkg-config --libs-only-l glib-2.0 gthread-2.0
+> -lgthread-2.0 -lglib-2.0
++ /usr/bin/pkg-config --cflags glib-2.0 gthread-2.0
+> -pthread -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/glib && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lgthread-2.0 -lglib-2.0' 'QMAKE_CFLAGS += -pthread -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' 'QMAKE_CXXFLAGS += -pthread -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/glib
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/glib && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -pthread -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o glib main.o   -lgthread-2.0 -lglib-2.0 
+ => source accepted.
+test config.corelib.libraries.glib succeeded
+executing config test posix-iconv
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/iconv && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/iconv
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/iconv && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/iconv -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o iconv.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/iconv/iconv.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o iconv iconv.o    
+test config.corelib.tests.posix-iconv succeeded
+looking for library icu
+Trying source 0 (type inline) of library icu ...
+  => source failed condition 'config.win32 && !features.shared'.
+Trying source 1 (type inline) of library icu ...
+  => source failed condition 'config.win32 && features.shared'.
+Trying source 2 (type inline) of library icu ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/icu && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -licui18n -licuuc -licudata' 'LIBS += -ldl' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/icu
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/icu && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o icu main.o   -licui18n -licuuc -licudata -ldl 
+ => source accepted.
+test config.corelib.libraries.icu succeeded
+executing config test inotify
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/inotify && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/inotify
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/inotify && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o inotify main.o    
+test config.corelib.tests.inotify succeeded
+executing config test ipc_sysv
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ipc_sysv && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ipc_sysv
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ipc_sysv && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o ipc_sysv main.o    
+test config.corelib.tests.ipc_sysv succeeded
+executing config test ppoll
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ppoll && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ppoll
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ppoll && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o ppoll main.o    
+test config.corelib.tests.ppoll succeeded
+looking for library slog2
+Trying source 0 (type inline) of library slog2 ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/slog2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lslog2' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/slog2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/slog2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: sys/slog2.h: No such file or directory
+>  #include <sys/slog2.h>
+>           ^~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.corelib.libraries.slog2 FAILED
+looking for library libatomic
+Trying source 0 (type inline) of library libatomic ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libatomic && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libatomic
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libatomic && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -std=gnu++11 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o libatomic main.o    
+ => source accepted.
+test config.corelib.libraries.libatomic succeeded
+looking for library doubleconversion
+Trying source 0 (type inline) of library doubleconversion ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/doubleconversion && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -ldouble-conversion' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/doubleconversion
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/doubleconversion && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: double-conversion/double-conversion.h: No such file or directory
+>  #include <double-conversion/double-conversion.h>
+>           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.corelib.libraries.doubleconversion FAILED
+looking for library pcre2
+Trying source 0 (type inline) of library pcre2 ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/pcre2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lpcre2-16' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/pcre2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/pcre2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:3:10: fatal error: pcre2.h: No such file or directory
+>  #include <pcre2.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.corelib.libraries.pcre2 FAILED
+executing config test cloexec
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/cloexec && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/cloexec
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/cloexec && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o cloexec main.o    
+test config.corelib.tests.cloexec succeeded
+executing config test atomicfptr
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/atomicfptr && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/atomicfptr
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/atomicfptr && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -std=gnu++11 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o atomicfptr main.o    
+test config.corelib.tests.atomicfptr succeeded
+Trying source 0 (type makeSpec) of library network ...
+ => source accepted.
+executing config test getaddrinfo
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/getaddrinfo && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/getaddrinfo
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/getaddrinfo && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o getaddrinfo main.o    
+test config.network.tests.getaddrinfo succeeded
+executing config test getifaddrs
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/getifaddrs && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/getifaddrs
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/getifaddrs && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o getifaddrs main.o    
+test config.network.tests.getifaddrs succeeded
+executing config test ipv6ifname
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ipv6ifname && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ipv6ifname
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ipv6ifname && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o ipv6ifname main.o    
+test config.network.tests.ipv6ifname succeeded
+looking for library openssl_headers
+Trying source 0 (type inline) of library openssl_headers ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/openssl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/openssl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/openssl && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/openssl -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o openssl.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/openssl/openssl.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/config.tests/openssl/openssl.cpp:40:10: fatal error: openssl/opensslv.h: No such file or directory
+>  #include <openssl/opensslv.h>
+>           ^~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:170: recipe for target 'openssl.o' failed
+> make: *** [openssl.o] Error 1
+ => source failed verification.
+test config.network.libraries.openssl_headers FAILED
+looking for library xcb
+Trying source 0 (type pkgConfig) of library xcb ...
++ /usr/bin/pkg-config --exists --silence-errors xcb '>=' 1.5
++ /usr/bin/pkg-config --modversion xcb '>=' 1.5
+> 1.13
++ /usr/bin/pkg-config --libs-only-L xcb '>=' 1.5
++ /usr/bin/pkg-config --libs-only-l xcb '>=' 1.5
+> -lxcb
++ /usr/bin/pkg-config --cflags xcb '>=' 1.5
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lxcb' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o xcb main.o   -lxcb 
+ => source accepted.
+test config.gui.libraries.xcb succeeded
+looking for library atspi
+Trying source 0 (type pkgConfig) of library atspi ...
++ /usr/bin/pkg-config --exists --silence-errors atspi-2
+pkg-config did not find package.
+  => source produced no result.
+test config.gui.libraries.atspi FAILED
+looking for library opengl
+Trying source 0 (type pkgConfig) of library opengl ...
++ /usr/bin/pkg-config --exists --silence-errors gl
++ /usr/bin/pkg-config --modversion gl
+> 20.0.8
++ /usr/bin/pkg-config --libs-only-L gl
++ /usr/bin/pkg-config --libs-only-l gl
+> -lGL
++ /usr/bin/pkg-config --cflags gl
+> -I/usr/include/libdrm
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/opengl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/opengl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/opengl && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o opengl main.o   -lGL 
+ => source accepted.
+test config.gui.libraries.opengl succeeded
+looking for library egl
+Trying source 0 (type pkgConfig) of library egl ...
++ /usr/bin/pkg-config --exists --silence-errors egl
++ /usr/bin/pkg-config --modversion egl
+> 20.0.8
++ /usr/bin/pkg-config --libs-only-L egl
++ /usr/bin/pkg-config --libs-only-l egl
+> -lEGL
++ /usr/bin/pkg-config --cflags egl
+> -I/usr/include/libdrm
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o egl main.o   -lEGL 
+ => source accepted.
+test config.gui.libraries.egl succeeded
+looking for library xcb_xlib
+Trying source 0 (type pkgConfig) of library xcb_xlib ...
++ /usr/bin/pkg-config --exists --silence-errors x11-xcb x11 xcb
++ /usr/bin/pkg-config --modversion x11-xcb x11 xcb
+> 1.6.4
+> 1.6.4
+> 1.13
++ /usr/bin/pkg-config --libs-only-L x11-xcb x11 xcb
++ /usr/bin/pkg-config --libs-only-l x11-xcb x11 xcb
+> -lX11-xcb -lX11 -lxcb
++ /usr/bin/pkg-config --cflags x11-xcb x11 xcb
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_xlib && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lX11-xcb -lX11 -lxcb' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_xlib
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_xlib && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o xcb_xlib main.o   -lX11-xcb -lX11 -lxcb 
+ => source accepted.
+test config.gui.libraries.xcb_xlib succeeded
+executing config test egl-x11
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-x11 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' 'LIBS += -lX11-xcb -lX11 -lxcb' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-x11
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-x11 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o egl-x11 main.o   -lEGL -lX11-xcb -lX11 -lxcb 
+test config.gui.tests.egl-x11 succeeded
+Trying source 0 (type inline) of library bcm_host ...
+ => source accepted.
+executing config test egl-brcm
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-brcm && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' 'LIBS += -lbcm_host' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-brcm
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-brcm && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:3:10: fatal error: bcm_host.h: No such file or directory
+>  #include <bcm_host.h>
+>           ^~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+test config.gui.tests.egl-brcm FAILED
+executing config test egl-egldevice
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-egldevice && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-egldevice
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-egldevice && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o egl-egldevice main.o   -lEGL 
+test config.gui.tests.egl-egldevice succeeded
+looking for library drm
+Trying source 0 (type pkgConfig) of library drm ...
++ /usr/bin/pkg-config --exists --silence-errors libdrm
++ /usr/bin/pkg-config --modversion libdrm
+> 2.4.101
++ /usr/bin/pkg-config --libs-only-L libdrm
++ /usr/bin/pkg-config --libs-only-l libdrm
+> -ldrm
++ /usr/bin/pkg-config --cflags libdrm
+> -I/usr/include/libdrm
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/drm && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -ldrm' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/drm
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/drm && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o drm main.o   -ldrm 
+ => source accepted.
+test config.gui.libraries.drm succeeded
+looking for library gbm
+Trying source 0 (type pkgConfig) of library gbm ...
++ /usr/bin/pkg-config --exists --silence-errors gbm
+pkg-config did not find package.
+  => source produced no result.
+test config.gui.libraries.gbm FAILED
+executing config test egl-mali
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-mali && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-mali
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-mali && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: EGL/fbdev_window.h: No such file or directory
+>  #include <EGL/fbdev_window.h>
+>           ^~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+test config.gui.tests.egl-mali FAILED
+executing config test egl-mali-2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-mali-2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-mali-2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-mali-2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp: In function ‘int main(int, char**)’:
+> main.cpp:8:5: error: ‘mali_native_window’ was not declared in this scope
+>      mali_native_window *w = 0;
+>      ^~~~~~~~~~~~~~~~~~
+> main.cpp:8:5: note: suggested alternative: ‘PointerWindow’
+>      mali_native_window *w = 0;
+>      ^~~~~~~~~~~~~~~~~~
+>      PointerWindow
+> main.cpp:8:25: error: ‘w’ was not declared in this scope
+>      mali_native_window *w = 0;
+>                          ^
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+test config.gui.tests.egl-mali-2 FAILED
+executing config test egl-viv
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-viv && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-viv
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/egl-viv && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC -DEGL_API_FB=1 -DLINUX=1 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:3:10: fatal error: EGL/eglvivante.h: No such file or directory
+>  #include <EGL/eglvivante.h>
+>           ^~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+test config.gui.tests.egl-viv FAILED
+executing config test evdev
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/evdev && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/evdev
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/evdev && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o evdev main.o    
+test config.gui.tests.evdev succeeded
+looking for library freetype
+Trying source 0 (type pkgConfig) of library freetype ...
++ /usr/bin/pkg-config --exists --silence-errors freetype2
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type freetype) of library freetype ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/freetype && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lfreetype' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/freetype
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/freetype && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: ft2build.h: No such file or directory
+>  #include <ft2build.h>
+>           ^~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.gui.libraries.freetype FAILED
+executing config test linuxfb
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/linuxfb && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/linuxfb
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/linuxfb && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o linuxfb main.o    
+test config.gui.tests.linuxfb succeeded
+looking for library mtdev
+Trying source 0 (type pkgConfig) of library mtdev ...
++ /usr/bin/pkg-config --exists --silence-errors mtdev
+pkg-config did not find package.
+  => source produced no result.
+test config.gui.libraries.mtdev FAILED
+looking for library openvg
+Trying source 0 (type pkgConfig) of library openvg ...
++ /usr/bin/pkg-config --exists --silence-errors vg
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type makeSpec) of library openvg ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/openvg && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lOpenVG' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/openvg
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/openvg && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: VG/openvg.h: No such file or directory
+>  #include <VG/openvg.h>
+>           ^~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.gui.libraries.openvg FAILED
+executing config test qpa_default_platform
+test config.gui.tests.qpa_default_platform gave result xcb
+looking for library harfbuzz
+Trying source 0 (type inline) of library harfbuzz ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/harfbuzz && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lharfbuzz' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/harfbuzz
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/harfbuzz && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o harfbuzz main.o   -lharfbuzz 
+ => source accepted.
+test config.gui.libraries.harfbuzz succeeded
+looking for library libjpeg
+Trying source 0 (type inline) of library libjpeg ...
+  => source failed condition 'config.msvc'.
+Trying source 1 (type inline) of library libjpeg ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libjpeg && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -ljpeg' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libjpeg
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libjpeg && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o libjpeg main.o   -ljpeg 
+ => source accepted.
+test config.gui.libraries.libjpeg succeeded
+looking for library libpng
+Trying source 0 (type pkgConfig) of library libpng ...
++ /usr/bin/pkg-config --exists --silence-errors libpng
++ /usr/bin/pkg-config --modversion libpng
+> 1.6.34
++ /usr/bin/pkg-config --libs-only-L libpng
++ /usr/bin/pkg-config --libs-only-l libpng
+> -lpng16 -lz
++ /usr/bin/pkg-config --cflags libpng
+> -I/usr/include/libpng16
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libpng && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lpng16 -lz' 'QMAKE_CFLAGS += -I/usr/include/libpng16' 'QMAKE_CXXFLAGS += -I/usr/include/libpng16' 'LIBS += -lz' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libpng
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libpng && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libpng16 -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o libpng main.o   -lpng16 -lz 
+ => source accepted.
+test config.gui.libraries.libpng succeeded
+looking for library xcb_syslibs
+Trying source 0 (type pkgConfig) of library xcb_syslibs ...
++ /usr/bin/pkg-config --exists --silence-errors xcb xcb-shm xcb-sync xcb-xfixes xcb-xinerama xcb-randr xcb-image xcb-keysyms xcb-icccm xcb-shape
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library xcb_syslibs ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_syslibs && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lxcb -lxcb-shm -lxcb-sync -lxcb-xfixes -lxcb-xinerama -lxcb-randr -lxcb-image -lxcb-keysyms -lxcb-icccm -lxcb-shape' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_syslibs
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_syslibs && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:4:10: fatal error: xcb/xcb_image.h: No such file or directory
+>  #include <xcb/xcb_image.h>
+>           ^~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.gui.libraries.xcb_syslibs FAILED
+looking for library tslib
+Trying source 0 (type inline) of library tslib ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/tslib && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lts' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/tslib
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/tslib && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: tslib.h: No such file or directory
+>  #include <tslib.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.gui.libraries.tslib FAILED
+executing config test x11prefix
++ /usr/bin/pkg-config --exists --silence-errors x11
++ /usr/bin/pkg-config --variable=prefix x11
+> /usr
+test config.gui.tests.x11prefix gave result /usr
+looking for library xcb_glx
+Trying source 0 (type pkgConfig) of library xcb_glx ...
++ /usr/bin/pkg-config --exists --silence-errors xcb-glx xcb
++ /usr/bin/pkg-config --modversion xcb-glx xcb
+> 1.13
+> 1.13
++ /usr/bin/pkg-config --libs-only-L xcb-glx xcb
++ /usr/bin/pkg-config --libs-only-l xcb-glx xcb
+> -lxcb-glx -lxcb
++ /usr/bin/pkg-config --cflags xcb-glx xcb
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_glx && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lxcb-glx -lxcb' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_glx
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcb_glx && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o xcb_glx main.o   -lxcb-glx -lxcb 
+ => source accepted.
+test config.gui.libraries.xcb_glx succeeded
+looking for library x11sm
+Trying source 0 (type pkgConfig) of library x11sm ...
++ /usr/bin/pkg-config --exists --silence-errors sm ice
++ /usr/bin/pkg-config --modversion sm ice
+> 1.2.2
+> 1.0.9
++ /usr/bin/pkg-config --libs-only-L sm ice
++ /usr/bin/pkg-config --libs-only-l sm ice
+> -lSM -lICE
++ /usr/bin/pkg-config --cflags sm ice
+ => source accepted.
+test config.gui.libraries.x11sm succeeded
+executing config test xlib
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xlib && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xlib
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xlib && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o xlib main.o    -lXext -lX11 -lm
+test config.gui.tests.xlib succeeded
+looking for library xinput2
+Trying source 0 (type pkgConfig) of library xinput2 ...
++ /usr/bin/pkg-config --exists --silence-errors xi
++ /usr/bin/pkg-config --modversion xi
+> 1.7.9
++ /usr/bin/pkg-config --libs-only-L xi
++ /usr/bin/pkg-config --libs-only-l xi
+> -lXi
++ /usr/bin/pkg-config --cflags xi
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xinput2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lXi' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xinput2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xinput2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o xinput2 main.o   -lXi -lXext -lX11 -lm
+ => source accepted.
+test config.gui.libraries.xinput2 succeeded
+looking for library xkbcommon_x11
+Trying source 0 (type pkgConfig) of library xkbcommon_x11 ...
++ /usr/bin/pkg-config --exists --silence-errors xkbcommon xkbcommon-x11 '>=' 0.4.1
+pkg-config did not find package.
+  => source produced no result.
+test config.gui.libraries.xkbcommon_x11 FAILED
+executing config test xkbconfigroot
++ /usr/bin/pkg-config --exists --silence-errors xkeyboard-config
++ /usr/bin/pkg-config --variable=xkb_base xkeyboard-config
+> /usr/share/X11/xkb
+test config.gui.tests.xkbconfigroot gave result /usr/share/X11/xkb
+looking for library xkbcommon
+Trying source 0 (type pkgConfig) of library xkbcommon ...
++ /usr/bin/pkg-config --exists --silence-errors xkbcommon
+pkg-config did not find package.
+  => source produced no result.
+test config.gui.libraries.xkbcommon FAILED
+looking for library gtk3
+Trying source 0 (type pkgConfig) of library gtk3 ...
++ /usr/bin/pkg-config --exists --silence-errors gtk+-3.0 '>=' 3.6
+pkg-config did not find package.
+  => source produced no result.
+test config.widgets.libraries.gtk3 FAILED
+looking for library cups
+Trying source 0 (type inline) of library cups ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/cups && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lcups' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/cups
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/cups && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: cups/cups.h: No such file or directory
+>  #include <cups/cups.h>
+>           ^~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.printsupport.libraries.cups FAILED
+looking for library db2
+Trying source 0 (type inline) of library db2 ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library db2 ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/db2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -ldb2' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/db2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/db2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: sqlcli.h: No such file or directory
+>  #include <sqlcli.h>
+>           ^~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.db2 FAILED
+looking for library ibase
+Trying source 0 (type inline) of library ibase ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library ibase ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ibase && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lgds' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ibase
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/ibase && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: ibase.h: No such file or directory
+>  #include <ibase.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.ibase FAILED
+looking for library mysql
+Trying source 0 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 1 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 2 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 3 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 4 (type inline) of library mysql ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/mysql && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lmysqlclient_r' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/mysql
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/mysql && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:5:10: fatal error: mysql.h: No such file or directory
+>  #include <mysql.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+Trying source 5 (type inline) of library mysql ...
+  => source failed condition 'config.win32'.
+Trying source 6 (type inline) of library mysql ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/mysql && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lmysqlclient' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/mysql
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/mysql && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:5:10: fatal error: mysql.h: No such file or directory
+>  #include <mysql.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.mysql FAILED
+looking for library oci
+Trying source 0 (type inline) of library oci ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library oci ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/oci && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lclntsh' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/oci
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/oci && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: oci.h: No such file or directory
+>  #include <oci.h>
+>           ^~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.oci FAILED
+looking for library odbc
+Trying source 0 (type inline) of library odbc ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library odbc ...
+  => source failed condition 'config.darwin'.
+Trying source 2 (type inline) of library odbc ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/odbc && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lodbc' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/odbc
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/odbc && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:5:10: fatal error: sql.h: No such file or directory
+>  #include <sql.h>
+>           ^~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.odbc FAILED
+looking for library psql
+Trying source 0 (type pkgConfig) of library psql ...
++ /usr/bin/pkg-config --exists --silence-errors libpq
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type psqlConfig) of library psql ...
+pg_config not found.
+  => source produced no result.
+Trying source 2 (type psqlEnv) of library psql ...
+  => source failed condition 'config.win32'.
+Trying source 3 (type psqlEnv) of library psql ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/psql && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lpq' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/psql
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/psql && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: libpq-fe.h: No such file or directory
+>  #include <libpq-fe.h>
+>           ^~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.psql FAILED
+looking for library sqlite2
+Trying source 0 (type inline) of library sqlite2 ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sqlite2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lsqlite' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sqlite2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sqlite2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: sqlite.h: No such file or directory
+>  #include <sqlite.h>
+>           ^~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.sqlite2 FAILED
+looking for library tds
+Trying source 0 (type sybaseEnv) of library tds ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type sybaseEnv) of library tds ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/tds && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lsybdb' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/tds
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/tds && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: sybfront.h: No such file or directory
+>  #include <sybfront.h>
+>           ^~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.tds FAILED
+executing config test socketcan
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/socketcan && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtserialbus/config.tests/socketcan
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/socketcan && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtserialbus/config.tests/socketcan -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtserialbus/config.tests/socketcan/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o socketcan main.o    
+test config.serialbus.tests.socketcan succeeded
+executing config test socketcan_fd
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/socketcan_fd && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtserialbus/config.tests/socketcan_fd
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/socketcan_fd && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtserialbus/config.tests/socketcan_fd -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtserialbus/config.tests/socketcan_fd/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o socketcan_fd main.o    
+test config.serialbus.tests.socketcan_fd succeeded
+executing config test d3d12
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/d3d12 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtdeclarative/config.tests/d3d12
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/d3d12 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtdeclarative/config.tests/d3d12 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o d3d12.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtdeclarative/config.tests/d3d12/d3d12.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtdeclarative/config.tests/d3d12/d3d12.cpp:40:10: fatal error: d3d12.h: No such file or directory
+>  #include <d3d12.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'd3d12.o' failed
+> make: *** [d3d12.o] Error 1
+test config.quick.tests.d3d12 FAILED
+looking for library sdl2
+Trying source 0 (type pkgConfig) of library sdl2 ...
++ /usr/bin/pkg-config --exists --silence-errors sdl2
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library sdl2 ...
+  => source failed condition 'config.darwin'.
+Trying source 2 (type inline) of library sdl2 ...
+  => source failed condition 'config.win32'.
+Trying source 3 (type inline) of library sdl2 ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sdl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lSDL2' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtgamepad/config.tests/sdl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/sdl && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtgamepad/config.tests/sdl -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtgamepad/config.tests/sdl/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtgamepad/config.tests/sdl/main.cpp:37:10: fatal error: SDL.h: No such file or directory
+>  #include <SDL.h>
+>           ^~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.gamepad.libraries.sdl2 FAILED
+looking for library assimp
+Trying source 0 (type pkgConfig) of library assimp ...
++ /usr/bin/pkg-config --exists --silence-errors assimp '>' 3.3.1
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library assimp ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/assimp && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lassimp' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/assimp
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/assimp && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/assimp -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/assimp/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/assimp/main.cpp:29:10: fatal error: assimp/cimport.h: No such file or directory
+>  #include <assimp/cimport.h>
+>           ^~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.core.libraries.assimp FAILED
+looking for library fbx
+Trying source 0 (type fbx) of library fbx ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/fbx && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lfbxsdk -L/usr/local/lib -L/usr/lib' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/fbx
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/fbx && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/fbx -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/fbx/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qt3d/config.tests/fbx/main.cpp:29:10: fatal error: fbxsdk.h: No such file or directory
+>  #include <fbxsdk.h>
+>           ^~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.geometryloaders.libraries.fbx FAILED
+looking for library wayland-client
+Trying source 0 (type pkgConfig) of library wayland-client ...
++ /usr/bin/pkg-config --exists --silence-errors wayland-client
++ /usr/bin/pkg-config --modversion wayland-client
+> 1.16.0
++ /usr/bin/pkg-config --libs-only-L wayland-client
++ /usr/bin/pkg-config --libs-only-l wayland-client
+> -lwayland-client
++ /usr/bin/pkg-config --cflags wayland-client
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lwayland-client' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o wayland main.o   -lwayland-client 
+ => source accepted.
+test config.client.libraries.wayland-client succeeded
+looking for library wayland-cursor
+Trying source 0 (type pkgConfig) of library wayland-cursor ...
++ /usr/bin/pkg-config --exists --silence-errors wayland-cursor
++ /usr/bin/pkg-config --modversion wayland-cursor
+> 1.16.0
++ /usr/bin/pkg-config --libs-only-L wayland-cursor
++ /usr/bin/pkg-config --libs-only-l wayland-cursor
+> -lwayland-cursor
++ /usr/bin/pkg-config --cflags wayland-cursor
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_cursor && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lwayland-cursor' 'LIBS += -lwayland-client' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_cursor
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_cursor && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_cursor -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_cursor/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o wayland_cursor main.o   -lwayland-cursor -lwayland-client 
+ => source accepted.
+test config.client.libraries.wayland-cursor succeeded
+executing config test wayland-scanner
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_scanner && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lwayland-client' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_scanner && MAKEFLAGS= /usr/bin/make
+> wayland-scanner client-header < /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner/scanner-test.xml > wayland-scanner-test-client-protocol.h
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o wayland_scanner main.o   -lwayland-client 
+test config.client.tests.wayland-scanner succeeded
+executing config test drm-egl-server
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/drm_egl_server && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/drm_egl_server
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/drm_egl_server && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/drm_egl_server -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/drm_egl_server/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o drm_egl_server main.o   -lEGL 
+test config.client.tests.drm-egl-server succeeded
+executing config test libhybris-egl-server
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libhybris_egl_server && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libhybris_egl_server && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server/main.cpp:53:10: fatal error: hybris/eglplatformcommon/hybris_nativebufferext.h: No such file or directory
+>  #include <hybris/eglplatformcommon/hybris_nativebufferext.h>
+>           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+test config.client.tests.libhybris-egl-server FAILED
+looking for library wayland-egl
+Trying source 0 (type pkgConfig) of library wayland-egl ...
++ /usr/bin/pkg-config --exists --silence-errors wayland-egl
++ /usr/bin/pkg-config --modversion wayland-egl
+> 18.1.0
++ /usr/bin/pkg-config --libs-only-L wayland-egl
++ /usr/bin/pkg-config --libs-only-l wayland-egl
+> -lwayland-egl -lwayland-client
++ /usr/bin/pkg-config --cflags wayland-egl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_egl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lwayland-egl -lwayland-client' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_egl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_egl && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_egl -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_egl/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o wayland_egl main.o   -lwayland-egl -lwayland-client 
+ => source accepted.
+test config.client.libraries.wayland-egl succeeded
+looking for library xcomposite
+Trying source 0 (type pkgConfig) of library xcomposite ...
++ /usr/bin/pkg-config --exists --silence-errors xcomposite
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library xcomposite ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcomposite && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lxcomposite' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcomposite && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite/main.cpp:51:10: fatal error: X11/extensions/Xcomposite.h: No such file or directory
+>  #include <X11/extensions/Xcomposite.h>
+>           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.client.libraries.xcomposite FAILED
+looking for library wayland-server
+Trying source 0 (type pkgConfig) of library wayland-server ...
++ /usr/bin/pkg-config --exists --silence-errors wayland-server
++ /usr/bin/pkg-config --modversion wayland-server
+> 1.16.0
++ /usr/bin/pkg-config --libs-only-L wayland-server
++ /usr/bin/pkg-config --libs-only-l wayland-server
+> -lwayland-server
++ /usr/bin/pkg-config --cflags wayland-server
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lwayland-server' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o wayland main.o   -lwayland-server 
+ => source accepted.
+test config.compositor.libraries.wayland-server succeeded
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_scanner && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lwayland-server' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_scanner && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f wayland-scanner-test-client-protocol.h
+> rm -f main.o
+> rm -f *~ core *.core
+> wayland-scanner client-header < /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner/scanner-test.xml > wayland-scanner-test-client-protocol.h
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_scanner/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o wayland_scanner main.o   -lwayland-server 
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/drm_egl_server && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/drm_egl_server
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/drm_egl_server && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/drm_egl_server -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/drm_egl_server/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o drm_egl_server main.o   -lEGL 
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libhybris_egl_server && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lEGL' 'QMAKE_CFLAGS += -I/usr/include/libdrm' 'QMAKE_CXXFLAGS += -I/usr/include/libdrm' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/libhybris_egl_server && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -I/usr/include/libdrm -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/libhybris_egl_server/main.cpp:53:10: fatal error: hybris/eglplatformcommon/hybris_nativebufferext.h: No such file or directory
+>  #include <hybris/eglplatformcommon/hybris_nativebufferext.h>
+>           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+Trying source 0 (type pkgConfig) of library wayland-egl ...
++ /usr/bin/pkg-config --exists --silence-errors wayland-egl
++ /usr/bin/pkg-config --modversion wayland-egl
+> 18.1.0
++ /usr/bin/pkg-config --libs-only-L wayland-egl
++ /usr/bin/pkg-config --libs-only-l wayland-egl
+> -lwayland-egl -lwayland-client
++ /usr/bin/pkg-config --cflags wayland-egl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_egl && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lwayland-egl -lwayland-client' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_egl
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/wayland_egl && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_egl -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/wayland_egl/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o wayland_egl main.o   -lwayland-egl -lwayland-client 
+ => source accepted.
+Trying source 0 (type pkgConfig) of library xcomposite ...
++ /usr/bin/pkg-config --exists --silence-errors xcomposite
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library xcomposite ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcomposite && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lxcomposite' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/xcomposite && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwayland/config.tests/xcomposite/main.cpp:51:10: fatal error: X11/extensions/Xcomposite.h: No such file or directory
+>  #include <X11/extensions/Xcomposite.h>
+>           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+looking for library bluez
+Trying source 0 (type pkgConfig) of library bluez ...
++ /usr/bin/pkg-config --exists --silence-errors bluez
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library bluez ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/bluez && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lbluetooth' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtconnectivity/config.tests/bluez
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/bluez && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtconnectivity/config.tests/bluez -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtconnectivity/config.tests/bluez/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtconnectivity/config.tests/bluez/main.cpp:29:10: fatal error: bluetooth/bluetooth.h: No such file or directory
+>  #include <bluetooth/bluetooth.h>
+>           ^~~~~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.bluetooth.libraries.bluez FAILED
+looking for library sensorfw
+Trying source 0 (type pkgConfig) of library sensorfw ...
++ /usr/bin/pkg-config --exists --silence-errors sensord-qt5
+pkg-config did not find package.
+  => source produced no result.
+test config.sensors.libraries.sensorfw FAILED
+looking for library gypsy
+Trying source 0 (type pkgConfig) of library gypsy ...
++ /usr/bin/pkg-config --exists --silence-errors gypsy gconf-2.0
+pkg-config did not find package.
+  => source produced no result.
+test config.positioning.libraries.gypsy FAILED
+executing config test winrt_geolocation
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/winrt && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtlocation/config.tests/winrt
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/winrt && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtlocation/config.tests/winrt -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtlocation/config.tests/winrt/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtlocation/config.tests/winrt/main.cpp:30:10: fatal error: windows.system.h: No such file or directory
+>  #include <windows.system.h>
+>           ^~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+test config.positioning.tests.winrt_geolocation FAILED
+looking for library alsa
+Trying source 0 (type inline) of library alsa ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/alsa && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lasound' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/alsa
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/alsa && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/alsa -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o alsatest.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/alsa/alsatest.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/alsa/alsatest.cpp:29:10: fatal error: alsa/asoundlib.h: No such file or directory
+>  #include <alsa/asoundlib.h>
+>           ^~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'alsatest.o' failed
+> make: *** [alsatest.o] Error 1
+ => source failed verification.
+test config.multimedia.libraries.alsa FAILED
+looking for library gstreamer_1_0
+Trying source 0 (type pkgConfig) of library gstreamer_1_0 ...
++ /usr/bin/pkg-config --exists --silence-errors gstreamer-1.0 gstreamer-base-1.0 gstreamer-audio-1.0 gstreamer-video-1.0 gstreamer-pbutils-1.0
++ /usr/bin/pkg-config --modversion gstreamer-1.0 gstreamer-base-1.0 gstreamer-audio-1.0 gstreamer-video-1.0 gstreamer-pbutils-1.0
+> 1.14.5
+> 1.14.5
+> 1.14.5
+> 1.14.5
+> 1.14.5
++ /usr/bin/pkg-config --libs-only-L gstreamer-1.0 gstreamer-base-1.0 gstreamer-audio-1.0 gstreamer-video-1.0 gstreamer-pbutils-1.0
++ /usr/bin/pkg-config --libs-only-l gstreamer-1.0 gstreamer-base-1.0 gstreamer-audio-1.0 gstreamer-video-1.0 gstreamer-pbutils-1.0
+> -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
++ /usr/bin/pkg-config --cflags gstreamer-1.0 gstreamer-base-1.0 gstreamer-audio-1.0 gstreamer-video-1.0 gstreamer-pbutils-1.0
+> -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0' 'QMAKE_CFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' 'QMAKE_CXXFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o gstreamer main.o   -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 
+ => source accepted.
+test config.multimedia.libraries.gstreamer_1_0 succeeded
+looking for library gstreamer_app_1_0
+Trying source 0 (type pkgConfig) of library gstreamer_app_1_0 ...
++ /usr/bin/pkg-config --exists --silence-errors gstreamer-app-1.0
++ /usr/bin/pkg-config --modversion gstreamer-app-1.0
+> 1.14.5
++ /usr/bin/pkg-config --libs-only-L gstreamer-app-1.0
++ /usr/bin/pkg-config --libs-only-l gstreamer-app-1.0
+> -lgstapp-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
++ /usr/bin/pkg-config --cflags gstreamer-app-1.0
+> -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer_appsrc && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lgstapp-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0' 'QMAKE_CFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' 'QMAKE_CXXFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' 'LIBS += -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0' 'QMAKE_CFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' 'QMAKE_CXXFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_appsrc
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer_appsrc && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_appsrc -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_appsrc/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o gstreamer_appsrc main.o   -lgstapp-1.0 -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 
+ => source accepted.
+test config.multimedia.libraries.gstreamer_app_1_0 succeeded
+executing config test gstreamer_encodingprofiles
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer_encodingprofiles && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0' 'QMAKE_CFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' 'QMAKE_CXXFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_encodingprofiles
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer_encodingprofiles && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_encodingprofiles -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_encodingprofiles/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o gstreamer_encodingprofiles main.o   -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 
+test config.multimedia.tests.gstreamer_encodingprofiles succeeded
+looking for library gstreamer_photography_1_0
+Trying source 0 (type inline) of library gstreamer_photography_1_0 ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer_photography && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lgstphotography-1.0' 'LIBS += -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0' 'QMAKE_CFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' 'QMAKE_CXXFLAGS += -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_photography
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/gstreamer_photography && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_photography -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_photography/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/gstreamer_photography/main.cpp:31:10: fatal error: gst/interfaces/photography.h: No such file or directory
+>  #include <gst/interfaces/photography.h>
+>           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.multimedia.libraries.gstreamer_photography_1_0 FAILED
+executing config test linux_v4l
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/linux_v4l && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/linux_v4l
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/linux_v4l && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/linux_v4l -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/linux_v4l/main.cpp
+> g++ -Wl,-O1 -fuse-ld=gold -o linux_v4l main.o    
+test config.multimedia.tests.linux_v4l succeeded
+looking for library openal
+Trying source 0 (type pkgConfig) of library openal ...
++ /usr/bin/pkg-config --exists --silence-errors openal
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type inline) of library openal ...
+  => source failed condition 'config.win32'.
+Trying source 2 (type inline) of library openal ...
+  => source failed condition 'config.darwin'.
+Trying source 3 (type inline) of library openal ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/openal && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lopenal' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/openal
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/openal && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/openal -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o main.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/openal/main.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtmultimedia/config.tests/openal/main.cpp:32:10: fatal error: AL/al.h: No such file or directory
+>  #include <AL/al.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.multimedia.libraries.openal FAILED
+looking for library pulseaudio
+Trying source 0 (type pkgConfig) of library pulseaudio ...
++ /usr/bin/pkg-config --exists --silence-errors libpulse '>=' 0.9.10 libpulse-mainloop-glib
+pkg-config did not find package.
+  => source produced no result.
+test config.multimedia.libraries.pulseaudio FAILED
+looking for library libresourceqt5
+Trying source 0 (type pkgConfig) of library libresourceqt5 ...
++ /usr/bin/pkg-config --exists --silence-errors libresourceqt5
+pkg-config did not find package.
+  => source produced no result.
+test config.multimedia.libraries.libresourceqt5 FAILED
+looking for library alsa
+Trying source 0 (type inline) of library alsa ...
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/alsa && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" 'LIBS += -lasound' /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/alsa
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/alsa && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make
+> rm -f alsatest.o
+> rm -f *~ core *.core
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/alsa -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o alsatest.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/alsa/alsatest.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/alsa/alsatest.cpp:29:10: fatal error: alsa/asoundlib.h: No such file or directory
+>  #include <alsa/asoundlib.h>
+>           ^~~~~~~~~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 'alsatest.o' failed
+> make: *** [alsatest.o] Error 1
+ => source failed verification.
+test config.qtwebengine.libraries.alsa FAILED
+executing config test embedded
+test config.qtwebengine.tests.embedded FAILED
+looking for library pulseaudio
+Trying source 0 (type pkgConfig) of library pulseaudio ...
++ /usr/bin/pkg-config --exists --silence-errors libpulse '>=' 0.9.10 libpulse-mainloop-glib
+pkg-config did not find package.
+  => source produced no result.
+test config.qtwebengine.libraries.pulseaudio FAILED
+executing config test python2
+test config.qtwebengine.tests.python2 gave result /usr/bin/python2
+executing config test ninja
+Building own ninja
+test config.qtwebengine.tests.ninja FAILED
+looking for library opus
+Trying source 0 (type pkgConfig) of library opus ...
++ /usr/bin/pkg-config --exists --silence-errors opus
+pkg-config did not find package.
+  => source produced no result.
+test config.qtwebengine.libraries.opus FAILED
+executing config test re2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/re2 && /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared use_gold_linker warn_off console single_arch" /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/re2
++ cd /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/config.tests/re2 && MAKEFLAGS= /usr/bin/make
+> g++ -c -pipe -O2 -w -fPIC  -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/re2 -I. -I/home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtbase/mkspecs/linux-g++ -o re2.o /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/re2/re2.cpp
+> /home/louis/work/lab/practice/user-library/src/opsrc-qt5/qt-everywhere-opensource-src-5.9.8/qtwebengine/config.tests/re2/re2.cpp:29:10: fatal error: re2/re2.h: No such file or directory
+>  #include <re2/re2.h>
+>           ^~~~~~~~~~~
+> compilation terminated.
+> Makefile:167: recipe for target 're2.o' failed
+> make: *** [re2.o] Error 1
+test config.qtwebengine.tests.re2 FAILED
+looking for library webp
+Trying source 0 (type pkgConfig) of library webp ...
++ /usr/bin/pkg-config --exists --silence-errors libwebp libwebpdemux
+pkg-config did not find package.
+  => source produced no result.
+test config.qtwebengine.libraries.webp FAILED
