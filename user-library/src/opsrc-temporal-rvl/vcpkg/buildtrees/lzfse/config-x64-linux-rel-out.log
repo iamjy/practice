@@ -1,0 +1,16 @@
+-- The C compiler identification is GNU 8.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test CFLAG_Wall
+-- Performing Test CFLAG_Wall - Success
+-- Performing Test CFLAG_Wunknown_pragmas
+-- Performing Test CFLAG_Wunknown_pragmas - Success
+-- Performing Test CFLAG_Wunused_variable
+-- Performing Test CFLAG_Wunused_variable - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel

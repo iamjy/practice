@@ -1,0 +1,7 @@
+Package: lzfse
+Version: 1.0-2
+Architecture: x64-linux
+Multi-Arch: same
+Abi: b8d0e4e1adcd53be21eeaca77c744d7812cd017b
+Description: Lempel-Ziv style data compressor using Finite State Entropy coding.
+Status: install ok half-installed

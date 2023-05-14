@@ -1,0 +1,7 @@
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel/CMakeFiles/install/strip.dir
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel/CMakeFiles/edit_cache.dir
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel/CMakeFiles/lzfse.dir
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel/CMakeFiles/list_install_components.dir
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel/CMakeFiles/install/local.dir
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel/CMakeFiles/rebuild_cache.dir
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/buildtrees/lzfse/x64-linux-rel/CMakeFiles/install.dir

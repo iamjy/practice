@@ -1,0 +1,10 @@
+# ninja log v5
+1	56	1659271753	CMakeFiles/lzfse.dir/src/lzfse_encode.c.o	37f0dc59406e3307
+0	70	1659271753	CMakeFiles/lzfse.dir/src/lzfse_decode.c.o	69e125e4bb86cf75
+1	70	1659271753	CMakeFiles/lzfse.dir/src/lzfse_fse.c.o	68a689bb09b0a4e1
+3	87	1659271753	CMakeFiles/lzfse.dir/src/lzvn_decode_base.c.o	69f12113c654b3cd
+1	100	1659271753	CMakeFiles/lzfse.dir/src/lzfse_decode_base.c.o	214576709b5ebfff
+1	125	1659271753	CMakeFiles/lzfse.dir/src/lzfse_encode_base.c.o	ad42105f98b93385
+56	134	1659271753	CMakeFiles/lzfse.dir/src/lzvn_encode_base.c.o	d98518372d9a0341
+134	168	1659271753	liblzfse.a	1d8412d85ab4fab9
+168	173	0	CMakeFiles/install.util	19efc0db3a3fcd62

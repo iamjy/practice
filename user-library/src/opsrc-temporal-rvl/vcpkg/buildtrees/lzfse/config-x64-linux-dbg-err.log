@@ -1,0 +1,39 @@
+CMake Warning at /home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/scripts/buildsystems/vcpkg.cmake:104 (message):
+  There are no libraries installed for the Vcpkg triplet x64-linux.
+Call Stack (most recent call first):
+  /home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/downloads/tools/cmake-3.14.0-linux/cmake-3.14.0-Linux-x86_64/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake:93 (include)
+  CMakeLists.txt:1 (project)
+
+
+CMake Warning (dev) at /home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/scripts/buildsystems/vcpkg.cmake:195 (_add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'lzfse'.
+Call Stack (most recent call first):
+  CMakeLists.txt:60 (add_library)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/scripts/buildsystems/vcpkg.cmake:195 (_add_library):
+  Policy CMP0063 is not set: Honor visibility properties for all target
+  types.  Run "cmake --help-policy CMP0063" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Target "lzfse" of type "STATIC_LIBRARY" has the following visibility
+  properties set for C:
+
+    C_VISIBILITY_PRESET
+
+  For compatibility CMake is not honoring them for this target.
+Call Stack (most recent call first):
+  CMakeLists.txt:60 (add_library)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    VCPKG_PLATFORM_TOOLSET
+    VCPKG_SET_CHARSET_FLAG
+
+

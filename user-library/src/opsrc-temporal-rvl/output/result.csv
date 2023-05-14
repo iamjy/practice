@@ -1,0 +1,4 @@
+filename,width,height,type,change_threshold,invalidation_threshold,                      average_compression_time,average_decompression_time,                      compression_ratio,average_psnr
+ppt2-sitting,640,576,rvl,0,0,4.88204,4.71281,4.39803,0
+ppt2-sitting,640,576,trvl,0,0,15.1502,7.86273,4.1293,0
+ppt2-sitting,640,576,trvl,10,0,10.8505,4.57618,21.5446,60.4579

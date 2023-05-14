@@ -1,0 +1,12 @@
+x64-linux/
+x64-linux/debug/
+x64-linux/debug/lib/
+x64-linux/debug/lib/liblzfse.a
+x64-linux/include/
+x64-linux/include/lzfse.h
+x64-linux/lib/
+x64-linux/lib/liblzfse.a
+x64-linux/share/
+x64-linux/share/lzfse/
+x64-linux/share/lzfse/copyright
+x64-linux/share/lzfse/vcpkg_abi_info.txt

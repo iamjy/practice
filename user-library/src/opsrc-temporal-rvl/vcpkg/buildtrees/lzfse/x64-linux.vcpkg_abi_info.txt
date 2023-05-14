@@ -1,0 +1,7 @@
+disable-cli-option.patch a2756e3e5c7240b95037918ea28bee40a93017d7
+portfile.cmake baed036049ed5f41e53147f5022536ba0e9c2376
+CONTROL ef2031a7eb6c09d0cf1ca9b3af6d3abf9d60f5e2
+cmake 3.14.0
+vcpkg_fixup_cmake_targets 0ddb96472da00d45d10e0b0bf037bfb744164d0a
+triplet 0974e7f98a1d9a57447898ec5d2ed03b8111966f-77a1725add280a33f0c7a3b12acc4170b1bffd7e
+features core

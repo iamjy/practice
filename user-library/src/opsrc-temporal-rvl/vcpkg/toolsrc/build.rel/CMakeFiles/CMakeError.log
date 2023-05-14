@@ -1,0 +1,28 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/toolsrc/build.rel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/downloads/tools/ninja-1.8.2-linux/ninja cmTC_e2d9e 
+[1/2] Building C object CMakeFiles/cmTC_e2d9e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_e2d9e
+FAILED: cmTC_e2d9e 
+: && /usr/bin/cc    CMakeFiles/cmTC_e2d9e.dir/CheckSymbolExists.c.o  -o cmTC_e2d9e   && :
+CMakeFiles/cmTC_e2d9e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/toolsrc/build.rel/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

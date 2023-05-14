@@ -1,0 +1,2 @@
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/packages/lzfse_x64-linux/debug/lib/liblzfse.a
+/home/louis/work/lab/practice/user-library/src/opsrc-temporal-rvl/vcpkg/packages/lzfse_x64-linux/debug/include/lzfse.h
